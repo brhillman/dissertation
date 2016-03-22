@@ -1,0 +1,32 @@
+\contentsline {chapter}{\@textofLoF }{iii}
+\contentsline {chapter}{Glossary}{vii}
+\contentsline {chapter}{\numberline {\@textofChapter \ 1:}Introduction}{1}
+\contentsline {chapter}{\numberline {\@textofChapter \ 2:}Evaluating the MISR simulator using independently retrieved hydrometeor profiles from active sensors}{8}
+\contentsline {section}{\numberline {2.1}Framework for verification of MISR and ISCCP simulators}{10}
+\contentsline {section}{\numberline {2.2}Retrievals of visible extinction using A-train measurements}{10}
+\contentsline {section}{\numberline {2.3}MISR-retrieved and MISR-simulated cloud top heights}{12}
+\contentsline {section}{\numberline {2.4}Comparisons between MISR-retrieved and MISR-simulated clouds}{16}
+\contentsline {section}{\numberline {2.5}Diurnal variations in cloud cover}{29}
+\contentsline {section}{\numberline {2.6}Summary and discussion}{31}
+\contentsline {chapter}{\numberline {\@textofChapter \ 3:}Quantifying sensitivities of satellite-simulated cloud retrievals to unresolved clouds and precipitation}{34}
+\contentsline {section}{\numberline {3.1}Overlap and condensate variability in global models}{34}
+\contentsline {section}{\numberline {3.2}Framework for sensitivity tests}{37}
+\contentsline {section}{\numberline {3.3}Sensitivity of simulated passive remote sensing diagnostics}{44}
+\contentsline {section}{\numberline {3.4}Sensitivity of simulated CloudSat diagnostics}{51}
+\contentsline {section}{\numberline {3.5}Summary and discussion}{57}
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}An improved framework for downscaling cloud properties from large-scale models}{61}
+\contentsline {section}{\numberline {4.1}Generating stochastic subcolumns of cloud and precipitation condensate}{61}
+\contentsline {section}{\numberline {4.2}Parameterizing occurrence overlap and rank correlation from SP-CAM}{65}
+\contentsline {section}{\numberline {4.3}Parameterizing cloud and precipitation condensate variability}{69}
+\contentsline {section}{\numberline {4.4}Quantifying improvements in COSP-simulated diagnostics}{75}
+\contentsline {section}{\numberline {4.5}Reduced errors in simulated passive remote sensing diagnostics}{77}
+\contentsline {section}{\numberline {4.6}Reduced errors in simulated CloudSat reflectivity and hydrometeor occurrence}{78}
+\contentsline {section}{\numberline {4.7}Discussion}{79}
+\contentsline {chapter}{\numberline {\@textofChapter \ 5:}Implications for model evaluation: an informed comparison of cloud and radiative properties in CMIP5 models}{80}
+\contentsline {section}{\numberline {5.1}Models and observations}{80}
+\contentsline {section}{\numberline {5.2}Biases in CMIP5 models relative to satellite retrievals}{84}
+\contentsline {section}{\numberline {5.3}Correlating biases in cloud properties with biases in cloud radiative effects}{89}
+\contentsline {section}{\numberline {5.4}Testing the improved subcolumn generator in the Community Atmosphere Model}{89}
+\contentsline {section}{\numberline {5.5}Summary, discussion, and future directions}{89}
+\contentsline {chapter}{Bibliography}{90}
+\contentsline {chapter}{\numberline {\@textofAppendix \ A:}A useful appendix}{101}

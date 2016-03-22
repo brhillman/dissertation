@@ -1,0 +1,51 @@
+\addvspace {5\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematic of the simulator framework.}}{5}
+\addvspace {5\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Profiles of visible extinction $d\tau $ and estimates of cloud top height $z_c$ for a short orbit segment.}}{12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Joint histograms of cloud top height and optical depth for the example orbit segment shown in Figure 2.1\hbox {}.}}{15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Maps of cloud area by cloud type for January 2008 retrieved by MISR (left), diagnosed using the MISR simulator from extinction profiles retrieved from CloudSat/CALIPSO (middle), and diagnosed directly by taking the highest altitude with non-zero extinction from the CloudSat/CALIPSO extinction retrievals (right). Shown from top to bottom are total ($\tau > 0.3$), high-topped ($\tau > 0.3$; $z_c > 7$ km), mid-topped ($\tau > 0.3$; $3 < z_c < 7$ km), and low-topped ($\tau > 0.3$; $z_c < 3$ km) cloud area. Area-weighted domain averages are indicated in the upper-right corner of each panel.}}{17}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces As in Figure 2.3\hbox {} but for June 2008.}}{18}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Zonally-averaged cloud area by cloud type from MISR-retrievals, MISR-simulated retrievals from CC-derived extinction profiles, and directly inferred cloud top heights from CC-derived extinction profiles. Shown are total, high-topped, mid-topped, and low-topped cloud area. Shading indicates the 95\% confidence interval obtained by bootstrap resampling the orbit-by-orbit zonal means. [NOTE: maybe combine this with the domain average plots?!]}}{20}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Joint radar-lidar low-level cloud mask from 2B-GEOPROF and 2B-GEOPROF-LIDAR for different lidar cloud fraction thresholds over the Pacific domain. Height bins are considered "cloudy" if the radar cloud mask (CPR\_Cloud\_mask in 2B-GEOPROF) has a value greater than 20, or if the lidar cloud fraction (CloudFraction in 2B-GEOPROF-LIDAR) is greater than the selected threshold value (indicicated in the legend). Plotted are the zonally averaged fraction of profiles with any cloudy height bins below 3 km (left), and differences relative to the default threshold of 50\% (right). Numbers in parentheses in the legend indicate the average over the entire (Pacific) domain.}}{23}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Joint histograms of cloud top height and cloud optical depth for January 2008.}}{24}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Joint histograms of cloud top height and cloud optical depth for June 2008.}}{25}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Histograms of cloud top height for January.}}{27}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Histograms of cloud top height for June.}}{28}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Zonally-averaged cloud area from MODIS Terra and Aqua.}}{30}
+\addvspace {5\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Total cloud (left) and precipitation (right) mixing ratios from the original CRM fields (top), homogenized CRM fields (second row), regenerated using SCOPS/PREC\_SCOPS (third row), and regenerated using SCOPS/PREC\_SCOPS with precipitation adjusted to conform to the precipitation fraction from the CRM (bottom row) for an example gridbox (00 UTC 01 July 2000, 10 N, 180 E).}}{41}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces From top to bottom, MISR-simulated total, high-topped, mid-topped, and low-topped cloud area using the (from left to right) CRM, CRM-HOM, and MRO-HOM fields as input to COSP.}}{45}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Errors in MISR-simulated cloud area by cloud type for (from top to bottom) total, high-topped, mid-topped, and low-topped clouds. Shown are (from left to right) the total error in using SCOPS/PREC\_SCOPS with homogeneous cloud condensate, the component of the error due only to homogenizing the condensate, and the component of the error due only to using SCOPS to regenerate subcolumns with maximum-random overlap.}}{47}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Probability density function of cloud optical depth for a single day from the CRM and CRM-HOM cases.}}{49}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Cloud occurrence overlap from original unmodified SP-CAM fields, and those with regenerated subcolumns assuming maximum-random overlap (MRO).}}{50}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Cloud area errors from ISCCP}}{51}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Hydrometeor occurence fraction by height}}{52}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Hydrometeor occurence fraction by height errors}}{53}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Reflectivity with height histograms for the NH Tropics [...].}}{54}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Errors in reflectivity with height histograms for the NH Tropics [...].}}{55}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Simulated reflectivity with height histograms for an example gridbox [...] using the CRM and CRM-HOM fields, with attenuation turned on (top) and with attenuation turned off (bottom).}}{56}
+\addvspace {5\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overlap and rank correlation statistics.}}{66}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Maps of cloud occurrence overlap (top) and condensate rank correlation (bottom) decorrelation length scales. Decorrelation length scales at each point are calculated by fitting time-averaged overlap and rank correlation as a function of separation distance to Equation 4.9\hbox {}.}}{67}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces As in Figure 4.1\hbox {}, but separated by convective strength. [TODO: fix this caption, make this figure]}}{68}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Maps of overlap and rank correlation decorrelation lengths for both convective (left) and non-convective (right) gridboxes.}}{69}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Raw (left) and normalized (right) condensate empirical density functions, with fits to the gamma distribution.}}{70}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Scatter plots of condensate standard deviation against condensate mean for cloud liquid, cloud ice, precipitating liquid, and precipitating ice. Shown in the legend are the fit parameters to the relationship $\sigma = a \mu ^b$, along with the coefficient of determination (r-squared) of the fit.}}{71}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces coefficient of variability}}{73}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Cases with improved subcolumn generator following R04.}}{75}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Errors in MISR-simulated cloud area by cloud top height arising due to using the improved GEN-VAR subcolumn generator to regenerate subcolumns from gridbox-mean profiles (left), the component of the error due to the treatment of variability (middle), and the component of the error due to the treatment of overlap (right).}}{77}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Errors in ISCCP-simulated cloud area by cloud top pressure.}}{77}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Errors in MODIS-simulated cloud area by cloud top pressure.}}{77}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Errors in CloudSat-simulated hydrometeor occurrence ($Z_e > -27.5$ dBZ) arising due to using GEN-VAR to regenerate subcolumns of cloud and precipitation (top), as well as components due to both the VAR treatment of variability (middle) and the GEN treatment of overlap (bottom).}}{78}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Errors in CloudSat-simulated reflectivity with height histograms for the NH Tropics (0 to 10 degrees north).}}{78}
+\addvspace {5\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces MISR and MISR-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models and from MISR retrievals.}}{84}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ISCCP and ISCCP-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models and from ISCCP retrievals.}}{85}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Difference in MISR-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models relative to MISR retrievals.}}{85}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Difference in ISCCP-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models relative to ISCCP retrievals.}}{86}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Shortwave (top), longwave (middle) and net (bottom) cloud radiative effects from CERES-EBAF (left) and from each of the five models evaluated in this study (from left to right, AM3, CAM4, CAM5, CanAM4, HadGEM2). Numbers in the lower right corner of each map indicate the area-weighted global mean.}}{87}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Differences in shortwave (top), longwave (middle) and net (bottom) cloud radiative effects in each of the five models relative to CERES-EBAF, calculated as model minus observations. Numbers in the lower right corner of each map indicate the area-weighted global mean of the difference.}}{87}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Joint histograms of MISR-retrieved and MISR-simulated cloud top height and cloud optical depth for the Tropical Warm Pool.}}{88}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Joint histograms of MISR-retrieved and MISR-simulated cloud top height and cloud optical depth for the Southern Ocean.}}{88}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Shortwave and longwave cloud radiative effect biases plotted against cloud area and cloud height biases from each of the models.}}{89}
+\addvspace {5\p@ }

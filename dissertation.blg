@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: dissertation.aux
+The style file: ametsoc.bst
+Database file #1: dissertation.bib
+Warning--I didn't find a database entry for "oreopolous_et_al_2012"
+Warning--I didn't find a database entry for "lee_et_al_2010"
+Warning--I didn't find a database entry for "tanelli_et_al_2008"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty journal in hillman_et_al_2016
+You've used 92 entries,
+            3488 wiz_defined-function locations,
+            1668 strings with 34552 characters,
+and the built_in function-call counts, 98052 in all, are:
+= -- 11378
+> -- 3480
+< -- 40
++ -- 2025
+- -- 855
+* -- 5554
+:= -- 10116
+add.period$ -- 184
+call.type$ -- 92
+change.case$ -- 730
+chr.to.int$ -- 90
+cite$ -- 93
+duplicate$ -- 9914
+empty$ -- 5180
+format.name$ -- 1173
+if$ -- 19839
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 1002
+newline$ -- 286
+num.names$ -- 368
+pop$ -- 4235
+preamble$ -- 1
+purify$ -- 635
+quote$ -- 0
+skip$ -- 5789
+stack$ -- 0
+substring$ -- 4490
+swap$ -- 8131
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 825
+warning$ -- 1
+while$ -- 450
+width$ -- 0
+write$ -- 1087
+(There were 4 warnings)

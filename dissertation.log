@@ -1,0 +1,777 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  22 MAR 2016 10:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**dissertation
+(./dissertation.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(./uwthesis.cls
+Document Class: uwthesis 2015/03/03
+\tf@not=\write3
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+Formatting for ProQuest
+\botmargin=\dimen103
+\@@wholepage=\box26
+\@Chair=\count88
+\@Sign=\count89
+\abs@savebox=\box27
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count90
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen106
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks16
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks17
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks25
+)
+(./dissertation.aux)
+\openout1 = `dissertation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen115
+\scratchbox=\box30
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen116
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks27
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
+ [1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [-1
+
+] [0
+
+]
+(./dissertation.toc [1
+
+
+
+])
+\tf@toc=\write4
+\openout4 = `dissertation.toc'.
+
+ [2] (./dissertation.lof
+Overfull \hbox (14.95421pt too wide) in paragraph at lines 8--8
+ [][] []\OT1/cmr/m/n/12 Zonally-averaged cloud area by cloud type from MISR-ret
+rievals, MISR-simulated 
+ []
+
+
+Overfull \hbox (5.81004pt too wide) in paragraph at lines 9--9
+ [][] []\OT1/cmr/m/n/12 Joint radar-lidar low-level cloud mask from 2B-GEOPROF 
+and 2B-GEOPROF- 
+ []
+
+[3
+
+]
+Overfull \hbox (23.02121pt too wide) in paragraph at lines 16--16
+ \OT1/cmr/m/n/12 SCOPS/PREC[]SCOPS (third row), and re-gen-er-ated us-ing SCOPS
+/PREC[]SCOPS 
+ []
+
+
+Underfull \vbox (badness 5756) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (3.67377pt too wide) in paragraph at lines 45--45
+ [][] []\OT1/cmr/m/n/12 Difference in ISCCP-simulated to-tal, high-topped, mid-
+topped, and low-topped 
+ []
+
+[5])
+\tf@lof=\write5
+\openout5 = `dissertation.lof'.
+
+ [6] (./glossary.tex
+Overfull \hbox (26.26125pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/m/n/12 Algorithm to stochas-ti-cally gen-er-ate pro-files of bi-nary
+ clear/cloudy
+ []
+
+) [7
+
+] [8
+
+] [9
+
+] (./chapter1.tex
+<<1>>
+
+Underfull \vbox (badness 1953) has occurred while \output is active []
+
+ [1
+
+
+
+]
+[2] [3] <graphics/simulator_schematic.pdf, id=57, 321.2pt x 297.11pt>
+File: graphics/simulator_schematic.pdf Graphic file (type pdf)
+
+<use graphics/simulator_schematic.pdf>
+Package pdftex.def Info: graphics/simulator_schematic.pdf used on input line 23
+.
+(pdftex.def)             Requested size: 321.19922pt x 297.10927pt.
+ [4] [5 <./graphics/simulator_schematic.pdf>]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [6])
+(./chapter2.tex [7]
+<<2>>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8
+
+]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ê in font cmr12!
+
+[9] [10]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [11]
+<graphics/misr_sim_example.pdf, id=99, 432.1941pt x 231.62508pt>
+File: graphics/misr_sim_example.pdf Graphic file (type pdf)
+
+<use graphics/misr_sim_example.pdf>
+Package pdftex.def Info: graphics/misr_sim_example.pdf used on input line 33.
+(pdftex.def)             Requested size: 470.295pt x 252.04573pt.
+ [12 <./graphics/misr_sim_example.pdf>]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [13]
+<graphics/misr_clmisr_example.pdf, id=161, 470.29501pt x 376.236pt>
+File: graphics/misr_clmisr_example.pdf Graphic file (type pdf)
+
+<use graphics/misr_clmisr_example.pdf>
+Package pdftex.def Info: graphics/misr_clmisr_example.pdf used on input line 45
+.
+(pdftex.def)             Requested size: 470.295pt x 376.24081pt.
+ [14] [15 <./graphics/misr_clmisr_example.pdf>]
+<graphics/misr_cldmisr_maps_2008-01.pdf, id=215, 470.29501pt x 399.75076pt>
+File: graphics/misr_cldmisr_maps_2008-01.pdf Graphic file (type pdf)
+
+<use graphics/misr_cldmisr_maps_2008-01.pdf>
+Package pdftex.def Info: graphics/misr_cldmisr_maps_2008-01.pdf used on input l
+ine 62.
+(pdftex.def)             Requested size: 470.295pt x 399.75587pt.
+
+<graphics/misr_cldmisr_maps_2008-06.pdf, id=216, 470.29501pt x 399.75076pt>
+File: graphics/misr_cldmisr_maps_2008-06.pdf Graphic file (type pdf)
+
+<use graphics/misr_cldmisr_maps_2008-06.pdf>
+Package pdftex.def Info: graphics/misr_cldmisr_maps_2008-06.pdf used on input l
+ine 69.
+(pdftex.def)             Requested size: 470.295pt x 399.75587pt.
+ [16] [17 <./graphics/misr_cldmisr_maps_2008-01.pdf>] [18 <./graphics/misr_cldm
+isr_maps_2008-06.pdf>]
+<graphics/misr_cldmisr_zonal.pdf, id=317, 470.29501pt x 470.29501pt>
+File: graphics/misr_cldmisr_zonal.pdf Graphic file (type pdf)
+
+<use graphics/misr_cldmisr_zonal.pdf>
+Package pdftex.def Info: graphics/misr_cldmisr_zonal.pdf used on input line 78.
+
+(pdftex.def)             Requested size: 470.295pt x 470.30103pt.
+
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [19]
+[20 <./graphics/misr_cldmisr_zonal.pdf>] [21]
+<graphics/misr_rlmask_test.pdf, id=373, 470.29501pt x 282.17702pt>
+File: graphics/misr_rlmask_test.pdf Graphic file (type pdf)
+
+<use graphics/misr_rlmask_test.pdf>
+Package pdftex.def Info: graphics/misr_rlmask_test.pdf used on input line 93.
+(pdftex.def)             Requested size: 470.295pt x 282.18062pt.
+
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [22]
+[23 <./graphics/misr_rlmask_test.pdf>]
+<graphics/misr_clmisr_Pacific_2008-01.pdf, id=430, 470.29501pt x 329.20651pt>
+File: graphics/misr_clmisr_Pacific_2008-01.pdf Graphic file (type pdf)
+
+<use graphics/misr_clmisr_Pacific_2008-01.pdf>
+Package pdftex.def Info: graphics/misr_clmisr_Pacific_2008-01.pdf used on input
+ line 102.
+(pdftex.def)             Requested size: 470.295pt x 329.21072pt.
+
+<graphics/misr_clmisr_Pacific_2008-06.pdf, id=431, 470.29501pt x 329.20651pt>
+File: graphics/misr_clmisr_Pacific_2008-06.pdf Graphic file (type pdf)
+
+<use graphics/misr_clmisr_Pacific_2008-06.pdf>
+Package pdftex.def Info: graphics/misr_clmisr_Pacific_2008-06.pdf used on input
+ line 109.
+(pdftex.def)             Requested size: 470.295pt x 329.21072pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./graphics/misr_clmisr_Pacific_2008-01.pdf>] [25 <./graphics/misr_clmisr_
+Pacific_2008-06.pdf>] <graphics/misr_cth_2008-01.pdf, id=536, 470.29501pt x 423
+.26549pt>
+File: graphics/misr_cth_2008-01.pdf Graphic file (type pdf)
+
+<use graphics/misr_cth_2008-01.pdf>
+Package pdftex.def Info: graphics/misr_cth_2008-01.pdf used on input line 118.
+(pdftex.def)             Requested size: 470.295pt x 423.27089pt.
+
+<graphics/misr_cth_2008-06.pdf, id=537, 470.29501pt x 423.26549pt>
+File: graphics/misr_cth_2008-06.pdf Graphic file (type pdf)
+
+<use graphics/misr_cth_2008-06.pdf>
+Package pdftex.def Info: graphics/misr_cth_2008-06.pdf used on input line 125.
+(pdftex.def)             Requested size: 470.295pt x 423.27089pt.
+ [26] [27 <./graphics/misr_cth_2008-01.pdf>] [28 <./graphics/misr_cth_2008-06.p
+df>] [29]
+Underfull \vbox (badness 2119) has occurred while \output is active []
+
+ [30]
+[31] [32]) (./chapter3.tex [33]
+<<3>>
+[34
+
+] [35] [36] [37]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [38]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [39]
+<graphics/mxratio_mro-hom.pdf, id=684, 470.29501pt x 399.75076pt>
+File: graphics/mxratio_mro-hom.pdf Graphic file (type pdf)
+
+<use graphics/mxratio_mro-hom.pdf>
+Package pdftex.def Info: graphics/mxratio_mro-hom.pdf used on input line 43.
+(pdftex.def)             Requested size: 470.295pt x 399.75587pt.
+
+Underfull \hbox (badness 2181) in paragraph at lines 44--44
+\OT1/cmr/m/n/12 i-nal CRM fields (top), ho-mog-e-nized CRM fields (sec-ond row)
+, re-gen-er-ated us-ing
+ []
+
+[40] [41 <./graphics/mxratio_mro-hom.pdf>] [42] [43]
+<graphics/cldmisr_mro-hom.pdf, id=746, 523.14746pt x 340.62404pt>
+File: graphics/cldmisr_mro-hom.pdf Graphic file (type pdf)
+
+<use graphics/cldmisr_mro-hom.pdf>
+Package pdftex.def Info: graphics/cldmisr_mro-hom.pdf used on input line 72.
+(pdftex.def)             Requested size: 470.295pt x 306.22096pt.
+
+
+LaTeX Warning: Reference `me_chapter' on page 44 undefined on input line 77.
+
+[44] [45 <./graphics/cldmisr_mro-hom.pdf>]
+<graphics/cldmisr_mro-hom_errors.pdf, id=794, 529.01314pt x 340.62404pt>
+File: graphics/cldmisr_mro-hom_errors.pdf Graphic file (type pdf)
+
+<use graphics/cldmisr_mro-hom_errors.pdf>
+Package pdftex.def Info: graphics/cldmisr_mro-hom_errors.pdf used on input line
+ 81.
+(pdftex.def)             Requested size: 470.295pt x 302.8218pt.
+
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [46]
+[47 <./graphics/cldmisr_mro-hom_errors.pdf>]
+<graphics/taudist_hom.pdf, id=839, 578.16pt x 397.485pt>
+File: graphics/taudist_hom.pdf Graphic file (type pdf)
+
+<use graphics/taudist_hom.pdf>
+Package pdftex.def Info: graphics/taudist_hom.pdf used on input line 90.
+(pdftex.def)             Requested size: 470.295pt x 323.32573pt.
+
+<graphics/overlap_mro.pdf, id=840, 512.77823pt x 358.88297pt>
+File: graphics/overlap_mro.pdf Graphic file (type pdf)
+
+<use graphics/overlap_mro.pdf>
+Package pdftex.def Info: graphics/overlap_mro.pdf used on input line 99.
+(pdftex.def)             Requested size: 470.295pt x 329.16324pt.
+
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [48]
+[49 <./graphics/taudist_hom.pdf>] [50 <./graphics/overlap_mro.pdf>]
+<graphics/hfba_mro-hom.pdf, id=928, 473.87068pt x 295.08963pt>
+File: graphics/hfba_mro-hom.pdf Graphic file (type pdf)
+
+<use graphics/hfba_mro-hom.pdf>
+Package pdftex.def Info: graphics/hfba_mro-hom.pdf used on input line 119.
+(pdftex.def)             Requested size: 470.295pt x 292.87808pt.
+
+<graphics/hfba_mro-hom_errors.pdf, id=929, 485.31972pt x 294.48425pt>
+File: graphics/hfba_mro-hom_errors.pdf Graphic file (type pdf)
+
+<use graphics/hfba_mro-hom_errors.pdf>
+Package pdftex.def Info: graphics/hfba_mro-hom_errors.pdf used on input line 12
+6.
+(pdftex.def)             Requested size: 470.295pt x 285.37077pt.
+ [51] [52 <./graphics/hfba_mro-hom.pdf>]
+[53 <./graphics/hfba_mro-hom_errors.pdf>]
+<graphics/cfadDbze94_mro-hom_errors.pdf, id=1024, 628.41434pt x 401.80525pt>
+File: graphics/cfadDbze94_mro-hom_errors.pdf Graphic file (type pdf)
+
+<use graphics/cfadDbze94_mro-hom_errors.pdf>
+Package pdftex.def Info: graphics/cfadDbze94_mro-hom_errors.pdf used on input l
+ine 143.
+(pdftex.def)             Requested size: 470.295pt x 300.7033pt.
+ [54] [55 <./graphics/cfadDbze94_mro-hom_errors.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+[57]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [58]
+
+LaTeX Warning: Reference `me_chapter' on page 59 undefined on input line 165.
+
+[59]) (./chapter4.tex [60]
+<<4>>
+[61
+
+] [62] [63] [64]
+
+LaTeX Warning: Reference `overlap_crm' on page 65 undefined on input line 94.
+
+[65] [66]
+
+Package natbib Warning: Citation `oreopolous_et_al_2012' on page 67 undefined o
+n input line 115.
+
+
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+ [67]
+Underfull \vbox (badness 4479) has occurred while \output is active []
+
+ [68]
+
+Package natbib Warning: Citation `lee_et_al_2010' on page 69 undefined on input
+ line 142.
+
+[69] <graphics/condensate_std.pdf, id=1091, 578.16pt x 397.485pt>
+File: graphics/condensate_std.pdf Graphic file (type pdf)
+
+<use graphics/condensate_std.pdf>
+Package pdftex.def Info: graphics/condensate_std.pdf used on input line 153.
+(pdftex.def)             Requested size: 470.295pt x 323.32573pt.
+
+Underfull \vbox (badness 5147) has occurred while \output is active []
+
+ [70]
+[71 <./graphics/condensate_std.pdf>]
+
+LaTeX Warning: Reference `sgi_method' on page 72 undefined on input line 162.
+
+<graphics/coefficient_of_variation.pdf, id=1148, 578.16pt x 397.485pt>
+File: graphics/coefficient_of_variation.pdf Graphic file (type pdf)
+
+<use graphics/coefficient_of_variation.pdf>
+Package pdftex.def Info: graphics/coefficient_of_variation.pdf used on input li
+ne 166.
+(pdftex.def)             Requested size: 470.295pt x 323.32573pt.
+ [72] [73 <./graphics/coefficient_of_variation.pdf>]
+
+Package natbib Warning: Citation `tanelli_et_al_2008' on page 74 undefined on i
+nput line 175.
+
+[74] <graphics/mxratio_gen-var.pdf, id=1207, 622.07817pt x 402.4106pt>
+File: graphics/mxratio_gen-var.pdf Graphic file (type pdf)
+
+<use graphics/mxratio_gen-var.pdf>
+Package pdftex.def Info: graphics/mxratio_gen-var.pdf used on input line 183.
+(pdftex.def)             Requested size: 470.295pt x 304.22647pt.
+ [75 <./graphics/mxratio_gen-var.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76]
+[77]
+
+LaTeX Warning: Reference `sgi_cfadDbze94_nhtropics_Diff' on page 78 undefined o
+n input line 235.
+
+
+Underfull \vbox (badness 1681) has occurred while \output is active []
+
+ [78])
+(./chapter5.tex [79]
+<<5>>
+
+LaTeX Warning: Reference `me_chapter' on page 80 undefined on input line 3.
+
+[80
+
+]
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [81]
+
+LaTeX Warning: Reference `me_chapter' on page 82 undefined on input line 16.
+
+[82]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]
+<graphics/cmip5_cldmisr.pdf, id=1285, 978.5325pt x 394.502pt>
+File: graphics/cmip5_cldmisr.pdf Graphic file (type pdf)
+
+<use graphics/cmip5_cldmisr.pdf>
+Package pdftex.def Info: graphics/cmip5_cldmisr.pdf used on input line 32.
+(pdftex.def)             Requested size: 470.295pt x 189.6056pt.
+
+<graphics/cmip5_cldisccp.pdf, id=1286, 978.5325pt x 394.502pt>
+File: graphics/cmip5_cldisccp.pdf Graphic file (type pdf)
+
+<use graphics/cmip5_cldisccp.pdf>
+Package pdftex.def Info: graphics/cmip5_cldisccp.pdf used on input line 39.
+(pdftex.def)             Requested size: 470.295pt x 189.6056pt.
+
+<graphics/cmip5_cldmisr_diff.pdf, id=1287, 968.6576pt x 450.51123pt>
+File: graphics/cmip5_cldmisr_diff.pdf Graphic file (type pdf)
+
+<use graphics/cmip5_cldmisr_diff.pdf>
+Package pdftex.def Info: graphics/cmip5_cldmisr_diff.pdf used on input line 46.
+
+(pdftex.def)             Requested size: 470.295pt x 218.7314pt.
+
+<graphics/cmip5_cldisccp_diff.pdf, id=1288, 968.6576pt x 450.51123pt>
+File: graphics/cmip5_cldisccp_diff.pdf Graphic file (type pdf)
+
+<use graphics/cmip5_cldisccp_diff.pdf>
+Package pdftex.def Info: graphics/cmip5_cldisccp_diff.pdf used on input line 53
+.
+(pdftex.def)             Requested size: 470.295pt x 218.7314pt.
+ [84 <./graphics/cmip5_cldmisr.pdf>]
+[85 <./graphics/cmip5_cldisccp.pdf> <./graphics/cmip5_cldmisr_diff.pdf
+
+pdfTeX warning: pdflatex (file ./graphics/cmip5_cldmisr_diff.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>] <graphics/cmip5_cre_maps.pdf, id=1425, 866.03444pt x 282.48349pt>
+File: graphics/cmip5_cre_maps.pdf Graphic file (type pdf)
+
+<use graphics/cmip5_cre_maps.pdf>
+Package pdftex.def Info: graphics/cmip5_cre_maps.pdf used on input line 63.
+(pdftex.def)             Requested size: 470.295pt x 153.40086pt.
+
+<graphics/cmip5_cre_maps_diff.pdf, id=1426, 867.28975pt x 335.41632pt>
+File: graphics/cmip5_cre_maps_diff.pdf Graphic file (type pdf)
+
+<use graphics/cmip5_cre_maps_diff.pdf>
+Package pdftex.def Info: graphics/cmip5_cre_maps_diff.pdf used on input line 70
+.
+(pdftex.def)             Requested size: 470.295pt x 181.87958pt.
+
+
+LaTeX Warning: Reference `me_chapter' on page 86 undefined on input line 75.
+
+
+<graphics/cmip5_clMISR_TropicalWarmPool.pdf, id=1427, 653.8114pt x 322.30223pt>
+File: graphics/cmip5_clMISR_TropicalWarmPool.pdf Graphic file (type pdf)
+<use graphics/cmip5_clMISR_TropicalWarmPool.pdf>
+Package pdftex.def Info: graphics/cmip5_clMISR_TropicalWarmPool.pdf used on inp
+ut line 79.
+(pdftex.def)             Requested size: 470.295pt x 231.84593pt.
+
+<graphics/cmip5_clMISR_SouthernOcean.pdf, id=1428, 653.8114pt x 322.30223pt>
+File: graphics/cmip5_clMISR_SouthernOcean.pdf Graphic file (type pdf)
+
+<use graphics/cmip5_clMISR_SouthernOcean.pdf>
+Package pdftex.def Info: graphics/cmip5_clMISR_SouthernOcean.pdf used on input 
+line 86.
+(pdftex.def)             Requested size: 470.295pt x 231.84593pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86 <./graphics/cmip5_cldisccp_diff.pdf>] [87 <./graphics/cmip5_cre_maps.pdf> 
+<./graphics/cmip5_cre_maps_diff.pdf
+
+pdfTeX warning: pdflatex (file ./graphics/cmip5_cre_maps_diff.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>] [88 <./graphics/cmip5_clMISR_TropicalWarmPool.pdf> <./graphics/cmip5_clMISR_
+SouthernOcean.pdf
+
+pdfTeX warning: pdflatex (file ./graphics/cmip5_clMISR_SouthernOcean.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]) (./dissertation.bbl [89] [90
+
+] [91] [92] [93] [94]
+Underfull \hbox (badness 6047) in paragraph at lines 267--270
+[]\OT1/cmr/m/n/12 Mace, G. G. and S. Benson-Troth, 2002: Cloud-layer over-lap c
+har-ac-ter-is-tics
+ []
+
+
+Underfull \hbox (badness 5696) in paragraph at lines 267--270
+\OT1/cmr/m/n/12 de-rived from long-term cloud radar data. \OT1/cmr/m/it/12 J. C
+li-mate\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 15\OT1/cmr/m/n/12 , doi:10.1175/1520-
+
+ []
+
+[95] [96] [97]
+Underfull \hbox (badness 3989) in paragraph at lines 415--418
+[]\OT1/cmr/m/n/12 Rossow, W. B. and R. A. Schif-fer, 1999: Ad-vances in un-der-
+stand-ing clouds
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 415--418
+\OT1/cmr/m/n/12 from IS-CCP. \OT1/cmr/m/it/12 Bull. Amer. Me-teor. Soc.\OT1/cmr
+/m/n/12 , \OT1/cmr/bx/n/12 80 (11)\OT1/cmr/m/n/12 , 2261--2287, doi:10.1175/152
+0-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--446
+[]\OT1/cmr/m/n/12 The HadGEM2 De-vel-op-ment Team: Mar-tin, G. M., et al., 2011
+: The
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 442--446
+\OT1/cmr/m/n/12 hadgem2 fam-ily of met of-fice uni-fied model cli-mate con-fig-
+u-ra-tions. \OT1/cmr/m/it/12 Geo-sci-en-
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 442--446
+\OT1/cmr/m/it/12 tific Model De-vel-op-ment\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 4
+ (3)\OT1/cmr/m/n/12 , 723--757, doi:10.5194/gmd-4-723-2011, URL
+ []
+
+[98] [99]) [100]
+<<A>>
+
+Package natbib Warning: There were undefined citations.
+
+[101
+
+] (./dissertation.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3237 strings out of 493089
+ 49629 string characters out of 6134842
+ 110697 words of memory out of 5000000
+ 6639 multiletter control sequences out of 15000+600000
+ 10782 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,14n,24p,2986b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on dissertation.pdf (113 pages, 40252113 bytes).
+PDF statistics:
+ 1761 PDF objects out of 2073 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+
