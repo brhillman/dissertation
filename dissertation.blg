@@ -11,45 +11,45 @@ Warning--I didn't find a database entry for "lee_et_al_2010"
 Warning--I didn't find a database entry for "tanelli_et_al_2008"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in hillman_et_al_2016
-You've used 93 entries,
+You've used 94 entries,
             3488 wiz_defined-function locations,
-            1677 strings with 34673 characters,
-and the built_in function-call counts, 100012 in all, are:
-= -- 11645
-> -- 3531
+            1682 strings with 34800 characters,
+and the built_in function-call counts, 100640 in all, are:
+= -- 11694
+> -- 3568
 < -- 40
-+ -- 2057
-- -- 867
-* -- 5639
-:= -- 10273
-add.period$ -- 186
-call.type$ -- 93
-change.case$ -- 739
-chr.to.int$ -- 91
-cite$ -- 94
-duplicate$ -- 10126
-empty$ -- 5271
-format.name$ -- 1192
-if$ -- 20252
++ -- 2073
+- -- 876
+* -- 5689
+:= -- 10361
+add.period$ -- 188
+call.type$ -- 94
+change.case$ -- 747
+chr.to.int$ -- 92
+cite$ -- 95
+duplicate$ -- 10178
+empty$ -- 5314
+format.name$ -- 1204
+if$ -- 20379
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 1014
-newline$ -- 289
-num.names$ -- 372
-pop$ -- 4369
+missing$ -- 1024
+newline$ -- 292
+num.names$ -- 376
+pop$ -- 4394
 preamble$ -- 1
-purify$ -- 643
+purify$ -- 650
 quote$ -- 0
-skip$ -- 5901
+skip$ -- 5922
 stack$ -- 0
-substring$ -- 4604
-swap$ -- 8322
+substring$ -- 4615
+swap$ -- 8349
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 834
+type$ -- 843
 warning$ -- 1
-while$ -- 460
+while$ -- 463
 width$ -- 0
-write$ -- 1097
+write$ -- 1109
 (There were 7 warnings)

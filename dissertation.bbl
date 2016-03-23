@@ -1,4 +1,4 @@
-\begin{thebibliography}{93}
+\begin{thebibliography}{94}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -159,6 +159,12 @@ Flato, G., et~al., 2013: Evaluation of climate models. \textit{Climate change
 Geleyn, J.~F. and A.~Hollingsworth, 1979: An economical analytical method for
   the computation of the interaction of between scattering and line absorption
   of radiation. \textit{Contrib. Atmos. Phys.}, \textbf{52}.
+
+\bibitem[{Gleckler et~al.(2008)Gleckler, Taylor, and
+  Doutriaux}]{gleckler_et_al_2008}
+Gleckler, P.~J., K.~E. Taylor, and C.~Doutriaux, 2008: Performance metrics for
+  climate models. \textit{J. Geophys. Res.}, \textbf{113~(D6)},
+  \doi{10.1029/2007JD008972}.
 
 \bibitem[{Golaz et~al.(2002)Golaz, Larson, and Cotton}]{golaz_et_al_2002}
 Golaz, J.-C., V.~E. Larson, and W.~R. Cotton, 2002: A {PDF}-based model for

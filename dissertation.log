@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  22 MAR 2016 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 MAR 2016 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -255,26 +255,21 @@ and 2B-GEOPROF-
 
 [3
 
-]
-Overfull \hbox (23.02121pt too wide) in paragraph at lines 16--16
- \OT1/cmr/m/n/12 SCOPS/PREC[]SCOPS (third row), and re-gen-er-ated us-ing SCOPS
-/PREC[]SCOPS 
- []
-
-
-Underfull \vbox (badness 5756) has occurred while \output is active []
-
- [4]
-Overfull \hbox (3.67377pt too wide) in paragraph at lines 45--45
+] [4]
+Overfull \hbox (3.67377pt too wide) in paragraph at lines 44--44
  [][] []\OT1/cmr/m/n/12 Difference in ISCCP-simulated to-tal, high-topped, mid-
 topped, and low-topped 
  []
 
-[5])
+
+Underfull \vbox (badness 4927) has occurred while \output is active []
+
+ [5])
 \tf@lof=\write5
 \openout5 = `dissertation.lof'.
 
- [6] (./glossary.tex
+
+[6] (./glossary.tex
 Overfull \hbox (26.26125pt too wide) in paragraph at lines 10--11
 []\OT1/cmr/m/n/12 Algorithm to stochas-ti-cally gen-er-ate pro-files of bi-nary
  clear/cloudy
@@ -450,123 +445,128 @@ ut line 14.
 [36]
 
 LaTeX Warning: Reference `introduction_chapter' on page 37 undefined on input l
-ine 20.
+ine 18.
 
-[37] [38] [39]
-<graphics/mxratio_mro-hom.pdf, id=684, 470.29501pt x 399.75076pt>
+[37] [38]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [39]
+[40]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [41]
+<graphics/mxratio_mro-hom.pdf, id=693, 470.29501pt x 399.75076pt>
 File: graphics/mxratio_mro-hom.pdf Graphic file (type pdf)
 
 <use graphics/mxratio_mro-hom.pdf>
-Package pdftex.def Info: graphics/mxratio_mro-hom.pdf used on input line 46.
+Package pdftex.def Info: graphics/mxratio_mro-hom.pdf used on input line 57.
 (pdftex.def)             Requested size: 470.295pt x 399.75587pt.
 
-Underfull \hbox (badness 2181) in paragraph at lines 47--47
-\OT1/cmr/m/n/12 i-nal CRM fields (top), ho-mog-e-nized CRM fields (sec-ond row)
-, re-gen-er-ated us-ing
+Underfull \hbox (badness 1320) in paragraph at lines 58--58
+\OT1/cmr/m/n/12 i-nal CRM fields (top), ho-mog-e-nized CRM fields (CRM-HOM, sec
+-ond row), re-gen-
  []
 
-[40] [41 <./graphics/mxratio_mro-hom.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-[43] [44] <graphics/cldmisr_mro-hom.pdf, id=749, 523.14746pt x 340.62404pt>
+[42] [43 <./graphics/mxratio_mro-hom.pdf>] [44] [45]
+<graphics/cldmisr_mro-hom.pdf, id=755, 523.14746pt x 340.62404pt>
 File: graphics/cldmisr_mro-hom.pdf Graphic file (type pdf)
 
 <use graphics/cldmisr_mro-hom.pdf>
-Package pdftex.def Info: graphics/cldmisr_mro-hom.pdf used on input line 75.
+Package pdftex.def Info: graphics/cldmisr_mro-hom.pdf used on input line 90.
 (pdftex.def)             Requested size: 470.295pt x 306.22096pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `me_chapter' on page 45 undefined on input line 80.
-
-<graphics/cldmisr_mro-hom_errors.pdf, id=750, 529.01314pt x 340.62404pt>
+ [46 <./graphics/cldmisr_mro-hom.pdf>]
+<graphics/cldmisr_mro-hom_errors.pdf, id=799, 529.01314pt x 340.62404pt>
 File: graphics/cldmisr_mro-hom_errors.pdf Graphic file (type pdf)
 
 <use graphics/cldmisr_mro-hom_errors.pdf>
 Package pdftex.def Info: graphics/cldmisr_mro-hom_errors.pdf used on input line
- 84.
+ 99.
 (pdftex.def)             Requested size: 470.295pt x 302.8218pt.
- [45] [46 <./graphics/cldmisr_mro-hom.pdf>] [47 <./graphics/cldmisr_mro-hom_err
-ors.pdf>]
+
+Underfull \vbox (badness 5008) has occurred while \output is active []
+
+ [47 <./graphics/cldmisr_mro-hom_errors.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48]
-<graphics/taudist_hom.pdf, id=842, 578.16pt x 397.485pt>
+<graphics/taudist_hom.pdf, id=844, 578.16pt x 397.485pt>
 File: graphics/taudist_hom.pdf Graphic file (type pdf)
 
 <use graphics/taudist_hom.pdf>
-Package pdftex.def Info: graphics/taudist_hom.pdf used on input line 93.
+Package pdftex.def Info: graphics/taudist_hom.pdf used on input line 108.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49 <./graphics/taudist_hom.pdf>]
-<graphics/overlap_mro.pdf, id=880, 512.77823pt x 358.88297pt>
-File: graphics/overlap_mro.pdf Graphic file (type pdf)
-
-<use graphics/overlap_mro.pdf>
-Package pdftex.def Info: graphics/overlap_mro.pdf used on input line 102.
-(pdftex.def)             Requested size: 470.295pt x 329.16324pt.
-
-<graphics/hfba_mro-hom.pdf, id=881, 473.87068pt x 295.08963pt>
+ [49 <./graphics/taudist_hom.pdf>] [50]
+<graphics/hfba_mro-hom.pdf, id=885, 473.87068pt x 295.08963pt>
 File: graphics/hfba_mro-hom.pdf Graphic file (type pdf)
 
 <use graphics/hfba_mro-hom.pdf>
-Package pdftex.def Info: graphics/hfba_mro-hom.pdf used on input line 122.
+Package pdftex.def Info: graphics/hfba_mro-hom.pdf used on input line 130.
 (pdftex.def)             Requested size: 470.295pt x 292.87808pt.
- [50] [51 <./graphics/overlap_mro.pdf>]
-<graphics/hfba_mro-hom_errors.pdf, id=932, 485.31972pt x 294.48425pt>
+
+<graphics/hfba_mro-hom_errors.pdf, id=886, 485.31972pt x 294.48425pt>
 File: graphics/hfba_mro-hom_errors.pdf Graphic file (type pdf)
 
 <use graphics/hfba_mro-hom_errors.pdf>
-Package pdftex.def Info: graphics/hfba_mro-hom_errors.pdf used on input line 12
-9.
+Package pdftex.def Info: graphics/hfba_mro-hom_errors.pdf used on input line 13
+7.
 (pdftex.def)             Requested size: 470.295pt x 285.37077pt.
- [52 <./graphics/hfba_mro-hom.pdf>]
-[53 <./graphics/hfba_mro-hom_errors.pdf>]
-<graphics/cfadDbze94_mro-hom_errors.pdf, id=1024, 628.41434pt x 401.80525pt>
+ [51 <./graphics/hfba_mro-hom.pdf>]
+[52 <./graphics/hfba_mro-hom_errors.pdf>]
+<graphics/cfadDbze94_mro-hom_errors.pdf, id=978, 628.41434pt x 401.80525pt>
 File: graphics/cfadDbze94_mro-hom_errors.pdf Graphic file (type pdf)
 
 <use graphics/cfadDbze94_mro-hom_errors.pdf>
 Package pdftex.def Info: graphics/cfadDbze94_mro-hom_errors.pdf used on input l
-ine 146.
+ine 154.
 (pdftex.def)             Requested size: 470.295pt x 300.7033pt.
- [54] [55 <./graphics/cfadDbze94_mro-hom_errors.pdf>]
+
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [53]
+[54 <./graphics/cfadDbze94_mro-hom_errors.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
-[57]
-Underfull \vbox (badness 5133) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [57]
 
-LaTeX Warning: Reference `me_chapter' on page 59 undefined on input line 168.
+LaTeX Warning: Reference `me_chapter' on page 58 undefined on input line 176.
 
-[59]) (./chapter4.tex [60]
+[58]) (./chapter4.tex [59]
 <<4>>
-[61
+[60
 
-] [62] [63] [64]
+] [61] [62] [63]
 
-LaTeX Warning: Reference `overlap_crm' on page 65 undefined on input line 94.
+LaTeX Warning: Reference `overlap_crm' on page 64 undefined on input line 94.
 
-[65] [66]
+[64] [65]
 
-Package natbib Warning: Citation `oreopolous_et_al_2012' on page 67 undefined o
+Package natbib Warning: Citation `oreopolous_et_al_2012' on page 66 undefined o
 n input line 115.
 
 
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
- [67]
+ [66]
 Underfull \vbox (badness 4479) has occurred while \output is active []
 
- [68]
+ [67]
 
-Package natbib Warning: Citation `lee_et_al_2010' on page 69 undefined on input
+Package natbib Warning: Citation `lee_et_al_2010' on page 68 undefined on input
  line 142.
 
-[69] <graphics/condensate_std.pdf, id=1091, 578.16pt x 397.485pt>
+[68] <graphics/condensate_std.pdf, id=1043, 578.16pt x 397.485pt>
 File: graphics/condensate_std.pdf Graphic file (type pdf)
 
 <use graphics/condensate_std.pdf>
@@ -575,75 +575,75 @@ Package pdftex.def Info: graphics/condensate_std.pdf used on input line 153.
 
 Underfull \vbox (badness 5147) has occurred while \output is active []
 
- [70]
-[71 <./graphics/condensate_std.pdf>]
+ [69]
+[70 <./graphics/condensate_std.pdf>]
 
-LaTeX Warning: Reference `sgi_method' on page 72 undefined on input line 162.
+LaTeX Warning: Reference `sgi_method' on page 71 undefined on input line 162.
 
-<graphics/coefficient_of_variation.pdf, id=1148, 578.16pt x 397.485pt>
+<graphics/coefficient_of_variation.pdf, id=1100, 578.16pt x 397.485pt>
 File: graphics/coefficient_of_variation.pdf Graphic file (type pdf)
 
 <use graphics/coefficient_of_variation.pdf>
 Package pdftex.def Info: graphics/coefficient_of_variation.pdf used on input li
 ne 166.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
- [72] [73 <./graphics/coefficient_of_variation.pdf>]
+ [71] [72 <./graphics/coefficient_of_variation.pdf>]
 
-Package natbib Warning: Citation `tanelli_et_al_2008' on page 74 undefined on i
+Package natbib Warning: Citation `tanelli_et_al_2008' on page 73 undefined on i
 nput line 175.
 
-[74] <graphics/mxratio_gen-var.pdf, id=1207, 622.07817pt x 402.4106pt>
+[73] <graphics/mxratio_gen-var.pdf, id=1159, 622.07817pt x 402.4106pt>
 File: graphics/mxratio_gen-var.pdf Graphic file (type pdf)
 
 <use graphics/mxratio_gen-var.pdf>
 Package pdftex.def Info: graphics/mxratio_gen-var.pdf used on input line 183.
 (pdftex.def)             Requested size: 470.295pt x 304.22647pt.
- [75 <./graphics/mxratio_gen-var.pdf>]
+ [74 <./graphics/mxratio_gen-var.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
-[77]
+ [75]
+[76]
 
-LaTeX Warning: Reference `sgi_cfadDbze94_nhtropics_Diff' on page 78 undefined o
+LaTeX Warning: Reference `sgi_cfadDbze94_nhtropics_Diff' on page 77 undefined o
 n input line 235.
 
 
 Underfull \vbox (badness 1681) has occurred while \output is active []
 
- [78])
-(./chapter5.tex [79]
+ [77])
+(./chapter5.tex [78]
 <<5>>
 
-LaTeX Warning: Reference `me_chapter' on page 80 undefined on input line 3.
+LaTeX Warning: Reference `me_chapter' on page 79 undefined on input line 3.
 
-[80
+[79
 
 ]
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
- [81]
+ [80]
 
-LaTeX Warning: Reference `me_chapter' on page 82 undefined on input line 16.
+LaTeX Warning: Reference `me_chapter' on page 81 undefined on input line 16.
 
-[82]
+[81]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
-<graphics/cmip5_cldmisr.pdf, id=1285, 978.5325pt x 394.502pt>
+ [82]
+<graphics/cmip5_cldmisr.pdf, id=1237, 978.5325pt x 394.502pt>
 File: graphics/cmip5_cldmisr.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldmisr.pdf>
 Package pdftex.def Info: graphics/cmip5_cldmisr.pdf used on input line 32.
 (pdftex.def)             Requested size: 470.295pt x 189.6056pt.
 
-<graphics/cmip5_cldisccp.pdf, id=1286, 978.5325pt x 394.502pt>
+<graphics/cmip5_cldisccp.pdf, id=1238, 978.5325pt x 394.502pt>
 File: graphics/cmip5_cldisccp.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldisccp.pdf>
 Package pdftex.def Info: graphics/cmip5_cldisccp.pdf used on input line 39.
 (pdftex.def)             Requested size: 470.295pt x 189.6056pt.
 
-<graphics/cmip5_cldmisr_diff.pdf, id=1287, 968.6576pt x 450.51123pt>
+<graphics/cmip5_cldmisr_diff.pdf, id=1239, 968.6576pt x 450.51123pt>
 File: graphics/cmip5_cldmisr_diff.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldmisr_diff.pdf>
@@ -651,26 +651,26 @@ Package pdftex.def Info: graphics/cmip5_cldmisr_diff.pdf used on input line 46.
 
 (pdftex.def)             Requested size: 470.295pt x 218.7314pt.
 
-<graphics/cmip5_cldisccp_diff.pdf, id=1288, 968.6576pt x 450.51123pt>
+<graphics/cmip5_cldisccp_diff.pdf, id=1240, 968.6576pt x 450.51123pt>
 File: graphics/cmip5_cldisccp_diff.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldisccp_diff.pdf>
 Package pdftex.def Info: graphics/cmip5_cldisccp_diff.pdf used on input line 53
 .
 (pdftex.def)             Requested size: 470.295pt x 218.7314pt.
- [84 <./graphics/cmip5_cldmisr.pdf>]
-[85 <./graphics/cmip5_cldisccp.pdf> <./graphics/cmip5_cldmisr_diff.pdf
+ [83 <./graphics/cmip5_cldmisr.pdf>]
+[84 <./graphics/cmip5_cldisccp.pdf> <./graphics/cmip5_cldmisr_diff.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/cmip5_cldmisr_diff.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
->] <graphics/cmip5_cre_maps.pdf, id=1425, 866.03444pt x 282.48349pt>
+>] <graphics/cmip5_cre_maps.pdf, id=1376, 866.03444pt x 282.48349pt>
 File: graphics/cmip5_cre_maps.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cre_maps.pdf>
 Package pdftex.def Info: graphics/cmip5_cre_maps.pdf used on input line 63.
 (pdftex.def)             Requested size: 470.295pt x 153.40086pt.
 
-<graphics/cmip5_cre_maps_diff.pdf, id=1426, 867.28975pt x 335.41632pt>
+<graphics/cmip5_cre_maps_diff.pdf, id=1377, 867.28975pt x 335.41632pt>
 File: graphics/cmip5_cre_maps_diff.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cre_maps_diff.pdf>
@@ -679,17 +679,17 @@ Package pdftex.def Info: graphics/cmip5_cre_maps_diff.pdf used on input line 70
 (pdftex.def)             Requested size: 470.295pt x 181.87958pt.
 
 
-LaTeX Warning: Reference `me_chapter' on page 86 undefined on input line 75.
+LaTeX Warning: Reference `me_chapter' on page 85 undefined on input line 75.
 
 
-<graphics/cmip5_clMISR_TropicalWarmPool.pdf, id=1427, 653.8114pt x 322.30223pt>
+<graphics/cmip5_clMISR_TropicalWarmPool.pdf, id=1378, 653.8114pt x 322.30223pt>
 File: graphics/cmip5_clMISR_TropicalWarmPool.pdf Graphic file (type pdf)
 <use graphics/cmip5_clMISR_TropicalWarmPool.pdf>
 Package pdftex.def Info: graphics/cmip5_clMISR_TropicalWarmPool.pdf used on inp
 ut line 79.
 (pdftex.def)             Requested size: 470.295pt x 231.84593pt.
 
-<graphics/cmip5_clMISR_SouthernOcean.pdf, id=1428, 653.8114pt x 322.30223pt>
+<graphics/cmip5_clMISR_SouthernOcean.pdf, id=1379, 653.8114pt x 322.30223pt>
 File: graphics/cmip5_clMISR_SouthernOcean.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_clMISR_SouthernOcean.pdf>
@@ -699,68 +699,68 @@ line 86.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86 <./graphics/cmip5_cldisccp_diff.pdf>] [87 <./graphics/cmip5_cre_maps.pdf> 
+ [85 <./graphics/cmip5_cldisccp_diff.pdf>] [86 <./graphics/cmip5_cre_maps.pdf> 
 <./graphics/cmip5_cre_maps_diff.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/cmip5_cre_maps_diff.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] [88 <./graphics/cmip5_clMISR_TropicalWarmPool.pdf> <./graphics/cmip5_clMISR_
+>] [87 <./graphics/cmip5_clMISR_TropicalWarmPool.pdf> <./graphics/cmip5_clMISR_
 SouthernOcean.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/cmip5_clMISR_SouthernOcean.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
->]) (./dissertation.bbl [89] [90
+>]) (./dissertation.bbl [88] [89
 
-] [91] [92] [93] [94]
-Underfull \hbox (badness 6047) in paragraph at lines 263--266
+] [90] [91] [92] [93]
+Underfull \hbox (badness 6047) in paragraph at lines 269--272
 []\OT1/cmr/m/n/12 Mace, G. G. and S. Benson-Troth, 2002: Cloud-layer over-lap c
 har-ac-ter-is-tics
  []
 
 
-Underfull \hbox (badness 5696) in paragraph at lines 263--266
+Underfull \hbox (badness 5696) in paragraph at lines 269--272
 \OT1/cmr/m/n/12 de-rived from long-term cloud radar data. \OT1/cmr/m/it/12 J. C
 li-mate\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 15\OT1/cmr/m/n/12 , doi:10.1175/1520-
 
  []
 
-[95] [96] [97]
-Underfull \hbox (badness 3989) in paragraph at lines 411--414
+[94] [95] [96]
+Underfull \hbox (badness 3989) in paragraph at lines 417--420
 []\OT1/cmr/m/n/12 Rossow, W. B. and R. A. Schif-fer, 1999: Ad-vances in un-der-
 stand-ing clouds
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 411--414
+Underfull \hbox (badness 2096) in paragraph at lines 417--420
 \OT1/cmr/m/n/12 from IS-CCP. \OT1/cmr/m/it/12 Bull. Amer. Me-teor. Soc.\OT1/cmr
 /m/n/12 , \OT1/cmr/bx/n/12 80 (11)\OT1/cmr/m/n/12 , 2261--2287, doi:10.1175/152
 0-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--448
+Underfull \hbox (badness 10000) in paragraph at lines 450--454
 []\OT1/cmr/m/n/12 The HadGEM2 De-vel-op-ment Team: Mar-tin, G. M., et al., 2011
 : The
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 444--448
+Underfull \hbox (badness 4479) in paragraph at lines 450--454
 \OT1/cmr/m/n/12 hadgem2 fam-ily of met of-fice uni-fied model cli-mate con-fig-
 u-ra-tions. \OT1/cmr/m/it/12 Geo-sci-en-
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 444--448
+Underfull \hbox (badness 7963) in paragraph at lines 450--454
 \OT1/cmr/m/it/12 tific Model De-vel-op-ment\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 4
  (3)\OT1/cmr/m/n/12 , 723--757, doi:10.5194/gmd-4-723-2011, URL
  []
 
-[98] [99] [100]) [101]
+[97] [98] [99]) [100]
 <<A>>
 
 Package natbib Warning: There were undefined citations.
 
-[102
+[101
 
 ] (./dissertation.aux)
 
@@ -768,13 +768,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3244 strings out of 493089
- 49827 string characters out of 6134842
- 110772 words of memory out of 5000000
- 6646 multiletter control sequences out of 15000+600000
+ 3241 strings out of 493089
+ 49762 string characters out of 6134842
+ 111826 words of memory out of 5000000
+ 6644 multiletter control sequences out of 15000+600000
  10782 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,24p,2996b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,16n,24p,3160b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -792,10 +792,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on dissertation.pdf (114 pages, 40254628 bytes).
+Output written on dissertation.pdf (113 pages, 40237178 bytes).
 PDF statistics:
- 1764 PDF objects out of 2073 (max. 8388607)
- 515 compressed objects within 6 object streams
+ 1716 PDF objects out of 1728 (max. 8388607)
+ 507 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
