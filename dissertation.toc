@@ -9,10 +9,10 @@
 \contentsline {section}{\numberline {2.5}Diurnal variations in cloud cover}{29}
 \contentsline {section}{\numberline {2.6}Summary and discussion}{31}
 \contentsline {chapter}{\numberline {\@textofChapter \ 3:}Quantifying sensitivities of satellite-simulated cloud retrievals to unresolved clouds and precipitation}{34}
-\contentsline {section}{\numberline {3.1}Overlap and condensate variability in global models}{34}
-\contentsline {section}{\numberline {3.2}Framework for sensitivity tests}{37}
-\contentsline {section}{\numberline {3.3}Sensitivity of simulated passive remote sensing diagnostics}{44}
-\contentsline {section}{\numberline {3.4}Sensitivity of simulated CloudSat diagnostics}{51}
+\contentsline {section}{\numberline {3.1}Generating stochastic subcolumns of cloud and precipitation}{37}
+\contentsline {section}{\numberline {3.2}Framework for sensitivity tests}{39}
+\contentsline {section}{\numberline {3.3}Sensitivity of simulated passive remote sensing diagnostics}{45}
+\contentsline {section}{\numberline {3.4}Sensitivity of simulated CloudSat diagnostics}{52}
 \contentsline {section}{\numberline {3.5}Summary and discussion}{57}
 \contentsline {chapter}{\numberline {\@textofChapter \ 4:}An improved framework for downscaling cloud properties from large-scale models}{61}
 \contentsline {section}{\numberline {4.1}Generating stochastic subcolumns of cloud and precipitation condensate}{61}
@@ -29,4 +29,4 @@
 \contentsline {section}{\numberline {5.4}Testing the improved subcolumn generator in the Community Atmosphere Model}{89}
 \contentsline {section}{\numberline {5.5}Summary, discussion, and future directions}{89}
 \contentsline {chapter}{Bibliography}{90}
-\contentsline {chapter}{\numberline {\@textofAppendix \ A:}A useful appendix}{101}
+\contentsline {chapter}{\numberline {\@textofAppendix \ A:}A useful appendix}{102}

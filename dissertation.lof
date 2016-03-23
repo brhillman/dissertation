@@ -14,10 +14,10 @@
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Zonally-averaged cloud area from MODIS Terra and Aqua.}}{30}
 \addvspace {5\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Total cloud (left) and precipitation (right) mixing ratios from the original CRM fields (top), homogenized CRM fields (second row), regenerated using SCOPS/PREC\_SCOPS (third row), and regenerated using SCOPS/PREC\_SCOPS with precipitation adjusted to conform to the precipitation fraction from the CRM (bottom row) for an example gridbox (00 UTC 01 July 2000, 10 N, 180 E).}}{41}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces From top to bottom, MISR-simulated total, high-topped, mid-topped, and low-topped cloud area using the (from left to right) CRM, CRM-HOM, and MRO-HOM fields as input to COSP.}}{45}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces From top to bottom, MISR-simulated total, high-topped, mid-topped, and low-topped cloud area using the (from left to right) CRM, CRM-HOM, and MRO-HOM fields as input to COSP.}}{46}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Errors in MISR-simulated cloud area by cloud type for (from top to bottom) total, high-topped, mid-topped, and low-topped clouds. Shown are (from left to right) the total error in using SCOPS/PREC\_SCOPS with homogeneous cloud condensate, the component of the error due only to homogenizing the condensate, and the component of the error due only to using SCOPS to regenerate subcolumns with maximum-random overlap.}}{47}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Probability density function of cloud optical depth for a single day from the CRM and CRM-HOM cases.}}{49}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Cloud occurrence overlap from original unmodified SP-CAM fields, and those with regenerated subcolumns assuming maximum-random overlap (MRO).}}{50}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Cloud occurrence overlap from original unmodified SP-CAM fields, and those with regenerated subcolumns assuming maximum-random overlap (MRO).}}{51}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Cloud area errors from ISCCP}}{51}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Hydrometeor occurence fraction by height}}{52}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Hydrometeor occurence fraction by height errors}}{53}

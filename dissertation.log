@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  22 MAR 2016 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  22 MAR 2016 21:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -421,91 +421,115 @@ Underfull \vbox (badness 2119) has occurred while \output is active []
  [30]
 [31] [32]) (./chapter3.tex [33]
 <<3>>
-[34
 
-] [35] [36] [37]
+LaTeX Warning: Reference `introduction_chapter' on page 34 undefined on input l
+ine 7.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34
+
+]
+
+Package natbib Warning: Citation `morcrette_and_fouquart_1986' on page 35 undef
+ined on input line 10.
+
+
 Underfull \vbox (badness 5133) has occurred while \output is active []
 
- [38]
-Underfull \vbox (badness 5133) has occurred while \output is active []
+ [35]
 
- [39]
+Package natbib Warning: Citation `barker_et_al_2002' on page 36 undefined on in
+put line 14.
+
+
+Package natbib Warning: Citation `hogan_et_al_2014' on page 36 undefined on inp
+ut line 14.
+
+[36]
+
+LaTeX Warning: Reference `introduction_chapter' on page 37 undefined on input l
+ine 20.
+
+[37] [38] [39]
 <graphics/mxratio_mro-hom.pdf, id=684, 470.29501pt x 399.75076pt>
 File: graphics/mxratio_mro-hom.pdf Graphic file (type pdf)
 
 <use graphics/mxratio_mro-hom.pdf>
-Package pdftex.def Info: graphics/mxratio_mro-hom.pdf used on input line 43.
+Package pdftex.def Info: graphics/mxratio_mro-hom.pdf used on input line 46.
 (pdftex.def)             Requested size: 470.295pt x 399.75587pt.
 
-Underfull \hbox (badness 2181) in paragraph at lines 44--44
+Underfull \hbox (badness 2181) in paragraph at lines 47--47
 \OT1/cmr/m/n/12 i-nal CRM fields (top), ho-mog-e-nized CRM fields (sec-ond row)
 , re-gen-er-ated us-ing
  []
 
-[40] [41 <./graphics/mxratio_mro-hom.pdf>] [42] [43]
-<graphics/cldmisr_mro-hom.pdf, id=746, 523.14746pt x 340.62404pt>
+[40] [41 <./graphics/mxratio_mro-hom.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+[43] [44] <graphics/cldmisr_mro-hom.pdf, id=749, 523.14746pt x 340.62404pt>
 File: graphics/cldmisr_mro-hom.pdf Graphic file (type pdf)
 
 <use graphics/cldmisr_mro-hom.pdf>
-Package pdftex.def Info: graphics/cldmisr_mro-hom.pdf used on input line 72.
+Package pdftex.def Info: graphics/cldmisr_mro-hom.pdf used on input line 75.
 (pdftex.def)             Requested size: 470.295pt x 306.22096pt.
 
 
-LaTeX Warning: Reference `me_chapter' on page 44 undefined on input line 77.
+LaTeX Warning: Reference `me_chapter' on page 45 undefined on input line 80.
 
-[44] [45 <./graphics/cldmisr_mro-hom.pdf>]
-<graphics/cldmisr_mro-hom_errors.pdf, id=794, 529.01314pt x 340.62404pt>
+<graphics/cldmisr_mro-hom_errors.pdf, id=750, 529.01314pt x 340.62404pt>
 File: graphics/cldmisr_mro-hom_errors.pdf Graphic file (type pdf)
 
 <use graphics/cldmisr_mro-hom_errors.pdf>
 Package pdftex.def Info: graphics/cldmisr_mro-hom_errors.pdf used on input line
- 81.
+ 84.
 (pdftex.def)             Requested size: 470.295pt x 302.8218pt.
+ [45] [46 <./graphics/cldmisr_mro-hom.pdf>] [47 <./graphics/cldmisr_mro-hom_err
+ors.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 5133) has occurred while \output is active []
-
- [46]
-[47 <./graphics/cldmisr_mro-hom_errors.pdf>]
-<graphics/taudist_hom.pdf, id=839, 578.16pt x 397.485pt>
+ [48]
+<graphics/taudist_hom.pdf, id=842, 578.16pt x 397.485pt>
 File: graphics/taudist_hom.pdf Graphic file (type pdf)
 
 <use graphics/taudist_hom.pdf>
-Package pdftex.def Info: graphics/taudist_hom.pdf used on input line 90.
+Package pdftex.def Info: graphics/taudist_hom.pdf used on input line 93.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/overlap_mro.pdf, id=840, 512.77823pt x 358.88297pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49 <./graphics/taudist_hom.pdf>]
+<graphics/overlap_mro.pdf, id=880, 512.77823pt x 358.88297pt>
 File: graphics/overlap_mro.pdf Graphic file (type pdf)
 
 <use graphics/overlap_mro.pdf>
-Package pdftex.def Info: graphics/overlap_mro.pdf used on input line 99.
+Package pdftex.def Info: graphics/overlap_mro.pdf used on input line 102.
 (pdftex.def)             Requested size: 470.295pt x 329.16324pt.
 
-Underfull \vbox (badness 5133) has occurred while \output is active []
-
- [48]
-[49 <./graphics/taudist_hom.pdf>] [50 <./graphics/overlap_mro.pdf>]
-<graphics/hfba_mro-hom.pdf, id=928, 473.87068pt x 295.08963pt>
+<graphics/hfba_mro-hom.pdf, id=881, 473.87068pt x 295.08963pt>
 File: graphics/hfba_mro-hom.pdf Graphic file (type pdf)
 
 <use graphics/hfba_mro-hom.pdf>
-Package pdftex.def Info: graphics/hfba_mro-hom.pdf used on input line 119.
+Package pdftex.def Info: graphics/hfba_mro-hom.pdf used on input line 122.
 (pdftex.def)             Requested size: 470.295pt x 292.87808pt.
-
-<graphics/hfba_mro-hom_errors.pdf, id=929, 485.31972pt x 294.48425pt>
+ [50] [51 <./graphics/overlap_mro.pdf>]
+<graphics/hfba_mro-hom_errors.pdf, id=932, 485.31972pt x 294.48425pt>
 File: graphics/hfba_mro-hom_errors.pdf Graphic file (type pdf)
 
 <use graphics/hfba_mro-hom_errors.pdf>
 Package pdftex.def Info: graphics/hfba_mro-hom_errors.pdf used on input line 12
-6.
+9.
 (pdftex.def)             Requested size: 470.295pt x 285.37077pt.
- [51] [52 <./graphics/hfba_mro-hom.pdf>]
+ [52 <./graphics/hfba_mro-hom.pdf>]
 [53 <./graphics/hfba_mro-hom_errors.pdf>]
 <graphics/cfadDbze94_mro-hom_errors.pdf, id=1024, 628.41434pt x 401.80525pt>
 File: graphics/cfadDbze94_mro-hom_errors.pdf Graphic file (type pdf)
 
 <use graphics/cfadDbze94_mro-hom_errors.pdf>
 Package pdftex.def Info: graphics/cfadDbze94_mro-hom_errors.pdf used on input l
-ine 143.
+ine 146.
 (pdftex.def)             Requested size: 470.295pt x 300.7033pt.
  [54] [55 <./graphics/cfadDbze94_mro-hom_errors.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -516,7 +540,7 @@ Underfull \vbox (badness 5133) has occurred while \output is active []
 
  [58]
 
-LaTeX Warning: Reference `me_chapter' on page 59 undefined on input line 165.
+LaTeX Warning: Reference `me_chapter' on page 59 undefined on input line 168.
 
 [59]) (./chapter4.tex [60]
 <<4>>
@@ -688,55 +712,55 @@ inclusion: multiple pdfs with page group included in a single page
 >]) (./dissertation.bbl [89] [90
 
 ] [91] [92] [93] [94]
-Underfull \hbox (badness 6047) in paragraph at lines 267--270
+Underfull \hbox (badness 6047) in paragraph at lines 263--266
 []\OT1/cmr/m/n/12 Mace, G. G. and S. Benson-Troth, 2002: Cloud-layer over-lap c
 har-ac-ter-is-tics
  []
 
 
-Underfull \hbox (badness 5696) in paragraph at lines 267--270
+Underfull \hbox (badness 5696) in paragraph at lines 263--266
 \OT1/cmr/m/n/12 de-rived from long-term cloud radar data. \OT1/cmr/m/it/12 J. C
 li-mate\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 15\OT1/cmr/m/n/12 , doi:10.1175/1520-
 
  []
 
 [95] [96] [97]
-Underfull \hbox (badness 3989) in paragraph at lines 415--418
+Underfull \hbox (badness 3989) in paragraph at lines 411--414
 []\OT1/cmr/m/n/12 Rossow, W. B. and R. A. Schif-fer, 1999: Ad-vances in un-der-
 stand-ing clouds
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 415--418
+Underfull \hbox (badness 2096) in paragraph at lines 411--414
 \OT1/cmr/m/n/12 from IS-CCP. \OT1/cmr/m/it/12 Bull. Amer. Me-teor. Soc.\OT1/cmr
 /m/n/12 , \OT1/cmr/bx/n/12 80 (11)\OT1/cmr/m/n/12 , 2261--2287, doi:10.1175/152
 0-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--446
+Underfull \hbox (badness 10000) in paragraph at lines 444--448
 []\OT1/cmr/m/n/12 The HadGEM2 De-vel-op-ment Team: Mar-tin, G. M., et al., 2011
 : The
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 442--446
+Underfull \hbox (badness 4479) in paragraph at lines 444--448
 \OT1/cmr/m/n/12 hadgem2 fam-ily of met of-fice uni-fied model cli-mate con-fig-
 u-ra-tions. \OT1/cmr/m/it/12 Geo-sci-en-
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 442--446
+Underfull \hbox (badness 7963) in paragraph at lines 444--448
 \OT1/cmr/m/it/12 tific Model De-vel-op-ment\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 4
  (3)\OT1/cmr/m/n/12 , 723--757, doi:10.5194/gmd-4-723-2011, URL
  []
 
-[98] [99]) [100]
+[98] [99] [100]) [101]
 <<A>>
 
 Package natbib Warning: There were undefined citations.
 
-[101
+[102
 
 ] (./dissertation.aux)
 
@@ -744,13 +768,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3237 strings out of 493089
- 49629 string characters out of 6134842
- 110697 words of memory out of 5000000
- 6639 multiletter control sequences out of 15000+600000
+ 3244 strings out of 493089
+ 49827 string characters out of 6134842
+ 110772 words of memory out of 5000000
+ 6646 multiletter control sequences out of 15000+600000
  10782 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,24p,2986b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,24p,2996b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -768,10 +792,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on dissertation.pdf (113 pages, 40252113 bytes).
+Output written on dissertation.pdf (114 pages, 40254628 bytes).
 PDF statistics:
- 1761 PDF objects out of 2073 (max. 8388607)
- 513 compressed objects within 6 object streams
+ 1764 PDF objects out of 2073 (max. 8388607)
+ 515 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{92}
+\begin{thebibliography}{93}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -80,12 +80,6 @@ Chepfer, H., S.~Bony, D.~Winker, M.~Chiriaco, J.-L. Dufresne, and
   cloudiness simulated by a climate model. \textit{Geophys. Res. Lett.},
   \textbf{35~(15)}, \doi{10.1029/2008GL034207}.
 
-\bibitem[{Collins(2001)}]{collins_2001}
-Collins, W.~D., 2001: Parameterization of generalized cloud overlap for
-  radiative calculations in general circulation models. \textit{J. Atmos.
-  Sci.}, \textbf{58~(21)}, 3224--3242,
-  \doi{10.1175/1520-0469(2001)058$<$3224:POGCOF$>$2.0.CO;2}.
-
 \bibitem[{Collins et~al.(2004)}]{collins_et_al_2004}
 Collins, W.~D., et~al., 2004: Description of the {NCAR} {C}ommunity
   {A}tmosphere {M}odel ({CAM} 3.0). NCAR Technical Note TN-464+STR, NCAR.
@@ -155,6 +149,12 @@ Evans, K.~F., A.~Marshak, and T.~V{\'a}rnai, 2008: The potential for improved
   misr. \textit{Journal of the Atmospheric Sciences}, \textbf{65~(10)},
   3179--3196, \doi{10.1175/2008JAS2627.1}.
 
+\bibitem[{Flato et~al.(2013)}]{flato_et_al_2013}
+Flato, G., et~al., 2013: Evaluation of climate models. \textit{Climate change
+  2013: the physical science basis. Contribution of Working Group I to the
+  Fifth Assessment Report of the Intergovernmental Panel on Climate Change},
+  Cambridge University Press, 741--866.
+
 \bibitem[{Geleyn and Hollingsworth(1979)}]{geleyn_and_hollingsworth_1979}
 Geleyn, J.~F. and A.~Hollingsworth, 1979: An economical analytical method for
   the computation of the interaction of between scattering and line absorption
@@ -183,10 +183,6 @@ Hillman, B.~R., R.~T. Marchand, T.~P. Ackerman, G.~G. Mace, and S.~Benson,
 Hogan, R.~J. and A.~J. Illingworth, 2000: Deriving cloud overlap statistics
   from radar. \textit{Q. J. R. Meteorol. Soc.}, \textbf{126}, 2903--2909,
   \doi{10.1256/smsqj.56913}.
-
-\bibitem[{Hogan et~al.(2014)}]{navgem_description}
-Hogan, T.~F., et~al., 2014: The navy global environmental model.
-  \textit{Oceanography}, \textbf{27~(3)}, \doi{10.5670/oceanog.2014.73}.
 
 \bibitem[{Iacono et~al.(2008)Iacono, Delamere, Mlawer, Shephard, Clough, and
   Collins}]{iacono_et_al_2008}
@@ -432,6 +428,12 @@ Stephens, G.~L., et~al., 2002: The {CloudSat} mission and the {A-Train}.
   \textit{Bull. Amer. Meteorol. Soc.}, \textbf{83~(12)}, 1771--1790,
   \doi{10.1175/BAMS-83-12-1771}.
 
+\bibitem[{Stubenrauch et~al.(1997)Stubenrauch, Genio, and
+  Rossow}]{stubenrauch_et_al_1997}
+Stubenrauch, C.~J., A.~D.~D. Genio, and W.~B. Rossow, 1997: Implementation of
+  subgrid cloud vertical structure inside a gcm and its effect on the radiation
+  budget. \textit{J. Climate.}, \textbf{10}, 273--287.
+
 \bibitem[{Tao et~al.(2009)}]{tao_et_al_2009}
 Tao, W.-K., et~al., 2009: A multiscale modeling system: Developments,
   applications, and critical issues. \textit{Bulletin of the American
@@ -443,6 +445,10 @@ The HadGEM2 Development Team:~Martin, G.~M., et~al., 2011: The hadgem2 family
   of met office unified model climate configurations. \textit{Geoscientific
   Model Development}, \textbf{4~(3)}, 723--757, \doi{10.5194/gmd-4-723-2011},
   \urlprefix\url{http://www.geosci-model-dev.net/4/723/2011/}.
+
+\bibitem[{Tian and Curry(1989)}]{tian_and_curry_1989}
+Tian, L. and J.~A. Curry, 1989: Cloud overlap statistics. \textit{J. Geophys.
+  Res.}, \textbf{94~(D7)}, 9925--9935.
 
 \bibitem[{Tompkins(2002)}]{tompkins_2002}
 Tompkins, A.~M., 2002: A prognostic parameterization for the subgrid-scale
