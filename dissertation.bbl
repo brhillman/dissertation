@@ -1,4 +1,4 @@
-\begin{thebibliography}{94}
+\begin{thebibliography}{97}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -178,17 +178,14 @@ Haynes, J.~M., R.~T. Marchand, Z.~Luo, A.~Bodas-Salcedo, and G.~L. Stephens,
   2007: A multipurpose radar simulation package: Quickbeam. \textit{Bull. Amer.
   Meteor. Soc.}, \textbf{88~(11)}, 1723--1727, \doi{10.1175/BAMS-88-11-1723}.
 
-\bibitem[{Hillman et~al.(2016)Hillman, Marchand, Ackerman, Mace, and
-  Benson}]{hillman_et_al_2016}
-Hillman, B.~R., R.~T. Marchand, T.~P. Ackerman, G.~G. Mace, and S.~Benson,
-  2016: How good is the misr simulator? a comparison of misr-retrieved and
-  misr-simulated cloud top heights using cloudsat/calipso hydrometeor profiles.
-  In prep.
-
 \bibitem[{Hogan and Illingworth(2000)}]{hogan_and_illingworth_2000}
 Hogan, R.~J. and A.~J. Illingworth, 2000: Deriving cloud overlap statistics
   from radar. \textit{Q. J. R. Meteorol. Soc.}, \textbf{126}, 2903--2909,
   \doi{10.1256/smsqj.56913}.
+
+\bibitem[{Hogan et~al.(2014)}]{hogan_et_al_2014}
+Hogan, T.~F., et~al., 2014: The navy global environmental model.
+  \textit{Oceanography}, \textbf{27~(3)}, \doi{10.5670/oceanog.2014.73}.
 
 \bibitem[{Iacono et~al.(2008)Iacono, Delamere, Mlawer, Shephard, Clough, and
   Collins}]{iacono_et_al_2008}
@@ -246,6 +243,12 @@ Klein, S.~A., Y.~Zhang, M.~D. Zelinka, R.~Pincus, J.~Boyle, and P.~J. Gleckler,
   2013: Are climate model simulations of clouds improving? an evaluation using
   the {ISCCP} simulator. \textit{J. Geophys. Res.}, \textbf{118~(3)},
   1329--1342, \doi{doi:10.1002/jgrd.50141}.
+
+\bibitem[{Lee et~al.(2010)Lee, Kahn, and Teixeira}]{lee_et_al_2010}
+Lee, S., B.~H. Kahn, and J.~Teixeira, 2010: Characterization of cloud liquid
+  water content distributions from cloudsat. \textit{Journal of Geophysical
+  Research: Atmospheres}, \textbf{115~(D20)}, \doi{10.1029/2009JD013272},
+  \urlprefix\url{http://dx.doi.org/10.1029/2009JD013272}, d20203.
 
 \bibitem[{Lin and Zhang(2004)}]{lin_and_zhang_2004}
 Lin, W.~Y. and M.~H. Zhang, 2004: Evaluation of clouds and their radiative
@@ -334,6 +337,14 @@ Meskhidze, N., L.~Remer, S.~Platnick, R.~N. Ju{\'a}rez, A.~Lichtenberger, and
   A.~Aiyyer, 2009: Exploring the differences in cloud properties observed by
   the terra and aqua modis sensors. \textit{Atmospheric Chemistry \& Physics
   Discussions}, \textbf{9~(1)}.
+
+\bibitem[{Morcrette and Fouquart(1986)}]{morcrette_and_fouquart_1986}
+Morcrette, J.-J. and Y.~Fouquart, 1986: The overlapping of cloud layers in
+  shortwave radiation parameterizations. \textit{Journal of the Atmospheric
+  Sciences}, \textbf{43~(4)}, 321--328,
+  \doi{10.1175/1520-0469(1986)043<0321:TOOCLI>2.0.CO;2},
+  \urlprefix\url{http://dx.doi.org/10.1175/1520-0469(1986)043<0321:TOOCLI>2.0.CO;2},
+  \eprint{http://dx.doi.org/10.1175/1520-0469(1986)043<0321:TOOCLI>2.0.CO;2}.
 
 \bibitem[{Moroney et~al.(2002)Moroney, Davies, and Muller}]{moroney_et_al_2002}
 Moroney, C., R.~Davies, and J.-P. Muller, 2002: Operational retrieval of
@@ -439,6 +450,14 @@ Stephens, G.~L., et~al., 2002: The {CloudSat} mission and the {A-Train}.
 Stubenrauch, C.~J., A.~D.~D. Genio, and W.~B. Rossow, 1997: Implementation of
   subgrid cloud vertical structure inside a gcm and its effect on the radiation
   budget. \textit{J. Climate.}, \textbf{10}, 273--287.
+
+\bibitem[{Tanelli et~al.(2008)Tanelli, Durden, Im, Pak, Reinke, Partain,
+  Haynes, and Marchand}]{tanelli_et_al_2008}
+Tanelli, S., S.~L. Durden, E.~Im, K.~S. Pak, D.~G. Reinke, P.~Partain, J.~M.
+  Haynes, and R.~T. Marchand, 2008: Cloudsat's cloud profiling radar after two
+  years in orbit: Performance, calibration, and processing. \textit{Geoscience
+  and Remote Sensing, IEEE Transactions on}, \textbf{46~(11)}, 3560--3573,
+  \doi{10.1109/TGRS.2008.2002030}.
 
 \bibitem[{Tao et~al.(2009)}]{tao_et_al_2009}
 Tao, W.-K., et~al., 2009: A multiscale modeling system: Developments,
