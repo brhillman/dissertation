@@ -21,30 +21,30 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Zonal-mean hydrometeor occurence fraction by height}}{52}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Zonal-mean hydrometeor occurence fraction by height errors}}{53}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Reflectivity with height histograms for the NH Tropics [...].}}{55}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Errors in reflectivity with height histograms for the NH Tropics [...].}}{55}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Simulated reflectivity with height histograms for an example gridbox [...] using the CRM and CRM-HOM fields, with attenuation turned on (top) and with attenuation turned off (bottom).}}{56}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Errors in reflectivity with height histograms for the NH Tropics [...].}}{56}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Simulated reflectivity with height histograms for an example gridbox [...] using the CRM and CRM-HOM fields, with attenuation turned on (top) and with attenuation turned off (bottom).}}{57}
 \addvspace {5\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overlap and rank correlation statistics.}}{66}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Maps of cloud occurrence overlap (top) and condensate rank correlation (bottom) decorrelation length scales. Decorrelation length scales at each point are calculated by fitting time-averaged overlap and rank correlation as a function of separation distance to Equation 4.9\hbox {}.}}{67}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces As in Figure 4.1\hbox {}, but separated by convective strength. [TODO: fix this caption, make this figure]}}{68}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Maps of overlap and rank correlation decorrelation lengths for both convective (left) and non-convective (right) gridboxes.}}{69}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Raw (left) and normalized (right) condensate empirical density functions, with fits to the gamma distribution.}}{70}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Scatter plots of condensate standard deviation against condensate mean for cloud liquid, cloud ice, precipitating liquid, and precipitating ice. Shown in the legend are the fit parameters to the relationship $\sigma = a \mu ^b$, along with the coefficient of determination (r-squared) of the fit.}}{71}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces coefficient of variability}}{73}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Cases with improved subcolumn generator following R04.}}{75}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Errors in MISR-simulated cloud area by cloud top height arising due to using the improved GEN-VAR subcolumn generator to regenerate subcolumns from gridbox-mean profiles (left), the component of the error due to the treatment of variability (middle), and the component of the error due to the treatment of overlap (right).}}{77}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Errors in ISCCP-simulated cloud area by cloud top pressure.}}{77}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Errors in MODIS-simulated cloud area by cloud top pressure.}}{77}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Errors in CloudSat-simulated hydrometeor occurrence ($Z_e > -27.5$ dBZ) arising due to using GEN-VAR to regenerate subcolumns of cloud and precipitation (top), as well as components due to both the VAR treatment of variability (middle) and the GEN treatment of overlap (bottom).}}{78}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Errors in CloudSat-simulated reflectivity with height histograms for the NH Tropics (0 to 10 degrees north).}}{78}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overlap and rank correlation statistics.}}{67}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Maps of cloud occurrence overlap (top) and condensate rank correlation (bottom) decorrelation length scales. Decorrelation length scales at each point are calculated by fitting time-averaged overlap and rank correlation as a function of separation distance to Equation 4.9\hbox {}.}}{68}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces As in Figure 4.1\hbox {}, but separated by convective strength. [TODO: fix this caption, make this figure]}}{69}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Maps of overlap and rank correlation decorrelation lengths for both convective (left) and non-convective (right) gridboxes.}}{70}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Raw (left) and normalized (right) condensate empirical density functions, with fits to the gamma distribution.}}{71}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Scatter plots of condensate standard deviation against condensate mean for cloud liquid, cloud ice, precipitating liquid, and precipitating ice. Shown in the legend are the fit parameters to the relationship $\sigma = a \mu ^b$, along with the coefficient of determination (r-squared) of the fit.}}{72}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces coefficient of variability}}{74}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Cases with improved subcolumn generator following R04.}}{76}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Errors in MISR-simulated cloud area by cloud top height arising due to using the improved GEN-VAR subcolumn generator to regenerate subcolumns from gridbox-mean profiles (left), the component of the error due to the treatment of variability (middle), and the component of the error due to the treatment of overlap (right).}}{78}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Errors in ISCCP-simulated cloud area by cloud top pressure.}}{78}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Errors in MODIS-simulated cloud area by cloud top pressure.}}{78}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Errors in CloudSat-simulated hydrometeor occurrence ($Z_e > -27.5$ dBZ) arising due to using GEN-VAR to regenerate subcolumns of cloud and precipitation (top), as well as components due to both the VAR treatment of variability (middle) and the GEN treatment of overlap (bottom).}}{79}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Errors in CloudSat-simulated reflectivity with height histograms for the NH Tropics (0 to 10 degrees north).}}{79}
 \addvspace {5\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces MISR and MISR-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models and from MISR retrievals.}}{84}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces ISCCP and ISCCP-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models and from ISCCP retrievals.}}{85}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Difference in MISR-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models relative to MISR retrievals.}}{85}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Difference in ISCCP-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models relative to ISCCP retrievals.}}{86}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Shortwave (top), longwave (middle) and net (bottom) cloud radiative effects from CERES-EBAF (left) and from each of the five models evaluated in this study (from left to right, AM3, CAM4, CAM5, CanAM4, HadGEM2). Numbers in the lower right corner of each map indicate the area-weighted global mean.}}{87}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Differences in shortwave (top), longwave (middle) and net (bottom) cloud radiative effects in each of the five models relative to CERES-EBAF, calculated as model minus observations. Numbers in the lower right corner of each map indicate the area-weighted global mean of the difference.}}{87}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Joint histograms of MISR-retrieved and MISR-simulated cloud top height and cloud optical depth for the Tropical Warm Pool.}}{88}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Joint histograms of MISR-retrieved and MISR-simulated cloud top height and cloud optical depth for the Southern Ocean.}}{88}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Shortwave and longwave cloud radiative effect biases plotted against cloud area and cloud height biases from each of the models.}}{89}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces MISR and MISR-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models and from MISR retrievals.}}{85}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ISCCP and ISCCP-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models and from ISCCP retrievals.}}{86}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Difference in MISR-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models relative to MISR retrievals.}}{86}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Difference in ISCCP-simulated total, high-topped, mid-topped, and low-topped cloud area in each of the five models relative to ISCCP retrievals.}}{87}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Shortwave (top), longwave (middle) and net (bottom) cloud radiative effects from CERES-EBAF (left) and from each of the five models evaluated in this study (from left to right, AM3, CAM4, CAM5, CanAM4, HadGEM2). Numbers in the lower right corner of each map indicate the area-weighted global mean.}}{88}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Differences in shortwave (top), longwave (middle) and net (bottom) cloud radiative effects in each of the five models relative to CERES-EBAF, calculated as model minus observations. Numbers in the lower right corner of each map indicate the area-weighted global mean of the difference.}}{88}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Joint histograms of MISR-retrieved and MISR-simulated cloud top height and cloud optical depth for the Tropical Warm Pool.}}{89}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Joint histograms of MISR-retrieved and MISR-simulated cloud top height and cloud optical depth for the Southern Ocean.}}{89}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Shortwave and longwave cloud radiative effect biases plotted against cloud area and cloud height biases from each of the models.}}{90}
 \addvspace {5\p@ }

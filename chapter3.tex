@@ -56,7 +56,7 @@ In order to separately evaluate the sensitivity of the COSP diagnostics to occur
 
 \begin{figure}
     \centering
-    \includegraphics[width=\columnwidth]{graphics/mxratio_mro-hom.pdf}
+    \includegraphics[width=\columnwidth]{graphics/subgrid1_mxratio_example.pdf}
     \caption{Total cloud (left) and precipitation (right) mixing ratios from the original CRM fields (top), homogenized CRM fields (CRM-HOM, second row), regenerated using SCOPS/PREC\_SCOPS (MRO-HOM, third row), and regenerated using SCOPS/PREC\_SCOPS with precipitation adjusted to conform to the precipitation fraction from the CRM (MRO-HOM-PADJ, bottom row) for an example gridbox (00 UTC 01 July 2000, 10 N, 180 E). TODO: remake this figure}
     \label{sg_mxratio_example} 
 \end{figure}
@@ -89,7 +89,7 @@ The MISR, ISCCP, and MODIS simulators estimate the cloud top heights (or cloud t
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{graphics/cldmisr_mro-hom.pdf}
+\includegraphics[width=\columnwidth]{graphics/subgrid1_cldmisr_maps.pdf}
 \caption{From top to bottom, MISR-simulated total, high-topped, mid-topped, and low-topped cloud area using the (from left to right) CRM, CRM-HOM, and MRO-HOM fields as input to COSP.}
 \label{sg_cldmisr_maps}
 \end{figure}
@@ -98,7 +98,7 @@ Figure \ref{sg_cldmisr_maps} shows MISR-simulated monthly-mean total (optical de
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{graphics/cldmisr_mro-hom_errors.pdf}
+\includegraphics[width=\columnwidth]{graphics/subgrid1_cldmisr_maps_diff.pdf}
 \caption{Errors in MISR-simulated cloud area by cloud type for (from top to bottom) total, high-topped, mid-topped, and low-topped clouds. Shown are (from left to right) the total error in using SCOPS/PREC\_SCOPS with homogeneous cloud condensate, the component of the error due only to homogenizing the condensate, and the component of the error due only to using SCOPS to regenerate subcolumns with maximum-random overlap.}
 \label{sg_cldmisr_maps_diff}
 \end{figure}
@@ -129,14 +129,14 @@ Figure \ref{sg_cldisccp_errors} shows errors in ISCCP-simulated cloud area by cl
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{graphics/hfba_mro-hom.pdf}
+\includegraphics[width=\columnwidth]{graphics/subgrid1_hfba_zonal.pdf}
 \caption{Zonal-mean hydrometeor occurence fraction by height}
 \label{sg_hfba_zonal}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{graphics/hfba_mro-hom_errors.pdf}
+\includegraphics[width=\columnwidth]{graphics/subgrid1_hfba_zonal_diff.pdf}
 \caption{Zonal-mean hydrometeor occurence fraction by height errors}
 \label{sg_hfba_zonal_diff}
 \end{figure}
@@ -149,13 +149,14 @@ These errors in hydrometeor occurrence are understand more fully by looking at t
  
 \begin{figure}
 \centering
+\includegraphics[width=\columnwidth]{graphics/subgrid1_cfadDbze94_NHTropics.pdf}
 \caption{Reflectivity with height histograms for the NH Tropics [...].}
 \label{sg_cfadDbze94_tropics}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{graphics/cfadDbze94_mro-hom_errors.pdf}
+\includegraphics[width=\columnwidth]{graphics/subgrid1_cfadDbze94_NHTropics_diff.pdf}
 \caption{Errors in reflectivity with height histograms for the NH Tropics [...].}
 \label{sg_cfadDbze94_tropics_diff}
 \end{figure}
