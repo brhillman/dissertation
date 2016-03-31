@@ -1,4 +1,4 @@
-\begin{thebibliography}{97}
+\begin{thebibliography}{98}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -11,6 +11,12 @@
 \bibitem[{Ackerman and Stokes(2003)}]{ackerman_and_stokes_2003}
 Ackerman, T.~P. and G.~M. Stokes, 2003: {The Atmospheric Radiation Measurement
   Program}. \textit{Physics Today}, \textbf{56}, 38--44.
+
+\bibitem[{Astin and Di~Girolamo(2014)}]{astin_and_digirolamo_2014}
+Astin, I. and L.~Di~Girolamo, 2014: Technical note: The horizontal scale
+  dependence of the cloud overlap parameter $\alpha$. \textit{Atmospheric
+  Chemistry and Physics}, \textbf{14~(18)}, 9917--9922,
+  \doi{10.5194/acp-14-9917-2014}.
 
 \bibitem[{Barker(2008)}]{barker_2008}
 Barker, H.~W., 2008: Overlap of fractional cloud for radiation calculations in
