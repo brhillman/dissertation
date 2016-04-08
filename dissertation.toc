@@ -21,12 +21,12 @@
 \contentsline {section}{\numberline {4.4}Quantifying improvements in COSP-simulated diagnostics}{83}
 \contentsline {section}{\numberline {4.5}Reduced errors in simulated passive remote sensing diagnostics}{86}
 \contentsline {section}{\numberline {4.6}Reduced errors in simulated CloudSat reflectivity and hydrometeor occurrence}{90}
-\contentsline {section}{\numberline {4.7}Discussion}{94}
-\contentsline {chapter}{\numberline {\@textofChapter \ 5:}Implications for model evaluation: an informed comparison of cloud and radiative properties in CMIP5 models}{95}
-\contentsline {section}{\numberline {5.1}Models and observations}{95}
-\contentsline {section}{\numberline {5.2}Biases in CMIP5 models relative to satellite retrievals}{99}
-\contentsline {section}{\numberline {5.3}Correlating biases in cloud properties with biases in cloud radiative effects}{104}
-\contentsline {section}{\numberline {5.4}Testing the improved subcolumn generator in the Community Atmosphere Model}{104}
-\contentsline {section}{\numberline {5.5}Summary, discussion, and future directions}{104}
-\contentsline {chapter}{Bibliography}{105}
-\contentsline {chapter}{\numberline {\@textofAppendix \ A:}A useful appendix}{117}
+\contentsline {section}{\numberline {4.7}Discussion}{95}
+\contentsline {chapter}{\numberline {\@textofChapter \ 5:}Implications for model evaluation: an informed comparison of cloud and radiative properties in CMIP5 models}{97}
+\contentsline {section}{\numberline {5.1}Models and observations}{97}
+\contentsline {section}{\numberline {5.2}Biases in CMIP5 models relative to satellite retrievals}{101}
+\contentsline {section}{\numberline {5.3}Correlating biases in cloud properties with biases in cloud radiative effects}{106}
+\contentsline {section}{\numberline {5.4}Testing the improved subcolumn generator in the Community Atmosphere Model}{106}
+\contentsline {section}{\numberline {5.5}Summary, discussion, and future directions}{106}
+\contentsline {chapter}{Bibliography}{107}
+\contentsline {chapter}{\numberline {\@textofAppendix \ A:}A useful appendix}{119}

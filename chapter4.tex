@@ -292,7 +292,9 @@ Using parameterized overlap, rank correlation, and variance results in larger er
 \label{sgi_hfba_zonal_gen-var-param_diff}
 \end{figure}
 
-Figure \ref{sgi_hfba_zonal_diff} shows the errors in the zonally-averaged CloudSat-simulated hydrometeor occurrence fraction. Comparing these errors to those shown in Figure \ref{sg_hfba_zonal_diff} again shows a substantial reduction in errors of all types using the improved subcolumn generator relative to those errors that result from using SCOPS/PREC\_SCOPS. Maximum errors have been reduced from ?? to ?? using the improved scheme. [More here, remaining errors? Where are the errors?]. This represents a reduction of the relative error from ?? down to ??; a marked improvement [more here].
+Figures \ref{sgi_hfba_zonal_diff} and \ref{sgi_hfba_zonal_gen-var-param_diff} show the errors in the zonally-averaged CloudSat-simulated hydrometeor occurrence fraction. Comparing these errors to those shown in Figure \ref{sg_hfba_zonal_diff} again shows a substantial reduction in errors of all types using the improved subcolumn generator relative to those errors that result from using SCOPS/PREC\_SCOPS when using the ideal (calculated) overlap and variance. The total error that arises using the GEN-VAR-CALC scheme to regenerate subcolumns results in errors that are generally less than 0.06 frequency of occurrence, compared to errors will above 0.1 frequency of occurrence using the old SCOPS/PREC\_SCOPS routine. The remaining errors appear to be almost entirely due to the treatment of variability, and the component of the error due to the treatment of cloud overlap is nearly zero.
+
+Errors in CloudSat-simulated hydrometeor occurrence when using the parameterized treatment of overlap and variability are much larger than when using the calculated overlap and variability. While the errors due to the treatment of overlap remain small, the errors due to the treatment of variability are substantially larger. Still, these errors are generally less than arise when using homogeneous cloud and precipitation condensate (compare with Figure \ref{sg_hfba_zonal_diff}), indicating that even the crude parameterization of variability used here is an improvement over the original subgrid generator.
 
 \begin{figure}
 \centering
@@ -308,9 +310,14 @@ Figure \ref{sgi_hfba_zonal_diff} shows the errors in the zonally-averaged CloudS
 \label{sgi_cfadDbze94_nhtropics_gen-var-param_diff}
 \end{figure}
 
-Figure \ref{sgi_cfadDbze94_nhtropics_diff} shows errors in CloudSat-simulated reflectivity with height histograms for the Northern Hemisphere Tropics. The figure shows again a reduction in errors of all types from using the GEN-VAR scheme to regenerate subcolumns. The largest impact is the inclusion of heterogeneous condensate, as after adjusting for precipitation, the homogeneous errors dominated the errors using MRO-HOM scheme shown in the previous chapter. 
+Figure \ref{sgi_cfadDbze94_nhtropics_diff} shows errors in CloudSat-simulated reflectivity with height histograms for the Northern Hemisphere Tropics. The figure shows again a reduction in errors of all types from using the GEN-VAR scheme to regenerate subcolumns compared with the errors identified in Figure \ref{sg_cfadDbze94_tropics_diff}. The largest impact is the inclusion of heterogeneous condensate, as after adjusting for precipitation, the homogeneous errors dominated the errors using MRO-HOM scheme shown in the previous chapter. Again, errors are somewhat larger using the parameterized variance treatment, while the error due to using the parameterized overlap treatment remains quite small. Similar to the homogeneous errors identified in Chapter \ref{subgrid1_chapter} (Figure \ref{sg_cfadDbze94_tropics_diff}), errors due to the parameterized variance manifest in a decrease in occurrence of low-reflectivity hydrometeors and an increase in occurrence of hydrometeors with higher reflectivity along the characteristic curve of reflectivity with height. Still, these errors are substantially smaller than arise when using homogeneous condensate. Figure \ref{sgi_cfadDbze94_NHTropics_all_diff} shows the total errors than arise in using each configuration of subcolumn generators, including SCOPS/PREC\_SCOPS, SCOPS/PREC\_SCOPS with the precipitation adjustment, the new subcolumn generator with calculated overlap and variance, and the new subcolumn generator with parameterized overlap and variance. It is obvious that although the errors using parameterized overlap and variance are larger than when using calculated overlap and variance, these errors are much smaller than when using SCOPS/PREC\_SCOPS with homogeneous condensate, especially at lower-altitudes.
 
-[What else to say here? Further discussion of values of both absolute and relative errors; quantify reduction of errors, i.e., ``this is a 20\% reduction in error from the MRO-HOM to the GEN-VAR'']
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{graphics/subgrid2_cfadDbze94_NHTropics_all_diff.pdf}
+\caption{Errors in CloudSat-simulated reflectivity with height histograms for the NH Tropics (0 to 10 degrees north).}
+\label{sgi_cfadDbze94_NHTropics_all_diff}
+\end{figure}
 
 \section{Discussion}
 \label{subgrid2_discussion_section}
