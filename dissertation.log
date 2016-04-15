@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 APR 2016 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 APR 2016 05:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -265,16 +265,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-Overfull \hbox (2.47238pt too wide) in paragraph at lines 29--29
+[4]
+Overfull \hbox (2.47238pt too wide) in paragraph at lines 30--30
  \OT1/cmr/m/n/12 Decor-re-la-tion length scales at each point are cal-cu-lated 
 by fit-ting time-averaged 
  []
 
 
-Overfull \hbox (9.79675pt too wide) in paragraph at lines 31--31
+Overfull \hbox (9.79675pt too wide) in paragraph at lines 32--32
  [][] []\OT1/cmr/m/n/12 Decorrelation lengths for con-den-sate rank cor-re-la-t
 ion for cloud liq-uid (CRM[]QC, 
  []
@@ -283,7 +281,7 @@ ion for cloud liq-uid (CRM[]QC,
 Underfull \vbox (badness 1460) has occurred while \output is active []
 
  [6]
-Overfull \hbox (3.67377pt too wide) in paragraph at lines 48--48
+Overfull \hbox (3.67377pt too wide) in paragraph at lines 49--49
  [][] []\OT1/cmr/m/n/12 Difference in ISCCP-simulated to-tal, high-topped, mid-
 topped, and low-topped 
  []
@@ -427,7 +425,7 @@ Package pdftex.def Info: graphics/misr_clmisr_Pacific_2008-06.pdf used on input
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./graphics/misr_clmisr_Pacific_2008-01.pdf>] [26 <./graphics/misr_clmisr_
-Pacific_2008-06.pdf>] <graphics/misr_cth_2008-01.pdf, id=588, 470.29501pt x 423
+Pacific_2008-06.pdf>] <graphics/misr_cth_2008-01.pdf, id=587, 470.29501pt x 423
 .26549pt>
 File: graphics/misr_cth_2008-01.pdf Graphic file (type pdf)
 
@@ -435,40 +433,55 @@ File: graphics/misr_cth_2008-01.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/misr_cth_2008-01.pdf used on input line 125.
 (pdftex.def)             Requested size: 470.295pt x 423.27089pt.
 
-<graphics/misr_cth_2008-06.pdf, id=589, 470.29501pt x 423.26549pt>
+<graphics/misr_cth_2008-06.pdf, id=588, 470.29501pt x 423.26549pt>
 File: graphics/misr_cth_2008-06.pdf Graphic file (type pdf)
 
 <use graphics/misr_cth_2008-06.pdf>
 Package pdftex.def Info: graphics/misr_cth_2008-06.pdf used on input line 132.
 (pdftex.def)             Requested size: 470.295pt x 423.27089pt.
  [27] [28 <./graphics/misr_cth_2008-01.pdf>] [29 <./graphics/misr_cth_2008-06.p
-df>] [30]
-Underfull \vbox (badness 2119) has occurred while \output is active []
+df>] (./tables/misr_cldmisr_january.tex)
+(./tables/misr_cldmisr_june.tex) [30] [31] [32]
+<graphics/misr_cldmodis_zonal_2008-01.pdf, id=710, 578.16pt x 397.485pt>
+File: graphics/misr_cldmodis_zonal_2008-01.pdf Graphic file (type pdf)
 
- [31]
-[32] [33]) (./chapter3.tex [34]
+<use graphics/misr_cldmodis_zonal_2008-01.pdf>
+Package pdftex.def Info: graphics/misr_cldmodis_zonal_2008-01.pdf used on input
+ line 162.
+(pdftex.def)             Requested size: 470.295pt x 323.32573pt.
+
+<graphics/misr_cldmodis_zonal_2008-06.pdf, id=711, 578.16pt x 397.485pt>
+File: graphics/misr_cldmodis_zonal_2008-06.pdf Graphic file (type pdf)
+
+<use graphics/misr_cldmodis_zonal_2008-06.pdf>
+Package pdftex.def Info: graphics/misr_cldmodis_zonal_2008-06.pdf used on input
+ line 169.
+(pdftex.def)             Requested size: 470.295pt x 323.32573pt.
+ [33] [34 <./graphics/misr_cldmodis_zonal_2008-01.pdf>] [35 <./graphics/misr_cl
+dmodis_zonal_2008-06.pdf>]
+[36] [37]) (./chapter3.tex [38]
 <<3>>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35
+ [39
 
 ]
 Underfull \vbox (badness 5133) has occurred while \output is active []
 
- [36]
-[37]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-[40] [41]
+ [40]
+[41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
-<graphics/subgrid1_mxratio_example.pdf, id=746, 578.16pt x 397.485pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+[44] [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+<graphics/subgrid1_mxratio_example.pdf, id=852, 578.16pt x 397.485pt>
 File: graphics/subgrid1_mxratio_example.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_mxratio_example.pdf>
@@ -481,11 +494,11 @@ Underfull \hbox (badness 1320) in paragraph at lines 60--60
 -ond row), re-gen-
  []
 
-[43] [44 <./graphics/subgrid1_mxratio_example.pdf>] [45]
+[47] [48 <./graphics/subgrid1_mxratio_example.pdf>] [49]
 Underfull \vbox (badness 2245) has occurred while \output is active []
 
- [46]
-<graphics/subgrid1_cldmisr_maps.pdf, id=801, 578.16pt x 397.485pt>
+ [50]
+<graphics/subgrid1_cldmisr_maps.pdf, id=907, 578.16pt x 397.485pt>
 File: graphics/subgrid1_cldmisr_maps.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_cldmisr_maps.pdf>
@@ -493,7 +506,7 @@ Package pdftex.def Info: graphics/subgrid1_cldmisr_maps.pdf used on input line
 92.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/subgrid1_cldmisr_maps_diff.pdf, id=802, 578.16pt x 397.485pt>
+<graphics/subgrid1_cldmisr_maps_diff.pdf, id=908, 578.16pt x 397.485pt>
 File: graphics/subgrid1_cldmisr_maps_diff.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_cldmisr_maps_diff.pdf>
@@ -503,13 +516,13 @@ line 101.
 
 Underfull \vbox (badness 3815) has occurred while \output is active []
 
- [47]
-[48 <./graphics/subgrid1_cldmisr_maps.pdf>] [49 <./graphics/subgrid1_cldmisr_ma
+ [51]
+[52 <./graphics/subgrid1_cldmisr_maps.pdf>] [53 <./graphics/subgrid1_cldmisr_ma
 ps_diff.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
-<graphics/taudist_hom.pdf, id=894, 578.16pt x 397.485pt>
+ [54]
+<graphics/taudist_hom.pdf, id=1000, 578.16pt x 397.485pt>
 File: graphics/taudist_hom.pdf Graphic file (type pdf)
 
 <use graphics/taudist_hom.pdf>
@@ -518,16 +531,16 @@ Package pdftex.def Info: graphics/taudist_hom.pdf used on input line 110.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51 <./graphics/taudist_hom.pdf>]
-<graphics/subgrid1_cldisccp_maps_diff.pdf, id=931, 578.16pt x 397.485pt>
+ [55 <./graphics/taudist_hom.pdf>]
+<graphics/subgrid1_cldisccp_maps_diff.pdf, id=1037, 578.16pt x 397.485pt>
 File: graphics/subgrid1_cldisccp_maps_diff.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_cldisccp_maps_diff.pdf>
 Package pdftex.def Info: graphics/subgrid1_cldisccp_maps_diff.pdf used on input
  line 121.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
- [52] [53 <./graphics/subgrid1_cldisccp_maps_diff.pdf>]
-<graphics/subgrid1_hfba_zonal.pdf, id=976, 578.16pt x 397.485pt>
+ [56] [57 <./graphics/subgrid1_cldisccp_maps_diff.pdf>]
+<graphics/subgrid1_hfba_zonal.pdf, id=1082, 578.16pt x 397.485pt>
 File: graphics/subgrid1_hfba_zonal.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_hfba_zonal.pdf>
@@ -535,16 +548,16 @@ Package pdftex.def Info: graphics/subgrid1_hfba_zonal.pdf used on input line 13
 3.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/subgrid1_hfba_zonal_diff.pdf, id=977, 578.16pt x 397.485pt>
+<graphics/subgrid1_hfba_zonal_diff.pdf, id=1083, 578.16pt x 397.485pt>
 File: graphics/subgrid1_hfba_zonal_diff.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_hfba_zonal_diff.pdf>
 Package pdftex.def Info: graphics/subgrid1_hfba_zonal_diff.pdf used on input li
 ne 140.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
- [54 <./graphics/subgrid1_hfba_zonal.pdf>] [55 <./graphics/subgrid1_hfba_zonal_
-diff.pdf>] [56]
-<graphics/subgrid1_cfadDbze94_NHTropics.pdf, id=1074, 578.16pt x 397.485pt>
+ [58 <./graphics/subgrid1_hfba_zonal.pdf>] [59 <./graphics/subgrid1_hfba_zonal_
+diff.pdf>] [60]
+<graphics/subgrid1_cfadDbze94_NHTropics.pdf, id=1180, 578.16pt x 397.485pt>
 File: graphics/subgrid1_cfadDbze94_NHTropics.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_cfadDbze94_NHTropics.pdf>
@@ -552,7 +565,7 @@ Package pdftex.def Info: graphics/subgrid1_cfadDbze94_NHTropics.pdf used on inp
 ut line 153.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/subgrid1_cfadDbze94_NHTropics_diff.pdf, id=1075, 578.16pt x 397.485pt
+<graphics/subgrid1_cfadDbze94_NHTropics_diff.pdf, id=1181, 578.16pt x 397.485pt
 >
 File: graphics/subgrid1_cfadDbze94_NHTropics_diff.pdf Graphic file (type pdf)
  <use graphics/subgrid1_cfadDbze94_NHTropics_diff.pdf>
@@ -560,7 +573,7 @@ Package pdftex.def Info: graphics/subgrid1_cfadDbze94_NHTropics_diff.pdf used o
 n input line 160.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/subgrid1_cfadDbze94_att-test.pdf, id=1076, 578.16pt x 397.485pt>
+<graphics/subgrid1_cfadDbze94_att-test.pdf, id=1182, 578.16pt x 397.485pt>
 File: graphics/subgrid1_cfadDbze94_att-test.pdf Graphic file (type pdf)
 
 <use graphics/subgrid1_cfadDbze94_att-test.pdf>
@@ -573,26 +586,26 @@ Overfull \hbox (25.3285pt too wide) in paragraph at lines 174--175
 to us-ing the SCOPS/PREC[]SCOPS
  []
 
-[57] [58 <./graphics/subgrid1_cfadDbze94_NHTropics.pdf>] [59 <./graphics/subgri
-d1_cfadDbze94_NHTropics_diff.pdf>] [60 <./graphics/subgrid1_cfadDbze94_att-test
-.pdf>] [61]
+[61] [62 <./graphics/subgrid1_cfadDbze94_NHTropics.pdf>] [63 <./graphics/subgri
+d1_cfadDbze94_NHTropics_diff.pdf>] [64 <./graphics/subgrid1_cfadDbze94_att-test
+.pdf>] [65]
 Underfull \vbox (badness 5133) has occurred while \output is active []
 
- [62]
-[63]) (./chapter4.tex [64]
+ [66]
+[67]) (./chapter4.tex [68]
 <<4>>
-[65
+[69
 
-] [66] [67] [68] [69]
-<graphics/subgrid2_overlap_dz.pdf, id=1270, 578.16pt x 397.485pt>
+] [70] [71] [72] [73]
+<graphics/subgrid2_overlap_dz.pdf, id=1376, 578.16pt x 397.485pt>
 File: graphics/subgrid2_overlap_dz.pdf Graphic file (type pdf)
 
 <use graphics/subgrid2_overlap_dz.pdf>
 Package pdftex.def Info: graphics/subgrid2_overlap_dz.pdf used on input line 10
 0.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
- [70] [71 <./graphics/subgrid2_overlap_dz.pdf>]
-<graphics/subgrid2_overlap_maps.pdf, id=1316, 566.59679pt x 225.94833pt>
+ [74] [75 <./graphics/subgrid2_overlap_dz.pdf>]
+<graphics/subgrid2_overlap_maps.pdf, id=1421, 566.59679pt x 225.94833pt>
 File: graphics/subgrid2_overlap_maps.pdf Graphic file (type pdf)
 
 <use graphics/subgrid2_overlap_maps.pdf>
@@ -600,7 +613,7 @@ Package pdftex.def Info: graphics/subgrid2_overlap_maps.pdf used on input line
 111.
 (pdftex.def)             Requested size: 470.295pt x 187.54395pt.
 
-<graphics/subgrid2_rankcorr_dz.pdf, id=1317, 578.16pt x 397.485pt>
+<graphics/subgrid2_rankcorr_dz.pdf, id=1422, 578.16pt x 397.485pt>
 File: graphics/subgrid2_rankcorr_dz.pdf Graphic file (type pdf)
 
 <use graphics/subgrid2_rankcorr_dz.pdf>
@@ -610,17 +623,17 @@ Package pdftex.def Info: graphics/subgrid2_rankcorr_dz.pdf used on input line 1
 
 Underfull \vbox (badness 3343) has occurred while \output is active []
 
- [72 <./graphics/subgrid2_overlap_maps.pdf>] [73 <./graphics/subgrid2_rankcorr_
+ [76 <./graphics/subgrid2_overlap_maps.pdf>] [77 <./graphics/subgrid2_rankcorr_
 dz.pdf>]
-<graphics/subgrid2_rankcorr_maps.pdf, id=1410, 566.59679pt x 380.827pt>
+<graphics/subgrid2_rankcorr_maps.pdf, id=1514, 566.59679pt x 380.827pt>
 File: graphics/subgrid2_rankcorr_maps.pdf Graphic file (type pdf)
 
 <use graphics/subgrid2_rankcorr_maps.pdf>
 Package pdftex.def Info: graphics/subgrid2_rankcorr_maps.pdf used on input line
  129.
 (pdftex.def)             Requested size: 470.295pt x 316.09795pt.
- [74] [75 <./graphics/subgrid2_rankcorr_maps.pdf>]
-<graphics/subgrid2_mxratio_cdf1.pdf, id=1461, 578.16pt x 289.08pt>
+ [78] [79 <./graphics/subgrid2_rankcorr_maps.pdf>]
+<graphics/subgrid2_mxratio_cdf1.pdf, id=1565, 578.16pt x 289.08pt>
 File: graphics/subgrid2_mxratio_cdf1.pdf Graphic file (type pdf)
 
 <use graphics/subgrid2_mxratio_cdf1.pdf>
@@ -630,8 +643,8 @@ Package pdftex.def Info: graphics/subgrid2_mxratio_cdf1.pdf used on input line
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76 <./graphics/subgrid2_mxratio_cdf1.pdf>] [77]
-<graphics/subgrid2_mxratio_variance.pdf, id=1513, 578.16pt x 397.485pt>
+ [80 <./graphics/subgrid2_mxratio_cdf1.pdf>] [81]
+<graphics/subgrid2_mxratio_variance.pdf, id=1617, 578.16pt x 397.485pt>
 File: graphics/subgrid2_mxratio_variance.pdf Graphic file (type pdf)
 
 <use graphics/subgrid2_mxratio_variance.pdf>
@@ -639,7 +652,7 @@ Package pdftex.def Info: graphics/subgrid2_mxratio_variance.pdf used on input l
 ine 208.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/subgrid2_mxratio_variance_fits.pdf, id=1514, 578.16pt x 397.485pt>
+<graphics/subgrid2_mxratio_variance_fits.pdf, id=1618, 578.16pt x 397.485pt>
 File: graphics/subgrid2_mxratio_variance_fits.pdf Graphic file (type pdf)
 
 <use graphics/subgrid2_mxratio_variance_fits.pdf>
@@ -649,8 +662,8 @@ put line 215.
 
 Underfull \vbox (badness 5832) has occurred while \output is active []
 
- [78 <./graphics/subgrid2_mxratio_variance.pdf>] [79 <./graphics/subgrid2_mxrat
-io_variance_fits.pdf>] <graphics/subgrid2_mxratio_cdf2.pdf, id=1620, 578.16pt x
+ [82 <./graphics/subgrid2_mxratio_variance.pdf>] [83 <./graphics/subgrid2_mxrat
+io_variance_fits.pdf>] <graphics/subgrid2_mxratio_cdf2.pdf, id=1724, 578.16pt x
  289.08pt>
 File: graphics/subgrid2_mxratio_cdf2.pdf Graphic file (type pdf)
 
@@ -658,19 +671,19 @@ File: graphics/subgrid2_mxratio_cdf2.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/subgrid2_mxratio_cdf2.pdf used on input line 
 239.
 (pdftex.def)             Requested size: 470.295pt x 235.14598pt.
- [80]
+ [84]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81 <./graphics/subgrid2_mxratio_cdf2.pdf>]
-<graphics/mxratio_gen-var.pdf, id=1673, 622.07817pt x 402.4106pt>
+ [85 <./graphics/subgrid2_mxratio_cdf2.pdf>]
+<graphics/mxratio_gen-var.pdf, id=1777, 622.07817pt x 402.4106pt>
 File: graphics/mxratio_gen-var.pdf Graphic file (type pdf)
 
 <use graphics/mxratio_gen-var.pdf>
 Package pdftex.def Info: graphics/mxratio_gen-var.pdf used on input line 256.
 (pdftex.def)             Requested size: 470.295pt x 304.22647pt.
- [82] [83 <./graphics/mxratio_gen-var.pdf>]
-[84]
-<graphics/subgrid2_cldmisr_maps_gen-var-calc_diff.pdf, id=1733, 578.16pt x 397.
+ [86] [87 <./graphics/mxratio_gen-var.pdf>]
+[88]
+<graphics/subgrid2_cldmisr_maps_gen-var-calc_diff.pdf, id=1836, 578.16pt x 397.
 485pt>
 File: graphics/subgrid2_cldmisr_maps_gen-var-calc_diff.pdf Graphic file (type p
 df)
@@ -679,7 +692,7 @@ Package pdftex.def Info: graphics/subgrid2_cldmisr_maps_gen-var-calc_diff.pdf u
 sed on input line 280.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/subgrid2_cldmisr_maps_gen-var-param_diff.pdf, id=1734, 578.16pt x 397
+<graphics/subgrid2_cldmisr_maps_gen-var-param_diff.pdf, id=1837, 578.16pt x 397
 .485pt>
 File: graphics/subgrid2_cldmisr_maps_gen-var-param_diff.pdf Graphic file (type 
 pdf)
@@ -689,29 +702,44 @@ used on input line 287.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
 
-LaTeX Warning: Reference `subgrid2_cldmisr_maps_gen-var-param' on page 85 undef
+LaTeX Warning: Reference `subgrid2_cldmisr_maps_gen-var-param' on page 89 undef
 ined on input line 292.
 
 
-LaTeX Warning: Reference `subgrid2_cldmisr_maps_gen-var-calc' on page 85 undefi
+LaTeX Warning: Reference `subgrid1_cldmisr_maps_diff' on page 89 undefined on i
+nput line 292.
+
+
+LaTeX Warning: Reference `subgrid2_cldmisr_maps_gen-var-calc' on page 89 undefi
 ned on input line 292.
 
 
-LaTeX Warning: Reference `subgrid2_cldmisr_maps_gen-var-param' on page 85 undef
+LaTeX Warning: Reference `subgrid2_cldmisr_maps_gen-var-param' on page 89 undef
 ined on input line 292.
 
 
-LaTeX Warning: Reference `subgrid2_variance_section' on page 85 undefined on in
+LaTeX Warning: Reference `subgrid2_variance_section' on page 89 undefined on in
 put line 292.
 
-[85] [86 <./graphics/subgrid2_cldmisr_maps_gen-var-calc_diff.pdf>] [87 <./graph
+
+LaTeX Warning: Reference `subgrid1_cldmisr_maps_diff' on page 89 undefined on i
+nput line 292.
+
+[89] [90 <./graphics/subgrid2_cldmisr_maps_gen-var-calc_diff.pdf>] [91 <./graph
 ics/subgrid2_cldmisr_maps_gen-var-param_diff.pdf>]
 
-LaTeX Warning: Reference `subgrid2_overlap_map' on page 88 undefined on input l
+LaTeX Warning: Reference `subgrid1_cldmisr_maps_diff' on page 92 undefined on i
+nput line 294.
+
+
+LaTeX Warning: Reference `subgrid2_overlap_map' on page 92 undefined on input l
 ine 294.
 
 
-<graphics/subgrid2_hfba_zonal_gen-var-calc_diff.pdf, id=1828, 578.16pt x 397.48
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [92]
+<graphics/subgrid2_hfba_zonal_gen-var-calc_diff.pdf, id=1935, 578.16pt x 397.48
 5pt>
 File: graphics/subgrid2_hfba_zonal_gen-var-calc_diff.pdf Graphic file (type pdf
 )
@@ -720,10 +748,7 @@ Package pdftex.def Info: graphics/subgrid2_hfba_zonal_gen-var-calc_diff.pdf use
 d on input line 301.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88]
-<graphics/subgrid2_hfba_zonal_gen-var-param_diff.pdf, id=1832, 578.16pt x 397.4
+<graphics/subgrid2_hfba_zonal_gen-var-param_diff.pdf, id=1936, 578.16pt x 397.4
 85pt>
 File: graphics/subgrid2_hfba_zonal_gen-var-param_diff.pdf Graphic file (type pd
 f)
@@ -732,11 +757,18 @@ Package pdftex.def Info: graphics/subgrid2_hfba_zonal_gen-var-param_diff.pdf us
 ed on input line 308.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89 <./graphics/subgrid2_hfba_zonal_gen-var-calc_diff.pdf>] [90 <./graphics/su
-bgrid2_hfba_zonal_gen-var-param_diff.pdf>]
-<graphics/subgrid2_cfadDbze94_NHTropics_gen-var-calc_diff.pdf, id=1933, 578.16p
+LaTeX Warning: Reference `subgrid1_hfba_zonal_diff' on page 93 undefined on inp
+ut line 313.
+
+[93 <./graphics/subgrid2_hfba_zonal_gen-var-calc_diff.pdf>] [94 <./graphics/sub
+grid2_hfba_zonal_gen-var-param_diff.pdf>]
+
+LaTeX Warning: Reference `subgrid1_hfba_zonal_diff' on page 95 undefined on inp
+ut line 315.
+
+
+<graphics/subgrid2_cfadDbze94_NHTropics_gen-var-calc_diff.pdf, id=2036, 578.16p
 t x 397.485pt>
 File: graphics/subgrid2_cfadDbze94_NHTropics_gen-var-calc_diff.pdf Graphic file
  (type pdf)
@@ -746,7 +778,7 @@ Package pdftex.def Info: graphics/subgrid2_cfadDbze94_NHTropics_gen-var-calc_di
 ff.pdf used on input line 319.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
 
-<graphics/subgrid2_cfadDbze94_NHTropics_gen-var-param_diff.pdf, id=1934, 578.16
+<graphics/subgrid2_cfadDbze94_NHTropics_gen-var-param_diff.pdf, id=2037, 578.16
 pt x 397.485pt>
 File: graphics/subgrid2_cfadDbze94_NHTropics_gen-var-param_diff.pdf Graphic fil
 e (type pdf)
@@ -755,10 +787,18 @@ e (type pdf)
 Package pdftex.def Info: graphics/subgrid2_cfadDbze94_NHTropics_gen-var-param_d
 iff.pdf used on input line 326.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
- [91]
-[92 <./graphics/subgrid2_cfadDbze94_NHTropics_gen-var-calc_diff.pdf>] [93 <./gr
-aphics/subgrid2_cfadDbze94_NHTropics_gen-var-param_diff.pdf>]
-<graphics/subgrid2_cfadDbze94_NHTropics_all_diff.pdf, id=2044, 578.16pt x 397.4
+
+
+LaTeX Warning: Reference `subgrid1_cfadDbze94_tropics_diff' on page 95 undefine
+d on input line 331.
+
+
+LaTeX Warning: Reference `subgrid1_cfadDbze94_tropics_diff' on page 95 undefine
+d on input line 331.
+
+[95] [96 <./graphics/subgrid2_cfadDbze94_NHTropics_gen-var-calc_diff.pdf>]
+[97 <./graphics/subgrid2_cfadDbze94_NHTropics_gen-var-param_diff.pdf>]
+<graphics/subgrid2_cfadDbze94_NHTropics_all_diff.pdf, id=2148, 578.16pt x 397.4
 85pt>
 File: graphics/subgrid2_cfadDbze94_NHTropics_all_diff.pdf Graphic file (type pd
 f)
@@ -766,42 +806,42 @@ f)
 Package pdftex.def Info: graphics/subgrid2_cfadDbze94_NHTropics_all_diff.pdf us
 ed on input line 335.
 (pdftex.def)             Requested size: 470.295pt x 323.32573pt.
- [94 <./graphics/subgrid2_cfadDbze94_NHTropics_all_diff.pdf>]
+ [98 <./graphics/subgrid2_cfadDbze94_NHTropics_all_diff.pdf>]
 
-LaTeX Warning: Reference `subgrid2_overlap_map' on page 95 undefined on input l
+LaTeX Warning: Reference `subgrid2_overlap_map' on page 99 undefined on input l
 ine 346.
 
-[95]
+[99]
 Underfull \vbox (badness 5133) has occurred while \output is active []
 
- [96])
-(./chapter5.tex [97]
+ [100])
+(./chapter5.tex [101]
 <<5>>
-[98
+[102
 
 ]
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
- [99]
-[100]
+ [103]
+[104]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [101]
-<graphics/cmip5_cldmisr.pdf, id=2125, 978.5325pt x 394.502pt>
+ [105]
+<graphics/cmip5_cldmisr.pdf, id=2230, 978.5325pt x 394.502pt>
 File: graphics/cmip5_cldmisr.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldmisr.pdf>
 Package pdftex.def Info: graphics/cmip5_cldmisr.pdf used on input line 32.
 (pdftex.def)             Requested size: 470.295pt x 189.6056pt.
 
-<graphics/cmip5_cldisccp.pdf, id=2126, 978.5325pt x 394.502pt>
+<graphics/cmip5_cldisccp.pdf, id=2231, 978.5325pt x 394.502pt>
 File: graphics/cmip5_cldisccp.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldisccp.pdf>
 Package pdftex.def Info: graphics/cmip5_cldisccp.pdf used on input line 39.
 (pdftex.def)             Requested size: 470.295pt x 189.6056pt.
 
-<graphics/cmip5_cldmisr_diff.pdf, id=2127, 968.6576pt x 450.51123pt>
+<graphics/cmip5_cldmisr_diff.pdf, id=2232, 968.6576pt x 450.51123pt>
 File: graphics/cmip5_cldmisr_diff.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldmisr_diff.pdf>
@@ -809,26 +849,26 @@ Package pdftex.def Info: graphics/cmip5_cldmisr_diff.pdf used on input line 46.
 
 (pdftex.def)             Requested size: 470.295pt x 218.7314pt.
 
-<graphics/cmip5_cldisccp_diff.pdf, id=2128, 968.6576pt x 450.51123pt>
+<graphics/cmip5_cldisccp_diff.pdf, id=2233, 968.6576pt x 450.51123pt>
 File: graphics/cmip5_cldisccp_diff.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cldisccp_diff.pdf>
 Package pdftex.def Info: graphics/cmip5_cldisccp_diff.pdf used on input line 53
 .
 (pdftex.def)             Requested size: 470.295pt x 218.7314pt.
- [102 <./graphics/cmip5_cldmisr.pdf>]
-[103 <./graphics/cmip5_cldisccp.pdf> <./graphics/cmip5_cldmisr_diff.pdf
+ [106 <./graphics/cmip5_cldmisr.pdf>]
+[107 <./graphics/cmip5_cldisccp.pdf> <./graphics/cmip5_cldmisr_diff.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/cmip5_cldmisr_diff.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
->] <graphics/cmip5_cre_maps.pdf, id=2266, 866.03444pt x 282.48349pt>
+>] <graphics/cmip5_cre_maps.pdf, id=2369, 866.03444pt x 282.48349pt>
 File: graphics/cmip5_cre_maps.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cre_maps.pdf>
 Package pdftex.def Info: graphics/cmip5_cre_maps.pdf used on input line 63.
 (pdftex.def)             Requested size: 470.295pt x 153.40086pt.
 
-<graphics/cmip5_cre_maps_diff.pdf, id=2267, 867.28975pt x 335.41632pt>
+<graphics/cmip5_cre_maps_diff.pdf, id=2370, 867.28975pt x 335.41632pt>
 File: graphics/cmip5_cre_maps_diff.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_cre_maps_diff.pdf>
@@ -836,33 +876,33 @@ Package pdftex.def Info: graphics/cmip5_cre_maps_diff.pdf used on input line 70
 .
 (pdftex.def)             Requested size: 470.295pt x 181.87958pt.
 
-<graphics/cmip5_clMISR_TropicalWarmPool.pdf, id=2268, 653.8114pt x 322.30223pt>
+<graphics/cmip5_clMISR_TropicalWarmPool.pdf, id=2371, 653.8114pt x 322.30223pt>
 File: graphics/cmip5_clMISR_TropicalWarmPool.pdf Graphic file (type pdf)
 <use graphics/cmip5_clMISR_TropicalWarmPool.pdf>
 Package pdftex.def Info: graphics/cmip5_clMISR_TropicalWarmPool.pdf used on inp
 ut line 79.
 (pdftex.def)             Requested size: 470.295pt x 231.84593pt.
 
-<graphics/cmip5_clMISR_SouthernOcean.pdf, id=2269, 653.8114pt x 322.30223pt>
+<graphics/cmip5_clMISR_SouthernOcean.pdf, id=2372, 653.8114pt x 322.30223pt>
 File: graphics/cmip5_clMISR_SouthernOcean.pdf Graphic file (type pdf)
 
 <use graphics/cmip5_clMISR_SouthernOcean.pdf>
 Package pdftex.def Info: graphics/cmip5_clMISR_SouthernOcean.pdf used on input 
 line 86.
 (pdftex.def)             Requested size: 470.295pt x 231.84593pt.
-) (./dissertation.bbl [104 <./graphics/cmip5_cldisccp_diff.pdf>] [105 <./graphi
+) (./dissertation.bbl [108 <./graphics/cmip5_cldisccp_diff.pdf>] [109 <./graphi
 cs/cmip5_cre_maps.pdf> <./graphics/cmip5_cre_maps_diff.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/cmip5_cre_maps_diff.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
->] [106 <./graphics/cmip5_clMISR_TropicalWarmPool.pdf> <./graphics/cmip5_clMISR
+>] [110 <./graphics/cmip5_clMISR_TropicalWarmPool.pdf> <./graphics/cmip5_clMISR
 _SouthernOcean.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/cmip5_clMISR_SouthernOcean.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
->] [107
+>] [111
 
-] [108] [109] [110] [111]
+] [112] [113] [114] [115]
 Underfull \hbox (badness 6047) in paragraph at lines 272--275
 []\OT1/cmr/m/n/12 Mace, G. G. and S. Benson-Troth, 2002: Cloud-layer over-lap c
 har-ac-ter-is-tics
@@ -875,7 +915,7 @@ li-mate\OT1/cmr/m/n/12 , \OT1/cmr/bx/n/12 15\OT1/cmr/m/n/12 , doi:10.1175/1520-
 
  []
 
-[112]
+[116]
 Underfull \hbox (badness 4416) in paragraph at lines 342--348
 []\OT1/cmr/m/n/12 Morcrette, J.-J. and Y. Fouquart, 1986: The over-lap-ping of 
 cloud lay-ers in
@@ -899,7 +939,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 342--348
 O;2\OT1/cmr/m/n/12 ,
  []
 
-[113] [114]
+[117] [118]
 Underfull \hbox (badness 3989) in paragraph at lines 428--431
 []\OT1/cmr/m/n/12 Rossow, W. B. and R. A. Schif-fer, 1999: Ad-vances in un-der-
 stand-ing clouds
@@ -912,7 +952,7 @@ Underfull \hbox (badness 2096) in paragraph at lines 428--431
 0-
  []
 
-[115]
+[119]
 Underfull \hbox (badness 10000) in paragraph at lines 469--473
 []\OT1/cmr/m/n/12 The HadGEM2 De-vel-op-ment Team: Mar-tin, G. M., et al., 2011
 : The
@@ -930,9 +970,9 @@ Underfull \hbox (badness 7963) in paragraph at lines 469--473
  (3)\OT1/cmr/m/n/12 , 723--757, doi:10.5194/gmd-4-723-2011, URL
  []
 
-[116] [117]) [118]
+[120] [121]) [122]
 <<A>>
-[119
+[123
 
 ] (./dissertation.aux)
 
@@ -940,10 +980,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3338 strings out of 493089
- 54482 string characters out of 6134842
- 113079 words of memory out of 5000000
- 6724 multiletter control sequences out of 15000+600000
+ 3359 strings out of 493089
+ 55190 string characters out of 6134842
+ 122092 words of memory out of 5000000
+ 6736 multiletter control sequences out of 15000+600000
  10782 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,24p,3160b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -965,10 +1005,10 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on dissertation.pdf (132 pages, 51748216 bytes).
+Output written on dissertation.pdf (136 pages, 51688542 bytes).
 PDF statistics:
- 2604 PDF objects out of 2984 (max. 8388607)
- 660 compressed objects within 7 object streams
+ 2708 PDF objects out of 2984 (max. 8388607)
+ 681 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

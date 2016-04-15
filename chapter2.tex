@@ -140,14 +140,14 @@ As discussed previously, low-topped differences can be large even when using the
 
 \begin{table}
 \centering
-%\input{tables/misr_cldmisr_table_january}
+\input{tables/misr_cldmisr_january}
 \caption{Regional mean cloud area by cloud top height for January 2008.}
 \label{misr_cldmisr_table_january}
 \end{table}
 
 \begin{table}
 \centering
-%\input{tables/misr_cldmisr_table_june}
+\input{tables/misr_cldmisr_june}
 \caption{Regional mean cloud area by cloud top height for June 2008.}
 \label{misr_cldmisr_table_june}
 \end{table}
@@ -159,11 +159,19 @@ Terra to Aqua differences reported in \cite{king_et_al_2013} and \cite{meskhidze
 
 \begin{figure}
 \centering
-\caption{Zonally-averaged cloud area from MODIS Terra and Aqua.}
-\label{misr_cldmodis_zonal}
+\includegraphics[width=\columnwidth]{graphics/misr_cldmodis_zonal_2008-01.pdf}
+\caption{January climatology of zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific domain. Shading indicates 95\% confidence interval obtained by bootstrap resampling individual monthly-means.}
+\label{misr_cldmodis_zonal_january}
 \end{figure}
 
-Figure \ref{misr_cldmodis_zonal} shows zonally-averaged MODIS total, high-topped (cloud top pressure $p_c < 440$ hPa), mid-topped ($440 < p_c < 680$ hPa) and low-topped ($p_c > 680$ hPa) cloud area using data from 12 years (2003 to 2014) and restricted to ocean areas in the Pacific analysis region shown in Figures \ref{misr_cldmisr_maps_january} and \ref{misr_cldmisr_maps_june}. The zonal mean total cloud cover (bottom right panel) is nearly indistinguishable between the Terra and Aqua retrievals (less than 2\% cloud cover difference throughout most of the domain), and the small differences that do exist in total cloud cover are not statistically significant with respect to sampling. There are, however, noticeable differences between the Terra and Aqua low and mid-topped cloud cover, with the Terra mid-topped cloud cover being larger than Aqua. The differences are significant in the sense that they are larger than could be explained by sampling (as represented by the error bars showing the 95\% confidence interval in Figure 10). The differences in mid-topped and low-topped zonal mean cloud area are a bit less than 6\% and 5\%, respectively, but this is comparable to the difference between MISR retrieved and MISR-simulated mid-topped cloud amount found in Section \ref{misr_results}, which suggests this difference may be near the limit of agreement that one should expect given our evaluation approach.
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{graphics/misr_cldmodis_zonal_2008-06.pdf}
+\caption{June climatology of zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific domain. Shading indicates 95\% confidence interval obtained by bootstrap resampling individual monthly-means.}
+\label{misr_cldmodis_zonal_june}
+\end{figure}
+
+Figures \ref{misr_cldmodis_zonal_january} and \ref{misr_cldmodis_zonal_june} show zonally-averaged MODIS total, high-topped (cloud top pressure $p_c < 440$ hPa), mid-topped ($440 < p_c < 680$ hPa) and low-topped ($p_c > 680$ hPa) cloud area using data from 12 years (2003 to 2014) and restricted to ocean areas in the Pacific analysis region shown in Figures \ref{misr_cldmisr_maps_january} and \ref{misr_cldmisr_maps_june} for the months of January and June, respectively. The zonal mean total cloud cover (bottom right panels) are nearly indistinguishable between the Terra and Aqua retrievals (less than 2\% cloud cover difference throughout most of the domain), and the small differences that do exist in total cloud cover are not statistically significant with respect to sampling. There are, however, noticeable differences between the Terra and Aqua low and mid-topped cloud cover, with the Terra mid-topped cloud cover being larger than Aqua. The differences are significant in the sense that they are larger than could be explained by sampling (as represented by the error bars showing the 95\% confidence interval). The differences in mid-topped and low-topped zonal mean cloud area are a bit less than 6\% and 5\%, respectively, but this is comparable to the difference between MISR retrieved and MISR-simulated mid-topped cloud amount found in Section \ref{misr_results}, which suggests this difference may be near the limit of agreement that one should expect given our evaluation approach.
 
 % Section
 \section{Summary and discussion}
