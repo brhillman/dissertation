@@ -1,4 +1,4 @@
-\begin{thebibliography}{96}
+\begin{thebibliography}{97}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -480,6 +480,11 @@ Tompkins, A.~M., 2002: A prognostic parameterization for the subgrid-scale
   variability of water vapor and clouds in large-scale models and its use to
   diagnose cloud cover. \textit{J. Atmos. Sci.}, \textbf{59}, 1917--1942,
   \doi{10.1175/1520-0469(2002)059$<$1917:APPFTS$>$2.0.CO;2}.
+
+\bibitem[{Tompkins and Di~Giuseppe(2015)}]{tompkins_and_digiuseppe_2015}
+Tompkins, A.~M. and F.~Di~Giuseppe, 2015: An interpretation of cloud overlap
+  statistics. \textit{Journal of the Atmospheric Sciences}, \textbf{72~(8)},
+  2877--2889.
 
 \bibitem[{von Salzen et~al.(2012)}]{von_salzen_et_al_2012}
 von Salzen, K., et~al., 2012: The {C}anadian fourth generation atmospheric
