@@ -1,22 +1,38 @@
 document = dissertation
-latex = pdflatex
-bibtex = bibtex
 
-SOURCES = $(document).tex $(document).bib \
-    chapter1.tex chapter2.tex chapter3.tex \
-    chapter4.tex chapter5.tex
+# commands
+LATEX = pdflatex
+BIBTEX = bibtex
 
+# targets
 all: $(document).pdf
-draft: draft.pdf
+docx: $(document).docx
+pdf: $(document).pdf
 
-$(document).pdf: $(SOURCES) $(document).tex
-	pdflatex $(document) \
-        && bibtex $(document) \
-        && pdflatex $(document) \
-        && pdflatex $(document)
+BIB = source/dissertation.bib
+PDFLAGS = --filter pandoc-crossref --bibliograph=$(BIB) --chapters
 
-draft.pdf: $(SOURCES) draft.tex
-	pdflatex draft \
-        && bibtex draft \
-        && pdflatex  \
-        && pdflatex draft 
+# sources
+CHAPTERS = source/01_intro.md \
+		   source/02_misr.md \
+		   source/03_subgrid1.md \
+		   source/04_subgrid2.md \
+		   source/05_cmip5.md 
+
+TEXSRC = latex/01_intro.tex \
+		 latex/02_misr.tex \
+		 latex/03_subgrid1.tex \
+		 latex/04_subgrid2.tex \
+		 latex/05_cmip5.tex
+
+$(document).pdf: $(document).tex $(TEXSRC)
+	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<
+
+$(document).docx: $(document).md $(CHAPTERS)
+	pandoc $(PDFLAGS) -M chapters --reference-docx=template.docx -o $@ $^
+
+latex/%.tex: source/crossref.yaml source/%.md
+	pandoc --filter pandoc-crossref --natbib --chapters -o $@ $^
+
+clean:
+	latexmk -CA

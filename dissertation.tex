@@ -56,6 +56,10 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 
+% BRH defs
+\usepackage{longtable}
+\usepackage{booktabs}
+
 \begin{document}
  
 % ==========   Preliminary pages
@@ -101,11 +105,11 @@
 %
 % ----- glossary 
 %
-\chapter*{Glossary}      % starred form omits the `chapter x'
-\addcontentsline{toc}{chapter}{Glossary}
-\thispagestyle{plain}
+%\chapter*{Glossary}      % starred form omits the `chapter x'
+%\addcontentsline{toc}{chapter}{Glossary} 
+%\thispagestyle{plain}
 %
-\input{glossary}
+%\input{glossary}
  
 %
 % ----- acknowledgments
@@ -124,35 +128,18 @@
 %
 % end of the preliminary pages
  
- 
- 
 %
 % ==========      Text pages
 %
 
 \textpages
  
-% ========== Chapter 1
-% Introduction
-\input{chapter1}
- 
-% ========== Chapter 2
-% Evaluating MISR, ISCCP, and MODIS simulators using
-% combined retrievals from the A-train
-\input{chapter2}
-
-% ========== Chapter 3
-% Quantifying sensitivities of simulated clouds due to unresolved cloud and precipitation structure
-\input{chapter3}
- 
-% ========== Chapter 4
-
-% An improved framework for downscaling cloud and precipitation properties
-\input{chapter4}
-
-% ========== Chapter 5
-% Implications for model evaluation: an informed assessment of clouds in climate models
-\input{chapter5}
+% ========== Input chapters
+\input{latex/01_intro}
+\input{latex/02_misr}
+\input{latex/03_subgrid1}
+\input{latex/04_subgrid2}
+\input{latex/05_cmip5}
 
 %
 % ==========   Bibliography
@@ -163,21 +150,21 @@
 %
 % ==========   Appendices
 %
-\appendix
-\raggedbottom\sloppy
- 
-% ========== Appendix A
- 
-\chapter{A useful appendix}
- 
-Here we have a useful description of something too involved to put in the text itself. Or maybe a link to a jupyter notebook containing analysis. Or something else, who knows.
+%\appendix
+%\raggedbottom\sloppy
+% 
+%% ========== Appendix A
+% 
+%\chapter{A useful appendix}
+% 
+%Here we have a useful description of something too involved to put in the text itself. Or maybe a link to a jupyter notebook containing analysis. Or something else, who knows.
 
+\vita{TODO: add short bio.}
 %\vita{Jim Fox is a Software Engineer with UW Information Technology at the University of Washington.
 %His duties do not include maintaining this package.  That is rather
 %an avocation which he enjoys as time and circumstance allow.
 
 %He welcomes your comments to {\tt fox@uw.edu}.
 %}
-
 
 \end{document}
