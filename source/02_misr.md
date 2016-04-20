@@ -492,64 +492,65 @@ the differences are much smaller and are not statistically significant with
 respect to sampling.
 
 
-  Region              Cloud type   MISR   CC-sim   Diff    p-value  Significance
-  ------------------ ------------ ------ -------- ------- --------- --------------
-  Pacific                High      13.2    13.0    -0.2     0.989   
-                         Mid       13.7    14.9     1.1     0.512   
-                         Low       44.4    36.4    -8.0     0.000        \*\*
-                        Total      73.3    65.3    -8.0     0.000        \*\*
-  N. Pacific             High      23.5    9.6     -13.9    0.000        \*\*
-                         Mid       16.5    26.9    10.3     0.001        \*\*
-                         Low       38.3    48.3    10.0     0.015         \*
-                        Total      81.5    85.6     4.1     0.336   
-  Tropical W. P.         High      29.6    37.2     7.6     0.047         \*
-                         Mid       12.3    11.2    -1.0     0.468   
-                         Low       32.9    17.5    -15.4    0.000        \*\*
-                        Total      75.5    68.5    -7.0     0.018         \*
-  California S. C.       High      20.9    15.6    -5.4     0.924   
-                         Mid       5.3     9.4      4.0     0.072   
-                         Low       44.3    43.4    -0.8     0.989   
-                        Total      74.3    69.7    -4.5     0.846   
-  Hawaiian T. C.         High      14.8    8.3     -6.5     0.005        \*\*
-                         Mid       8.1     8.7      0.6     0.979   
-                         Low       36.5    35.1    -1.3     0.943   
-                        Total      60.0    52.9    -7.1     0.006        \*\*
-  S. Pacific             High      9.0     11.6     2.6     0.066   
-                         Mid       19.0    18.8    -0.2     0.288   
-                         Low       50.8    42.1    -8.7     0.005        \*\*
-                        Total      81.5    73.4    -8.0     0.000        \*\*
-   
-  : Regional mean cloud area by cloud top height for January 2008. {#tbl:misr_cldmisr_table_january}
+Region                 Cloud type       MISR      CC-sim      Diff     p-value    Significance  
+------                ------------     ------    --------    ------   ---------  -------------- 
+Pacific                   High          13.2       13.0       -0.2      0.989                   
+                           Mid          13.7       14.9       1.1       0.512                   
+                           Low          44.4       36.4       -8.0      0.000          **       
+                          Total         73.3       65.3       -8.0      0.000          **       
+N. Pacific                High          23.5       9.6       -13.9      0.000          **       
+                           Mid          16.5       26.9       10.3      0.001          **       
+                           Low          38.3       48.3       10.0      0.015           *       
+                          Total         81.5       85.6       4.1       0.336                   
+Tropical W. P.            High          29.6       37.2       7.6       0.047           *       
+                           Mid          12.3       11.2       -1.0      0.468                   
+                           Low          32.9       17.5      -15.4      0.000          **       
+                          Total         75.5       68.5       -7.0      0.018           *       
+California S. C.          High          20.9       15.6       -5.4      0.924                   
+                           Mid          5.3        9.4        4.0       0.072                   
+                           Low          44.3       43.4       -0.8      0.989                   
+                          Total         74.3       69.7       -4.5      0.846                   
+Hawaiian T. C.            High          14.8       8.3        -6.5      0.005          **       
+                           Mid          8.1        8.7        0.6       0.979                   
+                           Low          36.5       35.1       -1.3      0.943                   
+                          Total         60.0       52.9       -7.1      0.006          **       
+S. Pacific                High          9.0        11.6       2.6       0.066                   
+                           Mid          19.0       18.8       -0.2      0.288                   
+                           Low          50.8       42.1       -8.7      0.005          **       
+                          Total         81.5       73.4       -8.0      0.000          **       
 
-  
-  Region              Cloud type   MISR   CC-sim   Diff    p-value   Significance
-  ------------------ ------------ ------ -------- ------- --------- --------------
-  Pacific                High      15.5    15.7     0.1     0.532   
-                         Mid       10.7    12.7     2.0     0.000        \*\*
-                         Low       41.0    35.3    -5.7     0.000        \*\*
-                        Total      69.8    64.8    -5.1     0.000        \*\*
-  N. Pacific             High      10.8    15.6     4.8     0.045         \*
-                         Mid       19.0    23.6     4.6     0.004        \*\*
-                         Low       60.6    48.6    -12.0    0.000        \*\*
-                        Total      94.2    88.2    -6.0     0.001        \*\*
-  Tropical W. P.         High      32.2    32.1    -0.1     0.567   
-                         Mid       11.7    14.6     2.9     0.097   
-                         Low       24.6    16.7    -7.8     0.003        \*\*
-                        Total      69.0    65.0    -3.9     0.242   
-  California S. C.       High      1.8     1.7     -0.0     0.689   
-                         Mid       2.0     2.6      0.6     0.418   
-                         Low       66.2    51.7    -14.5    0.024         \*
-                        Total      76.8    56.5    -20.3    0.001        \*\*
-  Hawaiian T. C.         High      9.8     12.3     2.5     0.727   
-                         Mid       5.4     5.3     -0.1     0.888   
-                         Low       42.0    31.3    -10.6    0.000        \*\*
-                        Total      61.6    50.2    -11.4    0.000        \*\*
-  S. Pacific             High      16.4    11.9    -4.5     0.049         \*
-                         Mid       14.6    16.0     1.4     0.627   
-                         Low       43.7    52.9     9.1     0.000        \*\*
-                        Total      78.8    81.5     2.7     0.024         \*
+Table: Regional mean cloud area by cloud top height for January 2008. {#tbl:misr_cldmisr_table_january}
 
-  : Regional mean cloud area by cloud top height for June 2008. {#tbl:misr_cldmisr_table_june}
+
+Region                 Cloud type       MISR      CC-sim      Diff     p-value    Significance  
+------                ------------     ------    --------    ------   ---------  -------------- 
+Pacific                   High          15.5       15.7       0.1       0.532                   
+                           Mid          10.7       12.7       2.0       0.000          **       
+                           Low          41.0       35.3       -5.7      0.000          **       
+                          Total         69.8       64.8       -5.1      0.000          **       
+N. Pacific                High          10.8       15.6       4.8       0.045           *       
+                           Mid          19.0       23.6       4.6       0.004          **       
+                           Low          60.6       48.6      -12.0      0.000          **       
+                          Total         94.2       88.2       -6.0      0.001          **       
+Tropical W. P.            High          32.2       32.1       -0.1      0.567                   
+                           Mid          11.7       14.6       2.9       0.097                   
+                           Low          24.6       16.7       -7.8      0.003          **       
+                          Total         69.0       65.0       -3.9      0.242                   
+California S. C.          High          1.8        1.7        -0.0      0.689                   
+                           Mid          2.0        2.6        0.6       0.418                   
+                           Low          66.2       51.7      -14.5      0.024           *       
+                          Total         76.8       56.5      -20.3      0.001          **       
+Hawaiian T. C.            High          9.8        12.3       2.5       0.727                   
+                           Mid          5.4        5.3        -0.1      0.888                   
+                           Low          42.0       31.3      -10.6      0.000          **       
+                          Total         61.6       50.2      -11.4      0.000          **       
+S. Pacific                High          16.4       11.9       -4.5      0.049           *       
+                           Mid          14.6       16.0       1.4       0.627                   
+                           Low          43.7       52.9       9.1       0.000          **       
+                          Total         78.8       81.5       2.7       0.024           *       
+
+Table: Regional mean cloud area by cloud top height for June 2008. {#tbl:misr_cldmisr_table_june}
+
 
 ## Diurnal variations in cloud cover {#sec:misrDiurnal}
 

@@ -379,9 +379,7 @@ fit.](graphics/subgrid2_mxratio_variance.pdf){#fig:subgrid2_mxratio_variance}
   Precip liquid       1.54          1.03           0.97 
   Precip ice          1.43          1.03           0.99
 
-  : Averages of the fit parameters shown in
-[@fig:subgrid2_mxratio_variance_fits] over all 284 SP-CAM snapshots.]
-{#tbl:subgrid2_mxratio_variance_fits_table}
+  : Averages of the fit parameters shown in [@fig:subgrid2_mxratio_variance_fits] over all 284 SP-CAM snapshots. {#tbl:subgrid2_mxratio_variance_fits_table}
 
 This provides a simple parameterization for condensate standard deviation, so
 that given just the gridbox mean values at each level, condensate standard
@@ -471,7 +469,7 @@ outputs are compared with one another to quantify the sensitivity to different
 aspects of the improved subcolumn generator. These cases are described below.
 
 ![Cases with improved subcolumn generator following
-R04.](graphics/mxratio_gen-var.pdf){#fig:mxratio_gen-var}
+R04.](graphics/subgrid2_mxratio_example.pdf){#fig:subgrid2_mxratio_example}
 
 The first two cases are identical to those used in the previous chapter. The
 first is the baseline (CRM) case, created by running COSP on the original,

@@ -29,7 +29,7 @@ $(document).pdf: $(document).tex $(TEXSRC)
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<
 
 $(document).docx: $(document).md $(CHAPTERS)
-	pandoc $(PDFLAGS) -M chapters --reference-docx=template.docx -o $@ $^
+	pandoc $(PDFLAGS) -M chapters --reference-docx=template.docx -o --toc $@ $^
 
 latex/%.tex: source/crossref.yaml source/%.md
 	pandoc --filter pandoc-crossref --natbib --chapters -o $@ $^

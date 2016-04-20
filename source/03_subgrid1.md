@@ -436,7 +436,7 @@ depths) often occur alongside columns with larger condensate amounts within the
 same gridbox, such that taking the average results in a squeezing of the
 distribution of condensate (less occurrence in the tails of the distribution and
 more near the mode), so a greater number of columns exceed the optical depth
-threshold. This effect is illustrated in [@fig:subgrid1_cldtau_distribution],
+threshold. This effect is illustrated in [@fig:subgrid1_taudist],
 which shows the distribution (histogram) of cloud optical depth for a single
 time-step of SP-CAM output. The increase in total cloud area due to this effect
 is modest, and only results in an increase of 2% cloud area in the global mean
@@ -447,13 +447,13 @@ tropics, especially over the Tropical Warm Pool region over the Maritime
 Continent and over the Indian Ocean. These regions are dominated by deep
 convective cloud systems with associated cirrus anvils consisting of high, thin
 ice clouds with very low optical depths. This situation is especially conducive
-to the effect illustrated in [@fig:subgrid1_cldtau_distribution], due to the
+to the effect illustrated in [@fig:subgrid1_taudist], due to the
 increased likelihood of averaging columns with optical depths that would be
 below the threshold with those having much larger optical depths. [should
 comment on increase of optically thick cloud due to this effect as well]
 
 ![Marginal histogram of cloud optical depth for a single day from the CRM and
-CRM-HOM cases.](graphics/taudist_hom.pdf){#fig:subgrid1_cldtau_distribution}
+CRM-HOM cases.](graphics/subgrid1_taudist.pdf){#fig:subgrid1_taudist}
 
 The errors in total cloud area from the maximum-random overlap assumption alone
 are everywhere negative, showing that implementing maximum-random overlap tends
