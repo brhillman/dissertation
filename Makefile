@@ -35,4 +35,4 @@ latex/%.tex: source/crossref.yaml source/%.md
 	pandoc --filter pandoc-crossref --natbib --chapters -o $@ $^
 
 clean:
-	latexmk -CA
+	latexmk -c
