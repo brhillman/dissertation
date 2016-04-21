@@ -40,7 +40,6 @@ science teams, available as monthly-mean gridded products from the CFMIP
 archive[^1]. These datasets are briefly summarized here, and a more
 comprehensive description can be found in @marchand_et_al_2010.
 
-[^1]: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
 ISCCP collects data from visible and infrared imagers on a number of both
 geostationary and polar-orbiting satellites and combines these measurements into
@@ -87,10 +86,7 @@ and longwave fluxes in this dataset have been adjusted within the observational
 uncertainty to obtain a net top of atmosphere (TOA) energy balance that ismore
 consistent with estimates of global heat storage. The CERES-EBAF dataset covers
 the time period from the year 2000 to present, and is available directly from
-the CERES team[^2], or from CFMIP in gridded, monthly averaged form[^3].
-
-[^2]: https://ceres-tool.larc.nasa.gov/ord-tool/srbavg
-[^3]: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
+the CERES team[^2], or from CFMIP in gridded, monthly averaged form[^1].
 
 The instantaneous effect of clouds on the TOA radiation budget can be quantified
 by calculating the difference between the all-sky and clear-sky fluxes [e.g.,
@@ -150,19 +146,7 @@ Total            71          65          46          57          60          54
 Table: Globally-averaged cloud area by cloud type from MISR observations and from the MISR simulator output from AM3, CAM4, CAM5, CanAM4, and HadGEM2. {#tbl:cmip5_cldmisr}
 
 
-[@fig:cmip5_cre_maps] shows shortwave and longwave cloud radiative effects from
-CERES-EBAF and from each of the five models, and [@fig:cmip5_cre_maps_diff]
-shows the differences between each of the models and the CERES-EBAF
-observations. Indicated in each panel of each figure are the global mean values.
-The global means agree well between the CERES-EBAF observations and the models,
-with global mean differences less than 5 W/m$^2$ in all of the models. The
-patterns of CRE are also similar in each of the models and the observations,
-consistent with the well-known cloud regimes dominating different regions
-of the globe. The difference plots in [@fig:cmip5_cre_maps_diff] show
-patterns of relative high differences though throughout different regions.
-[comments on differences specific to models...lw vs sw]. These differences
-are shown below to be traceable (using the simulator framework) to biases
-in the simulated cloud statistics.
+The more egregious of the model errors in cloud area manifest as errors in cloud radiative effects as well. [@fig:cmip5_cre_maps] shows cloud radiative effects from CERES-EBAF and from each of the models, and [@fig:cmip5_cre_maps_diff] shows differences between each model and CERES-EBAF (calculated as model minus CERES-EBAF). [@fig:cmip5_cre_maps] shows that models tend to capture the broad spatial patterns in shortwave, longwave, and net cloud radiative effect, but @fig:cmip5_cre_maps_diff shows large errors that have similarities to the errors in MISR-simulated cloud area. In particular, AM3, CAM4, and CanAM4 have large errors in longwave cloud radiative effect throughout the tropical western pacific (on the order of 20 $\textrm{W / m^2}$). These errors are consistent with the overestimate from these models in high-topped (and mid-topped) cloud area relative to MISR identified in @fig:cmip5_cldmisr_maps_diff, since high-topped cloud is most relevant to the longwave (cooling) cloud radiative effect. That these errors exist in both cloud radiative effect and in cloud area gives further confidence to the results obtained in @fig:cmip5_cldmisr_maps_diff, but this also raises further concern about the treatment of cloud properties in models. The similarities between longwave cloud radiative effect errors, MISR-simulated high-topped cloud area errors, and the errors that resulted from homogenizing cloud condensate in Chapter 3 suggest again that these errors are likely due at least in part to the assumption of homogeneous cloud condensate in the radiative transfer code in these models.
 
 ![Shortwave (top), longwave (middle) and net (bottom) cloud radiative effects
 from CERES-EBAF (left) and from each of the five models evaluated in this study
@@ -176,29 +160,9 @@ as model minus observations. Numbers in the lower right corner of each map
 indicate the area-weighted global mean of the
 difference.](graphics/cmip5_cre_maps_diff.pdf){#fig:cmip5_cre_maps_diff}
 
-<!-- [@fig:cmip5_cldmisr_maps_diff] and [@fig:cmip5_cldisccp_maps_diff] show the
-differences between MISR and ISCCP-simulated total, high-topped, mid-topped, and
-low-topped cloud area in each of the models relative to the MISR and ISCCP
-retrievals. These figures highlight differences in the simulated clouds that are
-consistent with the differences in cloud radiative effects identified in
-[@fig:cmip5_cre_maps_diff]. [comment on specific differences...what are the
-magnititudes? How do these compare with the observational uncertainties
-idendified in [@sec:misr] and the expected errors identified in [@sec:subgrid1]?
-Also, calculate some kind of correlation between the cloud area biases and the
-longwave and shortwave cloud radiative effects...differences tied to radiative
-effects? I expect the errors to be correlated, and it would be a nice result to
-quantify this...] -->
-
-<!-- Don't use these for now...
-![Joint histograms of MISR-retrieved and MISR-simulated cloud top height and
-cloud optical depth for the Tropical Warm
-Pool.](graphics/cmip5_clMISR_TropicalWarmPool.pdf){#fig:cmip5_clMISR_TropicalWarmPool}
-
-![Joint histograms of MISR-retrieved and MISR-simulated cloud top height and
-cloud optical depth for the Southern
-Ocean.](graphics/cmip5_clMISR_SouthernOcean.pdf){#fig:cmip5_clMISR_SouthernOcean}
--->
-
 ## Summary, discussion, and future directions
 
 This is the summary and discussion.
+[^1]: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
+[^2]: https://ceres-tool.larc.nasa.gov/ord-tool/srbavg
+
