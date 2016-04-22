@@ -42,9 +42,9 @@ and ISCCP-simulated cloud top height (or pressure) and optical depth
 (CTH-OD or CTP-OD) joint histogram outputs from COSP. These outputs are
 evaluated against the corresponding CTH-OD and CTP-OD datasets produced
 by the MISR and ISCCP science teams, available as monthly-mean gridded
-products from the CFMIP archive{[}\^{}1{]}. These datasets are briefly
-summarized here, and a more comprehensive description can be found in
-\citet{marchand_et_al_2010}.
+products from the CFMIP archive\footnote{http://climserv.ipsl.polytechnique.fr/cfmip-obs/}.
+These datasets are briefly summarized here, and a more comprehensive
+description can be found in \citet{marchand_et_al_2010}.
 
 ISCCP collects data from visible and infrared imagers on a number of
 both geostationary and polar-orbiting satellites and combines these
@@ -98,8 +98,8 @@ dataset have been adjusted within the observational uncertainty to
 obtain a net top of atmosphere (TOA) energy balance that ismore
 consistent with estimates of global heat storage. The CERES-EBAF dataset
 covers the time period from the year 2000 to present, and is available
-directly from the CERES team{[}\^{}2{]}, or from CFMIP in gridded,
-monthly averaged form{[}\^{}1{]}.
+directly from the CERES team\footnote{https://ceres-tool.larc.nasa.gov/ord-tool/srbavg},
+or from CFMIP in gridded, monthly averaged form\footnote{http://climserv.ipsl.polytechnique.fr/cfmip-obs/}.
 
 The instantaneous effect of clouds on the TOA radiation budget can be
 quantified by calculating the difference between the all-sky and
@@ -243,9 +243,9 @@ radiative effect, but Figure~\ref{fig:cmip5_cre_maps_diff} shows large
 errors that have similarities to the errors in MISR-simulated cloud
 area. In particular, AM3, CAM4, and CanAM4 have large errors in longwave
 cloud radiative effect throughout the tropical western pacific (on the
-order of 20 \(\textrm{W / m^2}\)). These errors are consistent with the
-overestimate from these models in high-topped (and mid-topped) cloud
-area relative to MISR identified in
+order of 20 \(\textrm{W}/\textrm{m}^2\)). These errors are consistent
+with the overestimate from these models in high-topped (and mid-topped)
+cloud area relative to MISR identified in
 Figure~\ref{fig:cmip5_cldmisr_maps_diff}, since high-topped cloud is
 most relevant to the longwave (cooling) cloud radiative effect. That
 these errors exist in both cloud radiative effect and in cloud area
@@ -284,6 +284,63 @@ difference.}\label{fig:cmip5ux5fcreux5fmapsux5fdiff}
 \section{Summary, discussion, and future
 directions}\label{summary-discussion-and-future-directions}
 
-This is the summary and discussion. {[}\^{}1{]}:
-http://climserv.ipsl.polytechnique.fr/cfmip-obs/ {[}\^{}2{]}:
-https://ceres-tool.larc.nasa.gov/ord-tool/srbavg
+In this chapter, differences between a selection of GCM-simulated cloud
+properties and satellite-retrieved cloud properties from MISR and
+CloudSat have been quantified. Differences between models and
+observations are often taken at face value to represent model biases,
+but the results from Chapters 2, 3, and 4 suggest that more care must be
+taken to properly interpret these differences. The purpose of this
+chapter is to illustrate the pitfalls in interpreting these differences,
+with the additional benefit of identifying model biases that cannot be
+entirely explained by limitations in the comparison framework and thus
+likely represent model parameterization errors.
+
+Low-topped and total cloud area is universally underestimated in the
+models considered here relative to MISR retrievals, but most of these
+differences are consistent with expectations for MISR to overestimate
+the true cloud area due to resolution effects. In particular, model
+underestimates of low-topped cloud throughout the subtropics likely
+represent primarily this feature of available imager retrievals of cloud
+area, rather than inherent model biases. The exception is where
+model-observation differences exceed 15\% cloud area, such as in the
+CAM4 total and low-topped cloud area. Differences between MISR and CAM4
+total and low-topped cloud area are so large as to be unlikely due to
+retrieval error alone and likely represent model biases.
+
+Globally averaged high-topped cloud area is well represented by the
+models considered here, but AM3, CAM4, and CanAM4 are found to
+overestimate high-topped cloud area relative to MISR throughout the
+convectively-active tropical western pacific. These differences are
+consistent with those identified in Chapter 3 as resulting from assuming
+horizontally-homogeneous cloud condensate when generating stochastic
+subcolumns of cloud condensate. Thus, at least part of these biases are
+likely due to using this assumption alone.
+
+Further points to make:
+
+\begin{itemize}
+\tightlist
+\item
+  Errors are on diagnostic side of model code, so errors do not
+  necessarily represent errors in model parameterizations alone. Thus,
+  care must be taken in interpreting these differences.
+\item
+  Errors are expected to arise due to using homogeneous cloud
+  condensate, so models that do \emph{not} show these errors may have
+  compensating errors, or erroneously tuned these errors out.
+\item
+  Errors in cloud area that arise due to using homogeneous cloud
+  condensate are consistent with errors in cloud radiative effects; this
+  demonstrates the far-reaching importance of properly treating
+  unresolved cloud properties in models. It is not just a diagnostic
+  problem, but permeates other areas of the model as well (radiative
+  transfer in this case) that can feed back on the model simulation
+  itself.
+\item
+  Cloud area is probably not a robust metric for model performance, due
+  to the ambiguity in diagnosing this quantity from models and retrieve
+  a similar quantity from satellites
+\end{itemize}
+
+TODO: discuss the path forward. Statistical cloud schemes? Better cloud
+metrics for models?
