@@ -9,7 +9,7 @@ all: $(document).pdf
 docx: $(document).docx
 pdf: $(document).pdf
 
-BIB = source/dissertation.bib
+BIB = dissertation.bib
 PDFLAGS = --filter pandoc-crossref --bibliograph=$(BIB) --chapters
 
 # sources
@@ -25,11 +25,11 @@ TEXSRC = latex/01_intro.tex \
 		 latex/04_subgrid2.tex \
 		 latex/05_cmip5.tex
 
-$(document).pdf: $(document).tex $(TEXSRC)
+$(document).pdf: $(document).tex $(TEXSRC) $(shell find graphics -type f)
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<
 
 $(document).docx: $(document).md $(CHAPTERS)
-	pandoc $(PDFLAGS) -M chapters --reference-docx=template.docx -o --toc $@ $^
+	pandoc $(PDFLAGS) -M chapters --reference-docx=template.docx -o $@ $^
 
 latex/%.tex: source/crossref.yaml source/%.md
 	pandoc --filter pandoc-crossref --natbib --chapters -o $@ $^

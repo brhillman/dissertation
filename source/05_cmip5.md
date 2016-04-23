@@ -40,8 +40,7 @@ science teams, available as monthly-mean gridded products from the CFMIP
 archive[^1]. These datasets are briefly summarized here, and a more
 comprehensive description can be found in @marchand_et_al_2010.
 
-
-ISCCP collects data from visible and infrared imagers on a number of both
+<!-- ISCCP collects data from visible and infrared imagers on a number of both
 geostationary and polar-orbiting satellites and combines these measurements into
 a single cloud product. Among the retrieved cloud properties are histograms of
 cloud top pressure ($p_c$) and cloud optical depth ($\tau$). To calculate the
@@ -61,7 +60,7 @@ between models and observations using the lower threshold in regions dominated
 by broken boundary layer clouds will highlight the large observational
 uncertainty surrounding these cloud types. Mid-topped clouds are similarly
 defined as those with $440 < p_c < 680$ hPa, and high-topped clouds are defined
-as those with $p_c < 440$ hPa.
+as those with $p_c < 440$ hPa. -->
 
 As discussed in [@sec:misr], the MISR instrument has a unique arrangement of
 nine different cameras, each pointed at a different viewing angle along the
@@ -100,18 +99,21 @@ CRE, and it will be referred as such here. The CRE can be calculated separately
 for the shortwave and longwave fluxes, and model biases will be evaluated
 separately in each of these broad spectral bands here.
 
-Because MISR cloud optical depths are not computed over land or ice, MISR
+<!-- Because MISR cloud optical depths are not computed over land or ice, MISR
 comparisons can only be made over ice-free oceans. In order to make consistent
-comparisons between MISR, ISCCP, and cloud radiative effects from CERES-EBAF,
+comparisons between MISR and cloud radiative effects from CERES-EBAF,
 all data and model output are masked to be consistent with valid MISR data. This
 is done on a monthly basis (before computing climatologies), so that for a given
 longitude, latitude and month, if the MISR observations indicate no valid
 retrievals then the ISCCP and CERES-EBAF observations and all model output for
-that longitude-latitude-time point are removed from the analysis as well. Both
+that longitude-latitude-time point are removed from the analysis as well. -->
+
+Because MISR cloud optical depths are not computed over land or ice, MISR
+comparisons can only be made over ice-free oceans. Thus, all model output is masked consistent with MISR before making comparisons with MISR cloud area. Both
 observations and models are averaged over the period from 2001 to 2008, which is
 the largest period for which observations and model output are available from
 each dataset and model. All observations and data are regridded (using bi-linear
-interpolation) to a common 2 degree by 2 degree regular latitude-longitude grid.
+interpolation) to a common 2.5 degree by 2.5 degree regular latitude-longitude grid.
 
 ## Biases in CMIP5 models relative to satellite retrievals
 
@@ -125,14 +127,14 @@ retrievals. Global means are shown in [@tbl:cmip5_cldmisr]](graphics/cmip5_cldmi
 cloud area in each of the five models relative to MISR
 retrievals.](graphics/cmip5_cldmisr_diff.pdf){#fig:cmip5_cldmisr_maps_diff}
 
-Globally averaged differences for high and mid-topped cloud area range from -5% (CanAM4) to 2% (CAM4) cloud area (-42% and 15% relative error). These errors are all within the uncertainties in MISR comparisons using the simulator framework identified in Chapter 2, and thus should not be interpreted alone as model biases. However, [@fig:cmip5_cldmisr_maps_diff] shows that regional errors in mid and high-topped cloud can exceed these ranges by a sizeable margin, with high-topped cloud area differences relative to MISR exceeding 20% cloud area throughout the tropical western pacific in AM3 and CanAM4. While these differences are much larger than can be explained by inherent biases in the MISR retrieval, they are of the same sign and of comparable magnitude to the errors identified in Chapter 3 that result from assuming homogeneous cloud condensate amounts in generating stochastic subcolumns for use with the simulators. Those errors inherent in the subcolumn generator were estimated to result in errors in excess of 10% cloud area throughout the same tropical deep convective regions identified as having large errors in high-topped cloud in the AM3 and CanAM4 models. This suggests that much of the error in AM3 and CanAM4 high-topped cloud in the tropical western pacific may be at least partially a result of assuming homogeneous cloud condensate in the diagnostic code, rather than due to inherent model biases alone. 
+Globally averaged differences for high and mid-topped cloud area are as large as -5% (CanAM4) cloud area (-42% relative error), but these errors are all within the uncertainties in MISR comparisons using the simulator framework identified in Chapter 2, and thus should not be interpreted alone as model biases. However, [@fig:cmip5_cldmisr_maps_diff] shows that regional errors in mid and high-topped cloud can exceed these ranges by a sizeable margin, with high-topped cloud area differences relative to MISR exceeding 20% cloud area throughout the tropical western pacific in AM3 and CanAM4. While these differences are much larger than can be explained by inherent biases in the MISR retrieval, they are of the same sign and of comparable magnitude to the errors identified in Chapter 3 that result from assuming homogeneous cloud condensate amounts in generating stochastic subcolumns for use with the simulators. Those errors inherent in the subcolumn generator were estimated to result in errors in excess of 10% cloud area throughout the same tropical deep convective regions identified as having large errors in high-topped cloud in the AM3 and CanAM4 models. This suggests that much of the error in AM3 and CanAM4 high-topped cloud in the tropical western pacific may be at least partially a result of assuming homogeneous cloud condensate in the diagnostic code, rather than due to inherent model biases alone. 
 
 Cloud type      MISR        AM3         CAM4        CAM5       CanAM4     HadGEM2   
 ----------   ----------  ----------  ----------  ----------  ----------  ---------- 
-High             13          15          15          11          14          14     
-Mid              12          13          9           10          8           9      
-Low              42          34          20          35          39          30     
-Total            71          65          46          57          60          54  
+High             13          14          15          10          13          14     
+Mid              12           9           9           9           7           9     
+Low              43          32          20          35          35          30     
+Total            71          58          46          57          55          54  
 
   : Globally-averaged cloud area by cloud type from MISR observations and from the MISR simulator output from AM3, CAM4, CAM5, CanAM4, and HadGEM2.  {#tbl:cmip5_cldmisr}
 
@@ -158,6 +160,17 @@ Low-topped and total cloud area is universally underestimated in the models cons
 
 Globally averaged high-topped cloud area is well represented by the models considered here, but AM3, CAM4, and CanAM4 are found to overestimate high-topped cloud area relative to MISR throughout the convectively-active tropical western pacific. These differences are consistent with those identified in Chapter 3 as resulting from assuming horizontally-homogeneous cloud condensate when generating stochastic subcolumns of cloud condensate. Thus, at least part of these biases are likely due to using this assumption alone. 
 
+![CloudSat hydrometeor occurrence fraction.](graphics/cmip5_hfba.pdf){#fig:cmip5_hfba}
+
+![CloudSat hydrometeor occurrence fraction differences.](graphics/cmip5_hfba_diff.pdf){#fig:cmip5_hfba_diffs}
+
+![CloudSat cfads.](graphics/cmip5_cfadDbze94_NHTropics.pdf){#fig:cmip5_cfads}
+
+![CloudSat cfad differences relative to CloudSat.](graphics/cmip5_cfadDbze94_NHTropics_diff.pdf){#fig:cmip5_cfads_diffs}
+
+
+While the goal of the simulator framework is to remove uncertainties in comparisons between models and observations by accounting for features of the satellite retrievals, it is clear from the results presented here that not all such uncertainties are removed with this framework, and additional carefull interpretation of results is necessary.
+
 Further points to make:
 
 - Errors are on diagnostic side of model code, so errors do not necessarily represent
@@ -173,6 +186,7 @@ Further points to make:
   that can feed back on the model simulation itself.
 - Cloud area is probably not a robust metric for model performance, due to the ambiguity in
   diagnosing this quantity from models and retrieve a similar quantity from satellites
+
 
 TODO: discuss the path forward. Statistical cloud schemes? Better cloud metrics for models?
 
