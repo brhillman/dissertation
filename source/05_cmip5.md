@@ -153,20 +153,25 @@ as model minus observations. Numbers in the lower right corner of each map
 indicate the area-weighted global mean of the
 difference.](graphics/cmip5_cre_maps_diff.pdf){#fig:cmip5_cre_maps_diff}
 
+
+![CloudSat hydrometeor occurrence fraction.](graphics/cmip5_hfba.pdf){#fig:cmip5_hfba}
+
+![CloudSat hydrometeor occurrence fraction differences.](graphics/cmip5_hfba_diff.pdf){#fig:cmip5_hfba_diffs}
+
+[@fig:cmip5_hfba] shows hydrometeor occurrence diagnosed from CloudSat retrievals of radar reflectivity factor (fraction of data with reflectivity $Ze > -27.5$ dBZ) and from the CloudSat simulated reflectivities from CAM4 and CAM5. [@fig:cmip5_hfba_diffs] shows differences in CAM4 and CAM5 diagnosed hydrometeor occurrence relative to the CloudSat retrieved hydrometeor occurrence. These figures again show similar errors as diagnosed in Chapter 3 as arising due to especially the treatment of precipitation in COSP, with both models showing much larger hydrometeor occurrence than the CloudSat retrievals, especially in the tropics. As suggested in Chapter 3, this is very likely due to the tendency for PREC_SCOPS to overestimate the precipitation fraction. The differences identified here between CAM4 and CAM5 and CloudSat hydrometeor occurrences are similar in magnitude, and thus these differences cannot be interpreted as model biases but rather are representative of the errors in the COSP subcolumn generation.
+
+![CloudSat cfads.](graphics/cmip5_cfadDbze94_NHTropics.pdf){#fig:cmip5_cfads}
+
+![CloudSat cfad differences relative to CloudSat.](graphics/cmip5_cfadDbze94_NHTropics_diff.pdf){#fig:cmip5_cfads_diffs}
+
+[@fig:cmip5_cfads] shows histograms of radar reflectivity with height from CloudSat and from CAM4 and CAM5, and [@fig:cmip5_cfads_diffs] shows differences between the models and the CloudSat retrievals. The two models have much larger frequency of occurrence along the characteristic curve in reflectivity-height space. These differences are again similar to the errors diagnosed in Chapter 3 as arising due to both the treatment of precipitation and due to homogenizing cloud and precipitation condensate amount. Again these differences are similar in magnitude to the inherent errors expected from Chapter 3, and thus these differences cannot be interpreted as model biases.
+
 ## Summary, discussion, and future directions
 In this chapter, differences between a selection of GCM-simulated cloud properties and satellite-retrieved cloud properties from MISR and CloudSat have been quantified. Differences between models and observations are often taken at face value to represent model biases, but the results from Chapters 2, 3, and 4 suggest that more care must be taken to properly interpret these differences. The purpose of this chapter is to illustrate the pitfalls in interpreting these differences, with the additional benefit of identifying model biases that cannot be entirely explained by limitations in the comparison framework and thus likely represent model parameterization errors.
 
 Low-topped and total cloud area is universally underestimated in the models considered here relative to MISR retrievals, but most of these differences are consistent with expectations for MISR to overestimate the true cloud area due to resolution effects. In particular, model underestimates of low-topped cloud throughout the subtropics likely represent primarily this feature of available imager retrievals of cloud area, rather than inherent model biases. The exception is where model-observation differences exceed 15% cloud area, such as in the CAM4 total and low-topped cloud area. Differences between MISR and CAM4 total and low-topped cloud area are so large as to be unlikely due to retrieval error alone and likely represent model biases.
 
 Globally averaged high-topped cloud area is well represented by the models considered here, but AM3, CAM4, and CanAM4 are found to overestimate high-topped cloud area relative to MISR throughout the convectively-active tropical western pacific. These differences are consistent with those identified in Chapter 3 as resulting from assuming horizontally-homogeneous cloud condensate when generating stochastic subcolumns of cloud condensate. Thus, at least part of these biases are likely due to using this assumption alone. 
-
-![CloudSat hydrometeor occurrence fraction.](graphics/cmip5_hfba.pdf){#fig:cmip5_hfba}
-
-![CloudSat hydrometeor occurrence fraction differences.](graphics/cmip5_hfba_diff.pdf){#fig:cmip5_hfba_diffs}
-
-![CloudSat cfads.](graphics/cmip5_cfadDbze94_NHTropics.pdf){#fig:cmip5_cfads}
-
-![CloudSat cfad differences relative to CloudSat.](graphics/cmip5_cfadDbze94_NHTropics_diff.pdf){#fig:cmip5_cfads_diffs}
 
 
 While the goal of the simulator framework is to remove uncertainties in comparisons between models and observations by accounting for features of the satellite retrievals, it is clear from the results presented here that not all such uncertainties are removed with this framework, and additional carefull interpretation of results is necessary.
