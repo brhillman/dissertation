@@ -30,16 +30,15 @@ parameterizations about the nature of clouds at these larger scales that
 summarize the aggregated properties of the smaller scales
 \citep{randall_et_al_2003}.
 
-As stated by \citet{pincus_et_al_2012} and mentioned in
-Section~\ref{sec:introductionChapter}, the relatively coarse resolution
-of GCMs is problematic because the gridbox-mean description of clouds
-implies a distribution of possible simulated retrievals within each
-gridbox. The gridbox mean description of clouds does not in itself
-specify how the clouds should be distributed horizontally and vertically
-within model gridboxes, and thus characterization of the unresolved
-structure depends on additional assumptions about how clouds in
-overlapping layers are aligned vertically and how cloud properties vary
-within model gridboxes.
+As stated by \citet{pincus_et_al_2012} and mentioned in Chapter 1, the
+relatively coarse resolution of GCMs is problematic because the
+gridbox-mean description of clouds implies a distribution of possible
+simulated retrievals within each gridbox. The gridbox mean description
+of clouds does not in itself specify how the clouds should be
+distributed horizontally and vertically within model gridboxes, and thus
+characterization of the unresolved structure depends on additional
+assumptions about how clouds in overlapping layers are aligned
+vertically and how cloud properties vary within model gridboxes.
 
 The importance of unresolved cloud properties is not unique to the
 problem of simulating satellite retrievals, but is more generally
@@ -47,20 +46,19 @@ important to the problem of calculating radiative fluxes and heating
 rates within models. This is due to the fact that radiative fluxes are
 non-local. That is, the radiative flux resulting from a combination of
 two layers depends on the degree to which those two layers overlap
-vertically. Many early radiative transfer parameterizations in
-large-scale models accounted for the overlapping nature of clouds from
-partly cloudy layers by appropriately weighting clear and cloudy-sky
-flux calculations to satisfy a specific overlap assumption. These
-overlap assumptions were necessarily simply defined, and have included
-random overlap, in which clouds in different vertical layers are assumed
-to be completely uncorrelated, maximum overlap, in which clouds in
-different layers are assumed to be perfectly correlated (or ``lined
-up''), and the popular maximum-random overlap, in which clouds in
-adjacent cloudy (or continuous) layers are maximimally overlapped and
-clouds in layers separated by at least one clear layer are randomly
-overlapped \citep{geleyn_and_hollingsworth_1979, tian_and_curry_1989}.
-The maximum-random overlap in particular has been used in a number of
-GCMs
+vertically. Radiative transfer parameterizations in large-scale models
+typically account for the overlapping nature of clouds from partly
+cloudy layers by appropriately weighting clear and cloudy-sky flux
+calculations to satisfy a specific overlap assumption. These overlap
+assumptions are necessarily simply defined, and have included random
+overlap, in which clouds in different vertical layers are assumed to be
+completely uncorrelated, maximum overlap, in which clouds in different
+layers are assumed to be perfectly correlated (or ``lined up''), and the
+popular maximum-random overlap, in which clouds in adjacent cloudy (or
+continuous) layers are maximimally overlapped and clouds in layers
+separated by at least one clear layer are randomly overlapped
+\citep{geleyn_and_hollingsworth_1979, tian_and_curry_1989}. The
+maximum-random overlap in particular has been used in a number of GCMs
 \citep[e.g.;][]{collins_et_al_2004, neale_et_al_2010a, neale_et_al_2010b}.
 That different overlap assumptions can significantly affect simulated
 radiative quantities is well established
@@ -74,14 +72,17 @@ unrealistic overlap assumptions can lead to instantaneous errors in
 calculated fluxes in excess of \(50 \textrm{W/m}^2\)
 \citep{barker_et_al_1999, wu_and_liang_2005}, suggesting that a more
 realistic treatment of cloud overlap should be sought for inclusion in
-GCMs. Subgrid-scale horizontal variability in cloud condensate is often
-completely neglected (or poorly represented by simple scaling of optical
-depths, e.g. {[}citations{]}) in GCMs, despite the fact that clouds can
-exhibit large horizontal variability on scales much smaller than GCM
-gridboxes \citep[e.g.;][]{stephens_and_platt_1987}. This is problematic
-because radiative fluxes and heating rates calculated from model
-radiative transfer parameterizations are sensitive to subgrid-scale
-variations in cloud condensate
+GCMs.
+
+Additionally, horizontal variability on model gridbox scales is
+important in the calculation of radiative fluxes, but subgrid-scale
+horizontal variability in cloud condensate is often completely neglected
+in GCMs, despite the fact that clouds can exhibit large horizontal
+variability on scales much smaller than GCM gridboxes
+\citep[e.g.;][]{stephens_and_platt_1987}. This is problematic because
+radiative fluxes and heating rates calculated from model radiative
+transfer parameterizations are sensitive to subgrid-scale variations in
+cloud condensate
 \citep[e.g.,][]{barker_et_al_1999, wu_and_liang_2005, oreopoulos_et_al_2012}.
 \citet{barker_et_al_1999} demonstrate instantaneous flux errors due to
 unresolved horizontal cloud variability in excess of 100
@@ -130,26 +131,23 @@ cloud properties \citep[e.g.;][]{neale_et_al_2010a, neale_et_al_2010b}.
 Improved subcolumn schemes are needed to take full advantage of the
 flexibility offered by McICA.
 
-As discussed in Section~\ref{sec:introductionChapter}, the first step in
-simulating satellite retrievals from GCM output is to downscale the
-gridbox-mean quanitities to scales approximating those at which the
-actual satellite retrievals are performed. In COSP, this is done by
-generating stochastic subcolumns following \citet{klein_and_jakob_1999},
-analogous to how subcolumns are generated for McICA, following the
-simple overlap assumptions described above with horizontally homogeneous
-cloud condensate. To the extent that the simulated satellite retrievals
-are sensitive to these assumptions, failing to accurately characterize
-the subgrid cloud structure and condensate variability potentially
-introduces ambiguities into satellite-model comparisons. The sensitivity
-of the satellite-simulated cloud properties to assumptions about
-unresolved cloud and precipitation are quantified here, and a framework
-for reducing errors due to these assumptions is presented in
-Section~\ref{sec:subgrid2}.
+As discussed in Chapter 1, the first step in simulating satellite
+retrievals from GCM output is to downscale the gridbox-mean quanitities
+to scales approximating those at which the actual satellite retrievals
+are performed. In COSP, this is done by generating stochastic subcolumns
+following \citet{klein_and_jakob_1999}, analogous to how subcolumns are
+generated for McICA, following the simple overlap assumptions described
+above with horizontally homogeneous cloud condensate. To the extent that
+the simulated satellite retrievals are sensitive to these assumptions,
+failing to accurately characterize the subgrid cloud structure and
+condensate variability potentially introduces ambiguities into
+satellite-model comparisons. The sensitivity of the satellite-simulated
+cloud properties to assumptions about unresolved cloud and precipitation
+are quantified here, and a framework for reducing errors due to these
+assumptions is presented in Chapter 4.
 
 \section{Generating stochastic subcolumns of cloud and
-precipitation}\label{generating-stochastic-subcolumns-of-cloud-and-precipitation}
-
-\{\#sec:subgrid1Scops\}
+precipitation}\label{sec:subgrid1Scops}
 
 As described by \citet{bodas-salcedo_et_al_2011}, the individual
 instrument simulators in COSP require profiles or columns of cloud and
@@ -159,14 +157,13 @@ occurrence). Because large-scale models (GCMs and numerical weather
 prediction models or NWPs) do not resolve clouds, this requires
 inferring these profiles of resolved cloud and precipitation occurrence
 using an ensemble of subcolumns for each model gridbox. As stated by
-\citet{bodas-salcedo_et_al_2011}, these subcolumns can be provided by
-the model if available, as may be the case if the model uses such
-subcolumns elsewhere in the code, such as in an implementation of McICA
-for calculating radiative fluxes as described above. But, if such
-subcolumns are not available (as may be the case even if McICA is used
-in the radiative transfer part of the model, due to model infrastructure
-challenges), COSP contains code for generating subcolumns itself using
-the model large-scale description of clouds.
+\citet{bodas-salcedo_et_al_2011}, these subcolumns can be provided to
+COSP by the model if available, as may be the case if the model uses
+such subcolumns elsewhere in the code, such as in an implementation of
+McICA for calculating radiative fluxes as described above. But, if such
+subcolumns are not available, COSP contains code for generating
+subcolumns itself using the model large-scale mean profiles of cloud
+fraction and condensate amounts.
 
 Generating stochastic subcolumns of cloud and precipitation properties
 is itself a multi-step process. First, stochastic subcolumns of binary
@@ -178,17 +175,21 @@ and can separately treat convective and stratiform cloud if such a
 distinction is made in the model. If the model distinguishes between
 convective and stratiform cloud, convective cloud is maximally
 overlapped and the remaining stratiform cloud may follow a separate
-overlap assumption (one of random, maximum, or maximum-random) in SCOPS,
-as described by \citet{webb_et_al_2001}. SCOPS takes as input the
+overlap assumption (one of random, maximum, or maximum-random), as
+described by \citet{webb_et_al_2001}. SCOPS takes as input the
 gridbox-mean total cloud fraction profile \(\overline{c}_k\) (the
 fraction of the gridbox at each level \(k\) containing either stratiform
 or convective cloud) and the gridbox-mean convective cloud fraction
 profile \(\overline{c}^\textrm{conv}_k\), and outputs an ensemble of
 \(n_\textrm{col}\) binary subcolumn cloud occurrence profiles
 \(c_{i, k}\), where for each subcolumn \(i\) and at each level \(k\),
-\[\begin{gathered} c_{i, k} = \begin{cases} 0 &
-~\text{if subcolumn is clear} \\ 1 & ~\text{if subcolumn is stratiform cloud} \\
-2 & ~\text{if subcolumn is convective cloud} \end{cases}\end{gathered}\]
+\[\begin{gathered} 
+    c_{i, k} = \begin{cases} 
+        0 & ~\text{if subcolumn is clear} \\ 
+        1 & ~\text{if subcolumn is stratiform cloud} \\ 
+        2 & ~\text{if subcolumn is convective cloud} 
+    \end{cases}
+\end{gathered}\]
 
 Following the generation of subcolumn cloud occurrence profiles,
 subcolumn binary precipitation occurrence profiles are generated
@@ -199,26 +200,26 @@ determined by SCOPS and either the gridbox-mean precipitation condensate
 amount (mixing ratio) or the gridbox-mean precipitation fluxes. Again,
 PREC\_SCOPS handles large-scale (resulting from stratiform cloud) and
 convective precipitation separately if the model distinquishes between
-the two. The following paraphrases the description of the algorithm in
-\citet{zhang_et_al_2010}. The algorithm steps down through model levels
-from the top of the atmosphere to the surface. Large-scale precipitation
-is first assigned to to all those subcolumns that have non-zero
-large-scale precipitation (condensate or flux) in the current level and
-either stratiform cloud (as determined by SCOPS) in the current level,
-or non-zero gridbox-mean large-scale precipitation (condensate or flux)
-in the level above. If large-scale precipitation is non-zero but is not
-assigned by these two criteria, the algorithm assigns precipitation to
-all subcolumns with stratiform cloud in the level below. If large-scale
-precipitation is non-zero but is not assigned by these three criteria,
-it is assigned to all subcolumns with stratiform cloud anywhere in the
-vertical column. If large-scale precipitation is non-zero but has not
-been assigned by any of these criteria, it is assigned to subcolumn in
-the current level. This procedure is repeated for convective
-precipitation (replacing stratiform in the above rules with convective
-cloud), but in the case that precipition is not assigned by the first
-four criteria it is assumed to only cover 5\% of the subcolumns for
-convective precipitation, as opposed to filling all subcolumns in the
-case of large-scale precipitation.
+the two. The approach works as follows. The algorithm steps down through
+model levels from the top of the atmosphere to the surface. At a given
+altitude where the domain-mean large-scale precipitation is non-zero,
+the precipitation is first assigned (and will be equally divided) across
+all subcolumns that have stratiform cloud (as determined by SCOPS) in
+the current level \emph{or} large-scale precipitation in the level
+above. If large-scale precipitation is non-zero but there are no columns
+which meet either of these two criteria, the algorithm assigns
+precipitation to all subcolumns with stratiform cloud in the level
+below. Failing this, the precipitation is assigned to all subcolumns
+with stratiform cloud anywhere in the vertical column. If large-scale
+precipitation has still not been assigned by any of these criteria, it
+is assigned to all subcolumns in the current level. Most of the time,
+the first rule is sufficient to place the stratiform precipitation. This
+procedure is repeated for convective precipitation (replacing stratiform
+in the above rules with convective cloud), but in the case that
+precipition is not assigned by the first four criteria it is assumed to
+only cover 5\% of the subcolumns for convective precipitation, as
+opposed to filling all subcolumns in the case of large-scale
+precipitation.
 
 Once subcolumn profiles of binary cloud and precipitation occurrence
 have been generated, condensate amounts (mixing ratios) are assigned to
@@ -238,10 +239,10 @@ where \(c^{\prime}_{i, k}\) is the subcolumn binary cloud occurrence for
 the particular hydrometeor type (\(c^\prime = 1\) where either \(c = 1\)
 for stratiform or \(c = 2\) for convective, and \(c^\prime = 0\)
 otherwise) and \(n_\textrm{col}\) is the number of subcolumns, so that
-\[\begin{gathered}
-\tilde{q}_k = \overline{q}_k / a_k\end{gathered}\] This is then repeated
-for precipitation, using the precipitation subcolumn profiles generated
-by PREC\_SCOPS.
+\[\begin{gathered} 
+    \tilde{q}_k = \overline{q}_k / a_k
+\end{gathered}\] This is then repeated for precipitation, using the
+precipitation subcolumn profiles generated by PREC\_SCOPS.
 
 The precipitation treatment described above attempts to associate
 precipitation with cloud, but fails to account for any estimate of
@@ -269,7 +270,7 @@ The simulation process described above assumes that gridbox-mean
 profiles of cloudiness and condensate are provided as inputs, however
 the modular structure of COSP enables bypassing the subcolumn generation
 step if resolved condensate fields with sufficiently high resolution
-(that approximating the scales at which the actual retrievals are
+(that approximate the scales at which the actual retrievals are
 performed) are available. This is done when using COSP with a
 cloud-resolving model
 \citep[e.g.,][]{marchand_et_al_2009, marchand_and_ackerman_2010}. Using
@@ -386,33 +387,35 @@ substantially reduces the errors in simulated CloudSat radar
 reflectivity.
 
 With this set of cases, the sensitivities of the COSP diagnostics to
-both occurrence overlap and condensate heterogeniety can be separately
-quantified by calculating appropriate differences between the three
-cases. Because the CRM-HOM case shares the exact occurrence overlap with
-the original CRM fields but uses homogenized condensate, differences in
-the COSP diagnostics between the CRM-HOM case and those from the
-unmodified CRM case will show the sensitivity of the COSP diagnostics to
-the assumption of homogeneous cloud and precipitation condensate.
-Because the MRO-HOM fields share the same homogeneous condensate
-profiles as the CRM-HOM fields but with maximum-random occurrence
-overlap, differences between MRO-HOM and CRM-HOM will show the
-additional impact of maximum-random occurrence overlap. Lastly, the
-differences between MRO-HOM and CRM will show the total error due to
-using both homogeneous cloud and precipitation condensate and
-maximum-random overlap (i.e., the GCM-equivalent errors expected using
-both MRO and homogeneous condensate). Symbolically, for a COSP-simulated
+occurrence overlap, condensate subgrid-scale heterogeniety, and
+precipitation treatment can be separately quantified by calculating
+appropriate differences between the cases. Because the CRM-HOM case
+shares the exact occurrence overlap with the original CRM fields but
+uses homogenized condensate, differences in the COSP diagnostics between
+the CRM-HOM case and those from the unmodified CRM case will show the
+sensitivity of the COSP diagnostics to the assumption of homogeneous
+cloud and precipitation condensate. Because the MRO-HOM-PADJ fields
+share the same homogeneous condensate profiles as the CRM-HOM fields but
+with maximum-random occurrence overlap, differences between MRO-HOM-PADJ
+and CRM-HOM will show the additional impact of assuming maximum-random
+cloud occurrence overlap. Differences between MRO-HOM and MRO-HOM-PADJ
+show the impact of constraining precipitation fraction. Lastly, the
+differences between MRO-HOM and CRM cases will show the total error due
+to using homogeneous cloud and precipitation condensate and
+maximum-random overlap with the default PREC\_SCOPS precipitation
+treatment (i.e., the GCM-equivalent errors expected using both MRO and
+homogeneous condensate). Symbolically, for a COSP-simulated
 psuedo-retrieved quantity \(X\) (i.e., MISR cloud top height), the total
 error in using the subcolumn generator \(E_\textrm{total}\), the
 component of the error due to using homogeneous condensate
-\(E_\textrm{homogeneous}\), and the component of the error due to the
-overlap assumption \(E_\textrm{overlap}\) are calculated as
-\[\begin{gathered} E_\textrm{total} = X_\textrm{MRO-HOM} -
-X_\textrm{CRM} \\ E_\textrm{homogeneous} = X_\textrm{CRM-HOM} - X_\textrm{CRM}
-\\ E_\textrm{overlap} = X_\textrm{MRO-HOM} - X_\textrm{CRM-HOM}\end{gathered}\]
-For the CloudSat-simulated radar reflectivity, the error due to the
-overestimation of precipitation using the PREC\_SCOPS routine without
-the precipitation adjustment can be calculated as \[\begin{gathered}
-E_\textrm{precip} = X_\textrm{MRO-HOM} - X_\textrm{MRO-HOM-PADJ}\end{gathered}\]
+\(E_\textrm{homogeneous}\), the component of the error due to the
+overlap assumption \(E_\textrm{overlap}\) and the component of the error
+due to the precipitation treatment are calculated as \[\begin{gathered} 
+    E_\textrm{total} = X_\textrm{MRO-HOM} - X_\textrm{CRM} \\
+    E_\textrm{homogeneous} = X_\textrm{CRM-HOM} - X_\textrm{CRM} \\
+    E_\textrm{overlap} = X_\textrm{MRO-HOM-PADJ} - X_\textrm{CRM-HOM} \\
+    E_\textrm{precip} = X_\textrm{MRO-HOM} - X_\textrm{MRO-HOM-PADJ}
+\end{gathered}\]
 
 In order to more easily evaluate the properties of the modified fields,
 and to ensure a consistent treatment for each case, the modified cases
@@ -465,11 +468,8 @@ cloud types. While the differences in the global means appear small, it
 should be noted that this is on the order of the uncertainty in
 comparisons between MISR retrievals and MISR-simulated retrievals using
 CloudSat and CALIPSO-derived extinction profiles, as shown in
-Section~\ref{sec:misr}. It will also be shown in Section~\ref{sec:cmip5}
-that mid and high-topped clouds in many of the CMIP5 models have global
-mean biases on the order of 5\% cloud area, so these errors are
-comparable and thus important, despite being small relative to the total
-cloud area.
+Section~\ref{sec:misr}. {[}TODO: reference literature showing these
+errors are on the order of errors in models{]}
 
 \begin{figure}[htbp]
 \centering
@@ -518,17 +518,22 @@ distribution (histogram) of cloud optical depth for a single time-step
 of SP-CAM output. The increase in total cloud area due to this effect is
 modest, and only results in an increase of 2\% cloud area in the global
 mean and regional errors on the order of 4-6\% cloud area, as seen in
-Figure~\ref{fig:subgrid1_cldmisr_maps_diff}. Errors due to this effect
-are larger for the diagnosis of high-topped cloud area, and can exceed
+Figure~\ref{fig:subgrid1_cldmisr_maps_diff}. These errors (and all
+errors discussed in this text) are absolute errors rather than relative
+errors; for example, in this case the homogenization results in an
+increase in the global-average cloud area from about 53\% to 55\%, for
+an absolute error of 2\% cloud area. Errors due to this effect are
+larger for the diagnosis of high-topped cloud area, and can exceed
 8-10\% cloud area in the deep tropics, especially over the Tropical Warm
 Pool region over the Maritime Continent and over the Indian Ocean. These
 regions are dominated by deep convective cloud systems with associated
-cirrus anvils consisting of high, thin ice clouds with very low optical
-depths. This situation is especially conducive to the effect illustrated
-in Figure~\ref{fig:subgrid1_taudist}, due to the increased likelihood of
+cirrus that often have very low optical depths. This situation is
+especially conducive to the effect illustrated in
+Figure~\ref{fig:subgrid1_taudist}, due to the increased likelihood of
 averaging columns with optical depths that would be below the threshold
-with those having much larger optical depths. {[}should comment on
-increase of optically thick cloud due to this effect as well{]}
+with those having much larger optical depths.
+
+{[}TODO: paragraph on increase in optically thick cloud{]}
 
 \begin{figure}[htbp]
 \centering
@@ -538,39 +543,44 @@ depth for a single day from the CRM and CRM-HOM
 cases.}\label{fig:subgrid1ux5ftaudist}
 \end{figure}
 
-The errors in total cloud area from the maximum-random overlap
-assumption alone are everywhere negative, showing that implementing
+While errors due to homogenizing cloud condensate are primarily postive,
+the errors in total cloud area due to the maximum-random overlap
+assumption are negative nearly everywhere, showing that implementing
 maximum-random overlap tends to decrease the total vertically projected
-cloud area. The decrease in cloud area is a result of the maximum-random
-overlap assumption tending to overestimate the vertical correlation in
-adjacent cloudy layers, as discussed above and shown by previous authors
+cloud area (right panel of Figure~\ref{fig:subgrid1_cldmisr_maps_diff}).
+The decrease in cloud area is a result of the maximum-random overlap
+assumption tending to overestimate the vertical correlation in adjacent
+cloudy layers, as discussed above and shown by previous authors
 \citep{mace_and_benson-troth_2002, hogan_and_illingworth_2000, barker_2008}.
 This will be explored more quantitatively in Section~\ref{sec:subgrid2}.
 The decrease is only -3\% cloud area in the global mean, but can reach
 values exceeding -10\% regionally, especially in the tropics. The
-decrease is largest for the low-topped cloud area, and high-topped cloud
+decrease is largest for the low-topped cloud area. High-topped cloud
 area actually increases slightly throughout some regions in middle to
-high latitudes. This is because the MISR simulator includes the tendency
+high latitudes. This is because the MISR simulator emulates the tendency
 for MISR to ``see through'' optically thin upper cloud layers and
-retrieve cloud top heights of optically thicker lower cloud layers in
-cases involving multiple cloud layers. This is based on an optical depth
-threshold, where upper layers below a certain optical depth threshold
-are considered transparent, while layers above a certain threshold are
-opaque. Because increasing vertical correlation of cloudy layers tends
-to increase the cloud water path (and hence the cloud optical depth of
-those combined layers), the MRO assumption inflates the high-topped
-cloud area while decreasing the low-topped cloud area.
+retrieve cloud top heights of optically thicker lower cloud layers when
+low-level clouds are present. This provides two pathways for the MRO
+approximation to increase high-topped cloud area. First, because
+increasing vertical correlation of cloudy layers tends to increase the
+cloud water path (and hence the cloud optical depth of those combined
+layers), the MRO assumption can inflate the high-topped cloud area by
+increasing the number of columns where the high-level cloud optical
+depth exceeds the threshold \(\tau > 1\) (which MISR does not see
+through). Second, the assumption decreases the low-topped cloud area
+(resulting in fewer multi-layer clouds). {[}TODO: ask Roger about
+this\ldots{}this second point does not really make sense to me{]}
 
 The errors in MISR-simulated cloud area due separately to homogenizing
-cloud condensate and using MRO are mostly compensatory, resulting in
-smaller errors in the total cloud area, but combine to produce larger
-errors in high, middle, and low-topped cloud area. The effect on
-simulated high-topped clouds due to the two components of the error are
-both positive in sign, so that these components of the error combine to
-produce much larger errors in simulated high-topped cloud, with a 5\%
-cloud area increase in the global mean and an increase greater than 10\%
-cloud area throughout much of the deep tropics. The errors in
-high-topped cloud area are mostly compensated by a decrease in
+cloud condensate and using MRO are mostly compensatory in regards to
+total cloud cover, but produce noteworthy errors in high, middle, and
+low-topped cloud area. The effect on simulated high-topped clouds due to
+the two components of the error are both positive in sign, so that these
+components of the error combine to produce much larger errors in
+simulated high-topped cloud, with almost a 5\% cloud area increase in
+the global mean and an increase greater than 10\% cloud area throughout
+much of the deep tropics. In regard to the total cloud area, the errors
+in high-topped cloud area are mostly compensated by a decrease in
 low-topped cloud, caused primarily by the errors due to using
 maximum-random overlap. The result is a decrease in simulated low-topped
 cloud of 4\% cloud area in the global average that, combined with the
@@ -592,22 +602,24 @@ overlap.}\label{fig:subgrid1ux5fcldisccpux5ferrors}
 \end{figure}
 
 Figure~\ref{fig:subgrid1_cldisccp_errors} shows errors in
-ISCCP-simulated cloud area by cloud type. These errors are qualitatively
-similar to the errors shown in
-Figure~\ref{fig:subgrid1_cldmisr_maps_diff} for the MISR simulated cloud
-area by cloud type, with again an overestimation of total and
-high-topped cloud area due to homogenizing cloud condensate and an
-underestimation of total and low-topped cloud area due to using
+ISCCP-simulated cloud area by cloud type. These errors are similar to
+the errors shown in Figure~\ref{fig:subgrid1_cldmisr_maps_diff} for the
+MISR simulated cloud area by cloud type, with again an overestimation of
+total and high-topped cloud area due to homogenizing cloud condensate
+and an underestimation of total and low-topped cloud area due to using
 maximum-random overlap. The errors in high-topped cloud area due to
 homogenizing condensate is similar to the errors in the MISR-simulated
-cloud area, but the errors due to using MRO are somewhat different
-between the ISCCP and MISR-simulated high-topped cloud area.
+cloud area. The errors due to using MRO are somewhat different between
+the ISCCP and MISR-simulated high-topped cloud area, in that
 MISR-simulated high-topped cloud area was actually increased somewhat in
 some regions when using the MRO, but ISCCP-simulated high-topped cloud
-area is universally decreased when using MRO. This results in a lower
-error in ISCCP-simulated high-topped cloud due to the combined effects
-of homogenizing cloud condensate and using MRO due to compensating
-errors between the two effects.
+area is universally decreased when using MRO. This is because ISCCP
+high-topped cloud area is based on IR detections and is not as sensitive
+as MISR to the reduction in low-topped cloud that results from the MRO
+approximation {[}TODO: ask Roger about this{]}. This results in a lower
+net error in ISCCP-simulated high-topped cloud, albeit due to the
+cancellation of errors between the effects of homogenizing cloud
+condensate and using MRO.
 
 \section{Sensitivity of simulated CloudSat
 diagnostics}\label{sensitivity-of-simulated-cloudsat-diagnostics}
@@ -623,10 +635,10 @@ fraction by height}\label{fig:subgrid1ux5fhfbaux5fzonal}
 \centering
 \includegraphics{graphics/subgrid1_hfba_zonal_diff.pdf}
 \caption{\label{fig:subgrid1_hfba_zonal_diff}Zonal-mean hydrometeor
-occurence fraction by height errors. {[}TODO: rename `MRO error' to
+occurence fraction by height errors. {[}TODO: rename ``MRO error'' to
 something less misleading\ldots{}this panel includes errors due to
-precip, which are shown
-below.{]}}\label{fig:subgrid1ux5fhfbaux5fzonalux5fdiff}
+precip, which are shown below. Add contour levels for 10-15\% or
+higher{]}}\label{fig:subgrid1ux5fhfbaux5fzonalux5fdiff}
 \end{figure}
 
 The 94 GHz radar reflectivity (\(Z_e\)) retrieved by the CloudSat Cloud
@@ -648,24 +660,31 @@ reflectivity bins with reflectivity \(Z_e > -27.5\) dBZ at a given
 height) from the CloudSat simulator using the CRM, CRM-HOM, MRO-HOM, and
 MRO-HOM-PADJ fields, and Figure~\ref{fig:subgrid1_hfba_zonal_diff} shows
 the errors in the MRO-HOM fields as well as the components of the errors
-due separately to homogenizing the condensate amounts and in using the
-maximum-random overlap assumption. Homogenizing the cloud and
-precipitation condensate amounts and using the subcolumn generator in
-COSP both result in an increase in simulated hydrometeor occurrence at
-all altitudes. These errors are especially large in the deep tropics in
-the ITCZ and in both northern and southern hemisphere mid-latitudes. The
-bottom panel of Figure~\ref{fig:subgrid1_hfba_zonal_diff} shows the
-component of the error due to using the unconstrained precipitation
-treatment, and it is clear that this error accounts for the majority of
-the error diagnosed in the panel above as due to using SCOPS/PREC\_SCOPS
-to regenerate subcolumns. The errors due separately to homogenizing
-cloud and precipitation and to using the MRO scheme in COSP combine to
+due separately to homogenizing (both the cloud and precipitation)
+condensate amounts, using SCOPS and PREC\_SCOPS with the maximum-random
+overlap assumption to regenerate hydrometeor occurrence \emph{with} the
+precipitation adjustment (i.e., errors due to occurrence overlap alone,
+not conflated with precipitation fraction errors), and using the
+(biased) precipitation fraction that arises from PREC\_SCOPS (i.e.,
+errors that arise due to PREC\_SCOPS inflating the precipitation
+fraction). Homogenizing the cloud and precipitation condensate amounts
+(\(E_\textrm{homogeneous}\)) and using the full subcolumn generator in
+COSP (\(E_\textrm{total}\)) both result in an increase in simulated
+hydrometeor occurrence at all altitudes. These errors are especially
+large in the deep tropics in the ITCZ and in both northern and southern
+hemisphere mid-latitudes. The bottom panel of
+Figure~\ref{fig:subgrid1_hfba_zonal_diff} shows the component of the
+error due solely to using the unconstrained precipitation treatment in
+PREC\_SCOPS, and it is clear that this error accounts for the majority
+of the error in generating sucolumns of cloud and precipitation
+occurrence. The errors due separately to homogenizing cloud and
+precipitation and to using SCOPS/PREC\_SCOPS with MRO in COSP combine to
 produce larger total errors in hydrometeor occurrence than result from
 either component alone (top panel of
 Figure~\ref{fig:subgrid1_hfba_zonal_diff}).
 
-These errors in hydrometeor occurrence are understand more fully by
-looking at the full reflectivity with height histograms.
+The causes of these errors in hydrometeor occurrence can be understood
+more easily by looking at the full reflectivity with height histograms.
 Figure~\ref{fig:subgrid1_cfadDbze94_tropics} shows the simulated radar
 reflectivity with height histograms using the CRM, CRM-HOM, MRO-HOM, and
 MRO-HOM-PADJ cases for the northern hemisphere tropics (0 to 5 N
@@ -676,18 +695,17 @@ of reflectivity with height histograms
 \citep[e.g.;][]{marchand_et_al_2009}, the homogenized cases show
 enhanced occurrence along the characteristic curve, and suppressed
 occurrence off of it where baseline occurrences are lower. This is
-clearer in Figure~\ref{fig:subgrid1_cfadDbze94_tropics_diff}, which
-shows errors due to using homogeneous clouds and precipitation and to
-using SCOPS/PREC\_SCOPS to regenerate subcolumns. Similar to the errors
-in MISR-simulated cloud area, the source of these errors is driven by
-the squeezing of the distribution of condensate that results from
-replacing the subgrid distributions of condensate with the gridbox
-averages, which effectively reduces the tails of the distribution by
-removing the within-gridbox variability. This explains the apparent
-increase from low reflectivities to high reflectivities, but it would be
-expected that this would be accompanied by a corresponding decrease in
-the occurrence of very large reflectivities, which is \emph{not} seen in
-Figure~\ref{fig:subgrid1_cfadDbze94_tropics_diff}.
+clearer in Figure~\ref{fig:subgrid1_cfadDbze94_tropics_diff} (second
+panel from the left), which shows errors due to using homogeneous clouds
+and precipitation. Similar to the errors in MISR-simulated cloud area,
+the source of these errors is driven by the squeezing of the
+distribution of condensate that results from replacing the subgrid
+distributions of condensate with the gridbox averages, which effectively
+reduces the tails of the distribution by removing the within-gridbox
+variability. This explains the apparent increase from low reflectivities
+to high reflectivities, but while there is some decrease in the
+occurrence of large reflectivities, it is much smaller than one might
+expect from the decrease of small reflectivities.
 
 \begin{figure}[htbp]
 \centering
@@ -712,19 +730,20 @@ the radar signal, and in the presence of hydrometeors with large
 reflectivities this effect can be quite large. Because homogenizing the
 cloud and precipitation condensate decreases precisely those
 hydrometeors that would be expected to have such large reflectivities,
-homogenizing tends to simultaneously decrease the attenuation. Thus,
-while the total number of these highly reflective hydrometeors is
-decreased in the homogenized case, more of them would actually be
-visible to the radar due to decreased attenuation. The result is that
-the occurrence is increased along the characteristic curve, decreased
-for hydrometeors with lower reflectivity, but essentially unchanged for
+homogenizing tends to simultaneously decrease the attenuation. Below
+cloud top, the decrease in attenuation can offset the reduction in
+condensate, such that there tends to be little reduction in the
+occurrence of the largest reflectivities. The result is that the
+occurrence is increased along the characteristic curve, decreased for
+hydrometeors with lower reflectivity, but can be nearly unchanged for
 hydrometeors with large reflecitivity. This is demostrated for an
 example gridbox in Figure~\ref{fig:subgrid1_cfadDbze94_testatt}, which
 shows the simulated reflectivity from both the CRM and CRM-HOM fields,
-but with attenuation turned on (top), and with attenuation turned off
-(bottom) for comparison. The histograms with attenuation turned off show
-precisely the squeezing of the distribution that we would have expected
-in the absence of attenuation.
+but with attenuation in the radar simulator turned on (left), and with
+attenuation turned off (right) for comparison. The histograms with
+attenuation turned off show precisely the squeezing of the distribution
+that we would have expected in the absence of attenuation at lower
+altitudes.
 
 \begin{figure}[htbp]
 \centering
@@ -738,10 +757,12 @@ Figure~\ref{fig:subgrid1_mxratio_example}), with attenuation turned on
 \end{figure}
 
 Errors in CloudSat-simulated hydrometeor occurrence due to using the
-SCOPS/PREC\_SCOPS subcolumn scheme to re-generate the subcolumns are
-less extensive than the errors due to homogenizing the hydrometeor
-properties, but can exceed 10\% frequency of occurrence in the tropics,
-and again lead to a false increase in the total hydrometeor occurrence.
+SCOPS/PREC\_SCOPS subcolumn scheme to overlap cloud and precipitation
+condensate (Figure~\ref{fig:subgrid1_cfadDbze94_tropics_diff}, third
+panel from left) are less extensive than the errors due to homogenizing
+the hydrometeor properties, but can exceed 10\% frequency of occurrence
+in the tropics, and again lead to a false increase in the total
+hydrometeor occurrence.
 Figure~\ref{fig:subgrid1_cfadDbze94_tropics_diff} shows that the error
 is due to an increase in the occurrence of hydrometeors with all
 reflectivities, but especially due again to an increase in the
@@ -766,26 +787,30 @@ precipitation is constrained by the input precipitation fraction (not
 shown), leaving the homogeneous errors as dominating the total error in
 simulated CloudSat radar reflectivity. This suggests that the simulated
 CloudSat radar reflectivity is not sensitive to the cloud overlap, but
-is sensitive to the treatment of subgrid-scale precipitation.
+is sensitive to the treatment of subgrid-scale precipitation. {[}TODO:
+go back and clean this paragraph up after updating the figures. Need to
+show either a) overlap errors with and without PADJ, or b) overlap
+errors without PADJ and then just the precip errors{]}
 
 \section{Summary and discussion}\label{sec:subgrid1Summary}
 
 Current global models do not resolve individual cloud elements, but
-rather represent the large-scale statistics by way of parameterization.
-But simulated satellite diagnostics (and radiative fluxes and heating
-rates) depend on the small-scale details of clouds. This chapter has
-presented an evaluation of the sensitivity of simulated MISR and
-CloudSat satellite diagnostics from the CFMIP Observation Simulator
-Package to two assumptions: that cloud and precipitation properties are
-horizontally uniform on the scale of GCM gridboxes, and that individual
-cloud elements follow a maximum-random overlap. Because these
-assumptions are used to infer subgrid-scale cloud structure in model
-radiative transfer codes, these assumptions are used by default in COSP
-to generate stochastic subcolumns on which the individual satellite
-instrument simulators are performed. However, others have shown that
-these assumptions lead to biases in calculated fluxes and heating rates,
-and it has been shown here that these assumptions also affect simulated
-MISR and CloudSat satellite diagnostics.
+rather represent most cloud-scale variability by way of
+parameterization. But simulated satellite diagnostics (and radiative
+fluxes and heating rates) depend on the small-scale details of clouds.
+This chapter has presented an evaluation of the sensitivity of simulated
+MISR and CloudSat satellite diagnostics from the CFMIP Observation
+Simulator Package to two assumptions: that cloud and precipitation
+properties are horizontally uniform on the scale of GCM gridboxes, and
+that individual cloud elements follow a maximum-random overlap. Because
+these assumptions are often used to infer subgrid-scale cloud structure
+in model radiative transfer codes, these assumptions have been adopted
+as defaults in COSP to generate stochastic subcolumns on which the
+individual satellite instrument simulators are performed. However,
+others have shown that these assumptions lead to biases in calculated
+fluxes and heating rates, and it has been shown here that these
+assumptions also affect simulated MISR and CloudSat satellite
+diagnostics.
 
 The assumption of homogeneous cloud properties tends to inflate the
 simulated MISR cloud area (when counting all clouds with an optical
@@ -806,18 +831,19 @@ This leads to a global mean underestimate in total cloud area of only
 3\%, but with regional errors as large as 10\% cloud area, especially in
 the deep tropics. The errors in cloud area due to homogeneous cloud
 properties and using the maximum-random overlap are generally opposite
-in sign, and result in a partial cancellation on the total error. The
-result is that the errors in total cloud area are less than 2\% in the
-global average, and regional errors in total cloud area are much smaller
-than for either of the two components of the error. However, errors in
-high and low-topped cloud area due to the two components are additive,
-such that the total errors in high and low-topped clouds are larger than
-they are for either the homogeneous or MRO components. High-topped cloud
-is overestimated by 5\% cloud area, and low-topped cloud is
-underestimated by 4\% cloud area in the global mean. Regional errors are
-even larger, and high-topped cloud errors reach 10\% cloud area or more,
-especially in the tropical western pacific, the Indian Ocean, and
-throughout the tropics.
+in sign, and result in a partial cancellation in the total error (that
+is, total vertically-projected cloud area that includes both high and
+low-topped clouds). The result is that the errors in total cloud area
+are less than 2\% in the global average, and regional errors in total
+cloud area are much smaller than for either of the two components of the
+error. However, errors in high and low-topped cloud area due to the two
+components are additive, such that the total errors in high and
+low-topped clouds are larger than they are for either the homogeneous or
+MRO components. High-topped cloud is overestimated by 5\% cloud area,
+and low-topped cloud is underestimated by 4\% cloud area in the global
+mean. Regional errors are even larger, and high-topped cloud errors
+reach 10\% cloud area or more, especially in the tropical western
+pacific, the Indian Ocean, and throughout the tropics.
 
 The sensitivity in MISR-simulated total cloud area identified here is
 generally less than errors in cloud area identified in current GCMs

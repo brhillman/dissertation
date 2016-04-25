@@ -32,12 +32,13 @@ of sub-pixel variability in the clouds and limitations associated with
 the 1D radiative transfer used in the ISCCP retrievals. The simulators
 do not current correct for any optical depth biases, and the potential
 exists for large biases in the comparisons for cases involving small,
-heterogeneous broken clouds where 3D effects become important. This
-topic is discussed in more detail later in this chapter, as it also
+heterogeneous broken clouds where 3D effects are especially important.
+This topic is discussed in more detail later in this chapter, as it also
 affects the evaluation of the MISR simulator presented here.
 
-The analysis by M2011 provides the only critical evaluation of the
-simulators documented in the available literature. The lack of
+The analysis by M2011 provides one of the few critical evaluation of the
+simulators documented in the available literature. {[}TODO: insert text
+discussion the other few critical evaluations{]} The lack of
 verification of the simulators severely undermines their credibility for
 use in the evaluation of climate models. The goal of this chapter is to
 perform a similar analysis to M2011 for the MISR simulator. Conceptually
@@ -90,16 +91,15 @@ provides nearly global sampling for this analysis, this approach is
 further challenged by the fact that the MISR instrument does not fly in
 constellation with the A-Train, but rather flies onboard the Terra
 platform, with an equator crossing time approximately three hours
-earlier in an entirely different orbit. This prevents a direct
+earlier in an entirely different orbit. This largely prevents a direct
 comparison of collocated retrievals as done by M2011, and instead only
 aggregated monthly statistics can be compared here. This also introduces
 the possibility for differences in the comparison of MISR and
 MISR-simulated retrievals due to differences in the diurnal cycle
-sampled by the different satellite platforms. These differences can be
+sampled by the different satellite platforms. These differences are
 expected to be small in most regions, with the likely exception of maybe
 marine stratocumulus clouds, but this will be examined in more detail in
-Section~\ref{sec:misrDiurnal}. {[}this section needs some more
-content{]}
+Section~\ref{sec:misrDiurnal}.
 
 \section{Retrievals of visible extinction using A-train
 measurements}\label{sec:ccRetrievals}
@@ -124,9 +124,9 @@ detailed description of this technique can be found in
 combined CloudSat radar and CALIPSO lidar data from the Radar-Lidar
 Geometrical Profile Product
 \citep[RL-GEOPROF;][]{mace_et_al_2009, mace_and_zhang_2014} Version R04
-define the vertical hydrometeor occurrence distribution. In RL-GEOPROF,
-CALIPSO lidar detections are mapped onto the coarser CloudSat grid (with
-an along track horizontal resolution of approximately 2 km, a horizontal
+defines the vertical hydrometeor occurrence. In RL-GEOPROF, CALIPSO
+lidar detections are mapped onto the coarser CloudSat grid (with an
+along track horizontal resolution of approximately 2 km, a horizontal
 grid spacing of about 1 km and vertical grid spacing of 240 m). Only
 radar volumes that are at least 50\% filled by lidar detections are
 treated as having a lidar cloud detection on the CloudSat retrieval
@@ -163,8 +163,8 @@ the NASA Langley Distributed Active Archive Center (DAAC). In order to
 calculate sampling uncertainties at the monthly time scale,
 orbit-by-orbit data are used in this study, but for use with climate
 models these data have been aggregated into monthly summaries that are
-available from the Cloud Feedback Model Intercomparison Project (CFMIP
-{[}citation needed{]}) observational data archive\footnote{http://climserv.ipsl.polytechnique.fr/cfmip-obs/}.
+available from the Cloud Feedback Model Intercomparison Project
+\citep[CFMIP;][]{webb_et_al_2016} observational data archive\footnote{http://climserv.ipsl.polytechnique.fr/cfmip-obs/}.
 
 \begin{figure}[htbp]
 \centering
@@ -175,12 +175,12 @@ segment.}\label{fig:misrux5fsimux5fexample}
 \end{figure}
 
 The MISR simulator takes as a primary input a visible extinction profile
-(along with thermodynamic information) and outputs the cloud top height
-that MISR would likely retrieve for that profile. The estimates of the
-cloud top height (\(z_c\)) that MISR would likely retrieve (from a given
-input profile of visible extinction) are based on a number of simple
-rules, described in detail in \citet{marchand_and_ackerman_2010} (see
-Appendix A therein) and briefly summarized here in the context of
+(and temperature) and outputs the cloud top height that MISR would
+likely retrieve for that profile. The estimates of the cloud top height
+(\(z_c\)) that MISR would likely retrieve (from a given input profile of
+visible extinction) are based on a number of simple rules, described in
+detail in \citet{marchand_and_ackerman_2010} (see Appendix A therein)
+and briefly summarized here in the context of
 Figure~\ref{fig:misr_sim_example}. The shading in
 Figure~\ref{fig:misr_sim_example} show an example of the combined
 CloudSat and CALIPSO (hereafter referred to as CC) cloud visible
@@ -197,9 +197,9 @@ for each profile with a black ``+''.
 
 The example shown in Figure~\ref{fig:misr_sim_example} highlights
 several key aspects of how the MISR simulator works. For single-layer
-water clouds (which have large optical depth and high visible contrast),
-the MISR estimate of cloud top height is expected to be in good
-agreement with the ``true'' cloud top height, and thus CC-sim should
+water clouds (which have optical depth \(\tau > 1\) and high visible
+contrast), the MISR estimate of cloud top height is expected to be in
+good agreement with the ``true'' cloud top height, and thus CC-sim will
 agree well with CC-dir for these cases. For example, the extinction
 profile near 31.5 N shows a single low-level cloud layer with large
 optical depth, and the CC-dir and CC-sim estimates of cloud top height
@@ -212,11 +212,12 @@ is preferentially picked up by the MISR pattern-matcher. The MISR
 simulator mimics this tendency (with again a nominal optical depth
 threshold for the upper layer of \(\tau < 1\)) and so the MISR simulator
 would return the cloud top height of the lower cloud layer in this case,
-even though the true cloud top height might be much higher in altitude,
-coinciding with the upper-level cloud. An example of this situation is
-seen in Figure~\ref{fig:misr_sim_example} near 33.5 N, where the CC-sim
-estimate returns the height of the lower cloud layer, but CC-dir returns
-the height of the upper cloud layer. For clouds with optically thicker
+even though the true cloud top height of the highest cloud in the column
+might be much higher in altitude, coinciding with the upper-level cloud.
+An example of this situation is seen in
+Figure~\ref{fig:misr_sim_example} near 33.5 N, where the CC-sim estimate
+returns the height of the lower cloud layer, but CC-dir returns the
+height of the upper cloud layer. For clouds with optically thicker
 ice-phase cloud tops, the MISR simulator penetrates down into the cloud
 layer to retrieve the cloud top height where the integrated optical
 depth reaches a nominal value of \(\tau = 1\). In these cases (such as
@@ -281,11 +282,11 @@ profiles with and without using the MISR simulator (CC-sim and CC-dir,
 respectively) for the months of January and June 2008. Data covers the
 domain with bounds -70N to 70N latitude and 100E to -70E longitude (this
 includes ocean surfaces beyond the Pacific Ocean, but we will refer to
-this domain as ``Pacific'' for convenience). Boxes are drawn around five
-climatically distinct regions that will be investigated more closely
-below: the North Pacific (35N to 60N; 160E to -140E), Hawaiian Trade
-Cumulus (15N to 35N; 160E to -140E), California Stratocumulus (15N to
-35N; -140E to -110E), Tropical Western Pacific (-5N to 20N; 70E to
+this domain as the ``Pacific'' for convenience). Boxes are drawn around
+five climatically distinct regions that will be investigated more
+closely below: the North Pacific (35N to 60N; 160E to -140E), Hawaiian
+Trade Cumulus (15N to 35N; 160E to -140E), California Stratocumulus (15N
+to 35N; -140E to -110E), Tropical Western Pacific (-5N to 20N; 70E to
 150E), and the South Pacific (-60N to -30N; -180E to -80E).
 
 \begin{figure}[htbp]
@@ -323,37 +324,36 @@ panel.}\label{fig:misrux5fcldmisrux5fmapsux5fjune}
 These figures show that the cloud area by cloud type from the CC
 extinction retrieval using the MISR-simulator (CC-sim; middle panels) is
 broadly similar to the MISR-retrieved cloud area (left panels),
-especially as compared with the cloud area by cloud type diagnosed from
-the directly-inferred cloud top heights from the CC extinction retrieval
-(CC-dir; right panels). This indicates that (at least qualitatively) the
-MISR simulator is working as intended. Differences between CC-dir and
-CC-sim (and likewise between CC-dir and MISR) are especially large in
-the Tropical Warm Pool, North Pacific, and South Pacific regions, owing
-to the large occurrence of optically thin high-altitude cloud in these
-regions. Averaged over the entire region shown in the figure, the
-occurrence of high-topped clouds differs by only 2\% cloud area in
-January 2008 between CC-sim and MISR (16\% in CC-sim and 14\% in MISR
-retrievals), and by 1\% cloud area in June, and the occurrence of
-mid-topped clouds differs by only 2\% cloud cover in January (15\% in
-CC-sim and 13\% in the MISR retrievals), and by 3\% in June (14\% in
-CC-sim and 11\% in MISR retrievals). The largest difference between MISR
-and CC-sim is in low-topped cloud, where the low-topped cloud cover is
-smaller in CC-sim by 8\% in January and 6\% in June. However, much of
-this difference appears to be due to differences in low cloud detection
-between MISR and CC, rather than due to errors in the MISR simulator
-determination of cloud top height. This is supported by the estimates of
-total cloud cover, which also differ by 8\% and 6\% in January and June,
-respectively. This difference is due to differences in detection of
-low-level clouds by CC, which will be shown below.
+especially as compared with the cloud area diagnosed from the CC
+extinction retrieval (CC-dir; right panels). This indicates that (at
+least qualitatively) the MISR simulator is working as intended.
+Differences between CC-dir and CC-sim (and likewise between CC-dir and
+MISR) are especially large in the Tropical Warm Pool, North Pacific, and
+South Pacific regions, owing to the large occurrence of optically thin
+high-altitude cloud in these regions. Averaged over the entire region
+shown in the figure, the occurrence of high-topped clouds differs by
+only 2\% cloud area in January 2008 between CC-sim and MISR (16\% in
+CC-sim and 14\% in MISR retrievals), and by 1\% cloud area in June, and
+the occurrence of mid-topped clouds differs by only 2\% cloud cover in
+January (15\% in CC-sim and 13\% in the MISR retrievals), and by 3\% in
+June (14\% in CC-sim and 11\% in MISR retrievals). The largest
+difference between MISR and CC-sim is in low-topped cloud, where the
+low-topped cloud cover is smaller in CC-sim by 8\% in January and 6\% in
+June. However, much of this difference appears to be due to differences
+in low cloud detection between MISR and CC, rather than due to errors in
+the MISR simulator determination of cloud top height. This is supported
+by the estimates of total cloud cover, which also differ by 8\% and 6\%
+in January and June, respectively. This difference is due to differences
+in detection of low-level clouds by CC, which will be shown below.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{graphics/misr_cldmisr_zonal_2008-01.pdf}
 \caption{\label{fig:misr_cldmisr_zonal_jan}Zonally-averaged cloud area
 by cloud type from MISR-retrievals, MISR-simulated retrievals from
-CC-derived extinction profiles, and directly inferred cloud top heights
-from CC-derived extinction profiles for the month of January 2008. Shown
-are total, high-topped, mid-topped, and low-topped cloud area. Shading
+CC-derived extinction profiles, and directly inferred from the
+CC-derived extinction profiles for the month of January 2008. Shown are
+total, high-topped, mid-topped, and low-topped cloud area. Shading
 indicates the 95\% confidence interval obtained by bootstrap resampling
 the orbit-by-orbit zonal
 means.}\label{fig:misrux5fcldmisrux5fzonalux5fjan}
@@ -364,9 +364,9 @@ means.}\label{fig:misrux5fcldmisrux5fzonalux5fjan}
 \includegraphics{graphics/misr_cldmisr_zonal_2008-06.pdf}
 \caption{\label{fig:misr_cldmisr_zonal_jun}Zonally-averaged cloud area
 by cloud type from MISR-retrievals, MISR-simulated retrievals from
-CC-derived extinction profiles, and directly inferred cloud top heights
-from CC-derived extinction profiles for the month of June 2008. Shown
-are total, high-topped, mid-topped, and low-topped cloud area. Shading
+CC-derived extinction profiles, and directly inferred from the
+CC-derived extinction profiles for the month of June 2008. Shown are
+total, high-topped, mid-topped, and low-topped cloud area. Shading
 indicates the 95\% confidence interval obtained by bootstrap resampling
 the orbit-by-orbit zonal
 means.}\label{fig:misrux5fcldmisrux5fzonalux5fjun}
@@ -379,18 +379,18 @@ Figure~\ref{fig:misr_cldmisr_zonal_jun} for low, mid, and high-topped
 cloud cover (limited to the domain shown in
 Figure~\ref{fig:misr_cldmisr_maps_january}
 Figure~\ref{fig:misr_cldmisr_maps_june}) for MISR, CC-sim, and CC-dir in
-January and June. Shaded regions show the 95\% confidence interval,
-based on 1000 bootstrap resamples of the orbit-by-orbit zonal means. A
-large fraction of the high-topped cloud detected by CC is not identified
-by the MISR stereo height retrieval, largely because it is optically
-thin (as will be shown later). The MISR simulator corrects for this in
-the CC retrieval, and the MISR-simulated high-topped cloud cover is in
-good agreement with the MISR retrievals except at northern mid-latitudes
-in January (30-60 N) and at high southern latitudes in June (south of 50
-S) where differences are closer to 10\% and outside the range of
-sampling uncertainty indicated by the 95\% confidence interval shading.
-This may be due to several factors, including MISR detecting thinner
-cirrus in these regions (that is, clouds with an optical depth
+January and June. Shaded regions show the 95\% confidence interval (due
+to sampling), based on 1000 bootstrap resamples of the orbit-by-orbit
+zonal means. A large fraction of the high-topped cloud detected by CC is
+not identified by the MISR stereo height retrieval, largely because it
+is optically thin (as will be shown later). The MISR simulator corrects
+for this in the CC retrieval, and the MISR-simulated high-topped cloud
+cover is in good agreement with the MISR retrievals except at northern
+mid-latitudes in January (30-60 N) and at high southern latitudes in
+June (south of 50 S) where differences are about 10\% and outside the
+range of sampling uncertainty indicated by the 95\% confidence interval
+shading. This may be due to several factors, including MISR detecting
+thinner cirrus in these regions (that is, clouds with an optical depth
 \(\tau < 1\)) because of contrast generated from long solar slant paths
 through the cirrus, or it may be due to limitations in the MISR stereo
 height algorithm. The MISR CTH-OD product uses the MISR stereo height
@@ -456,9 +456,9 @@ sensitivity of the low-level cloud fraction (the fraction of profiles
 with \emph{any} cloud below 3 km, not just profiles with cloud
 \emph{tops} below 3 km as reported by MISR) to the lidar cloud fraction
 threshold is quantified here by adjusting the lidar cloud fraction
-threshold for considering cloud to 0\% and 10\% and comparing the
-resulting low-level cloud fraction to that obtained using the 50\%
-threshold.
+threshold for which a CloudSat ``1 km'' volume is considered to be cloud
+to 0\% and 10\% and comparing the resulting low-level cloud fraction to
+that obtained using the 50\% threshold used in the Mace scheme.
 
 \begin{figure}[htbp]
 \centering
@@ -483,12 +483,13 @@ E and -70 E) using the three threshold values for lidar cloud fraction,
 as well as the differences relative to using the 50\% cloud fraction
 threshold. The domain-averaged difference in low-level cloud area is
 12\%, and differences in the zonally-averaged low-level cloud area are
-as high as 22\% in the tropical Pacific. Differences are mch smaller at
+as high as 22\% in the tropical Pacific. Differences are smaller at
 higher latitudes, and differences in the north Pacific are generally
-less than 5\% cloud area. Nonetheless, this analysis shows a very large
-sensitivity to the fraction of lidar-detected clouds kept, and suggests
-a large resolution dependence on the low-level (and total) cloud area.
-The resolution-driven increase in MISR-retrieved low-topped cloud due to
+less than 5\% cloud area. Nonetheless, this analysis shows there is a
+very large sensitivity in low-level cloud fraction based on the fraction
+of lidar-detected clouds kept, and suggests a large resolution
+dependence on the low-level (and total) cloud area in general. The
+resolution-driven increase in MISR-retrieved low-topped cloud due to
 this partially filled pixel problem is likely to be of a similar
 magnitude, and thus the large differences identified in
 Figures~\ref{fig:misr_cldmisr_zonal_jan}, \ref{fig:misr_cldmisr_zonal_jun}
@@ -498,9 +499,9 @@ Sensitivities to this detection threshold are much lower in the high
 latitudes, and the close agreement in total cloud fraction between MISR
 and CC at high-latitudes in the winter hemisphere demonstrated in
 Figures~\ref{fig:misr_cldmisr_zonal_jan}, \ref{fig:misr_cldmisr_zonal_jun}
-demonstrates the more horizontally continuous (or wider-spread) nature
-of low clouds during the winter season at these latitudes, especially in
-the southern hemisphere.
+demonstrates the more horizontally continuous nature of low clouds
+during the winter season at these latitudes, especially in the southern
+hemisphere.
 
 \begin{figure}[htbp]
 \centering
@@ -556,7 +557,7 @@ Figures~\ref{fig:misr_cth_region_january}, \ref{fig:misr_cth_region_june}
 show marginal histograms of cloud top height (\(z_c\)) for each of the
 regions outlined in Figure~\ref{fig:misr_cldmisr_maps_january} and
 Figure~\ref{fig:misr_cldmisr_maps_june}. Regionally averaged cloud area
-by cloud type is summarized for each of these regions in Tables
+by cloud type is summarized for each of these regions in
 Tables~\ref{tbl:misr_cldmisr_table_january}, \ref{tbl:misr_cldmisr_table_june}
 for January and June, respectively. The tables show the regionally
 averaged cloud area by cloud type for the MISR and CC-sim retrievals,
@@ -568,18 +569,18 @@ the CC-dir results show large amounts of high-topped clouds in both
 January and June. Most of this high-topped cloud is optically thin, and
 the MISR simulator does a reasonable job matching the MISR retrievals.
 The good agreement between MISR and CC-sim mid and high-topped cloud is
-also evident in Tables Table~\ref{tbl:misr_cldmisr_table_january} and
+also evident in Table~\ref{tbl:misr_cldmisr_table_january} and
 Table~\ref{tbl:misr_cldmisr_table_june}, which show that the more
 broadly defined mid and high-topped categories are in even better
 agreement than the profiles of cloud top height shown in
 Figures~\ref{fig:misr_cth_region_january}, \ref{fig:misr_cth_region_june},
 with differences generally less than 5\%, and the only statistically
-significant differences being in the North Pacific {[}check this{]}. As
-discussed earlier, the differences in the North Pacific in January may
-reflect biases due to incomplete wind correction in the MISR CTH-OD V6
-product. Differences in the other regions are much smaller than those in
-the North Pacific (typically less than 5\% cloud area) and are generally
-not statistically significant with respect to sampling.
+significant differences being in the North Pacific {[}TODO: check
+this{]}. As discussed earlier, the differences in the North Pacific in
+January may reflect biases due to incomplete wind correction in the MISR
+CTH-OD V6 product. Differences in the other regions are much smaller
+than those in the North Pacific (typically less than 5\% cloud area) and
+are generally not statistically significant with respect to sampling.
 
 As discussed previously, low-topped differences can be large even when
 using the simulator to correct for the effects of thin high-topped cloud
@@ -739,8 +740,8 @@ MISR and CC-sim low cloud cover shown in the previous section.
 \caption{\label{fig:misr_cldmodis_zonal_january}January climatology of
 zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific
 domain. Shading indicates 95\% confidence interval obtained by bootstrap
-resampling individual
-monthly-means.}\label{fig:misrux5fcldmodisux5fzonalux5fjanuary}
+resampling individual monthly-means. {[}TODO: darken
+shading{]}}\label{fig:misrux5fcldmodisux5fzonalux5fjanuary}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -749,8 +750,8 @@ monthly-means.}\label{fig:misrux5fcldmodisux5fzonalux5fjanuary}
 \caption{\label{fig:misr_cldmodis_zonal_june}June climatology of
 zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific
 domain. Shading indicates 95\% confidence interval obtained by bootstrap
-resampling individual
-monthly-means.}\label{fig:misrux5fcldmodisux5fzonalux5fjune}
+resampling individual monthly-means. {[}TODO: darken
+shading{]}}\label{fig:misrux5fcldmodisux5fzonalux5fjune}
 \end{figure}
 
 Figure~\ref{fig:misr_cldmodis_zonal_january} and
@@ -779,18 +780,18 @@ given our evaluation approach.
 
 \section{Summary and discussion}\label{sec:misrSummary}
 
-Satellite instrument simulators are used increasingly more in model
+Increasingly, satellite instrument simulators are being used in model
 evaluation studies to account for known features, limitations, or errors
-in individual satellite retrievals. However, as recognized by
-\citet{pincus_et_al_2012} and \citet{mace_et_al_2011}, not all such
-errors or ambiguities have been (or likely can be) removed by this
-approach, and critical evaluation of the simulators themselves is of the
-utmost importance if the simulator framework is to be used to quantify
-biases between satellite-retrieved and model-simulated cloud properties.
-This chapter has presented an evaluation of the MISR simulator by
-comparing MISR retrievals to MISR-simulated retrievals based on
-extinction profiles derived from a combination of CloudSat, CALIPSO, and
-MODIS observations.
+in individual satellite retrievals \citep{webb_et_al_2016}. However, as
+recognized by \citet{pincus_et_al_2012} and \citet{mace_et_al_2011}, not
+all such errors or ambiguities have been (or likely can be) removed by
+this approach, and critical evaluation of the simulators themselves is
+of the utmost importance if the simulator framework is to be used to
+quantify biases between satellite-retrieved and model-simulated cloud
+properties. This chapter has presented an evaluation of the MISR
+simulator by comparing MISR retrievals to MISR-simulated retrievals
+based on extinction profiles derived from a combination of CloudSat,
+CALIPSO, and MODIS observations.
 
 The results in this chapter show that mid and high-topped cloud cover is
 in good agreement between MISR and MISR-simulated retrievals from CC.
@@ -817,13 +818,10 @@ problem with the MISR simulator. Nonetheless, these errors need to be
 considered when comparing model-simulated cloud area with MISR-retrieved
 cloud area, as the MISR-retrieved cloud area is likely biased high in
 regions occupied by small broken boundary-layer clouds. This bias is of
-the correct sign to explain at least some of the ubiquitous ``biases''
-in low-level cloud amount in current global climate models as compared
-with retrievals from MISR, ISCCP, and MODIS, as will be shown in
-Section~\ref{sec:cmip5}, suggesting that at least some of these
-differences are more appropriately attributed to systematic biases in
-our retrievals. This is an area of on-going research in the remote
-sensing community {[}citations needed{]}.
+the correct sign to explain at least some (though certainly not all) of
+the ubiquitous ``biases'' in low-level cloud amount in current global
+climate models as compared with retrievals from MISR, ISCCP, and MODIS
+\citep[e.g.,][]{zhang_et_al_2005, pincus_et_al_2012, kay_et_al_2012, klein_et_al_2013}.
 
 Differences in the full cloud top height and optical depth joint
 histograms for the whole domain had an absolute error of 4\% or less for
@@ -843,10 +841,8 @@ occur on larger horizontal scales. While 3D effects may still be
 significant for high and mid-level clouds, other factors may also be
 important. In particular, retrievals of optical depth from radar and
 lidar may be prone to overestimate optical depth for a variety of
-factors including the strong sensitivity of radar to precipitating
+reasons including the strong sensitivity of radar to precipitating
 particles (which makes retrieval of small or non-precipitating particles
 that usually dominate the visible-extinction difficult and uncertain),
 especially at temperatures where both ice and water condensate may
 exists.
-
-{[}TODO: add a strong conclusion here{]}

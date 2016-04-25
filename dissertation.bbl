@@ -1,4 +1,4 @@
-\begin{thebibliography}{97}
+\begin{thebibliography}{91}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -138,11 +138,6 @@ Dufresne, J.-L. and S.~Bony, 2008: An assessment of the primary sources of
   spread of global warming estimates from coupled atmosphere-ocean models.
   \textit{J. Climate}, \textbf{21}, 5135--5144, \doi{10.1175/2008JCLI2239.1}.
 
-\bibitem[{Ellis and {Vonder Haar}(1976)}]{ellis_and_vonderhaar_1976}
-Ellis, J.~S. and T.~H. {Vonder Haar}, 1976: Zonal average earth radiation
-  budget measurements from satellites for climate studies. Tech. Rep. 240,
-  Dept. of Atmospheric Sciences, Colorado State University.
-
 \bibitem[{Evans et~al.(2008)Evans, Marshak, and V{\'a}rnai}]{evans_et_al_2008}
 Evans, K.~F., A.~Marshak, and T.~V{\'a}rnai, 2008: The potential for improved
   boundary layer cloud optical depth retrievals from the multiple directions of
@@ -245,7 +240,7 @@ Klein, S.~A., Y.~Zhang, M.~D. Zelinka, R.~Pincus, J.~Boyle, and P.~J. Gleckler,
   1329--1342, \doi{doi:10.1002/jgrd.50141}.
 
 \bibitem[{Lee et~al.(2010)Lee, Kahn, and Teixeira}]{lee_et_al_2010}
-Lee, S., B.~H. Kahn, and J.~Teixeira, 2010: Characterization of cloud liquid
+Lee, S., B.~H. Kahn, and J.~a. Teixeira, 2010: Characterization of cloud liquid
   water content distributions from cloudsat. \textit{Journal of Geophysical
   Research: Atmospheres}, \textbf{115~(D20)}, \doi{10.1029/2009JD013272},
   \urlprefix\url{http://dx.doi.org/10.1029/2009JD013272}, d20203.
@@ -255,13 +250,6 @@ Lin, W.~Y. and M.~H. Zhang, 2004: Evaluation of clouds and their radiative
   effects simulated by the {NCAR} {C}ommunity {A}tmospheric {M}odel against
   satellite observations. \textit{J. Climate}, \textbf{17~(17)}, 3302--3318,
   \doi{10.1175/1520-0442(2004)017$<$3302:EOCATR$>$2.0.CO;2}.
-
-\bibitem[{Loeb et~al.(2009)Loeb, Wielicki, Doelling, Smith, Keyes, Kato,
-  Manalo-Smith, and Wong}]{loeb_et_al_2009}
-Loeb, N.~G., B.~A. Wielicki, D.~R. Doelling, G.~L. Smith, D.~F. Keyes, S.~Kato,
-  N.~Manalo-Smith, and T.~Wong, 2009: Toward optimal closure of the {E}arth's
-  top-of-atmosphere radiation budget. \textit{J. Climate}, \textbf{22~(3)},
-  748--766, \doi{10.1175/2008JCLI2637.1}.
 
 \bibitem[{Mace(2010)}]{mace_2010}
 Mace, G.~G., 2010: Cloud properties and radiative forcing over the maritime
@@ -351,13 +339,6 @@ Moroney, C., R.~Davies, and J.-P. Muller, 2002: Operational retrieval of
   cloud-top heights using {MISR} data. \textit{IEEE Trans. Geosci. Remote
   Sens.}, \textbf{40~(7)}, 1532--1540, \doi{10.1109/TGRS.2002.801150}.
 
-\bibitem[{Muller et~al.(2002)Muller, Mandanayake, Moroney, Davies, Diner, and
-  Paradise}]{muller_et_al_2002}
-Muller, J.-P., A.~Mandanayake, C.~Moroney, R.~Davies, D.~J. Diner, and
-  S.~Paradise, 2002: {MISR} stereoscopic image matchers: Techniques and
-  results. \textit{IEEE Trans. Geosci. Remote Sens.}, \textbf{40~(7)},
-  1547--1559, \doi{10.1109/TGRS.2002.801160}.
-
 \bibitem[{Neale et~al.(2010{\natexlab{a}})}]{neale_et_al_2010a}
 Neale, R.~B., et~al., 2010{\natexlab{a}}: Description of the {NCAR} {C}ommunity
   {A}tmosphere {M}odel ({CAM} 4.0). NCAR Technical Note {TN-485+STR}, NCAR.
@@ -406,18 +387,6 @@ R{\"a}is{\"a}nen, P., H.~W. Barker, M.~F. Khairoutdinov, J.~Li, and D.~A.
   large-scale models. \textit{Q. J. R. Meteorol. Soc.}, \textbf{130},
   2047--2067, \doi{10.1256/qj.03.99}.
 
-\bibitem[{Ramanathan(1987)}]{ramanathan_1987}
-Ramanathan, V., 1987: The role of earth radiation budget studies in climate and
-  general circulation research. \textit{J. Geophys. Res.}, \textbf{92~(D4)},
-  4075--4095, \doi{10.1029/JD092iD04p04075}.
-
-\bibitem[{Ramanathan et~al.(1989)Ramanathan, Cess, Harrison, Minnis, Barkstrom,
-  Ahmad, and Hartmann}]{ramanathan_et_al_1989}
-Ramanathan, V., R.~D. Cess, E.~F. Harrison, P.~Minnis, B.~R. Barkstrom,
-  E.~Ahmad, and D.~Hartmann, 1989: Cloud-radiative forcing and climate: Results
-  from the {E}arth {R}adiation {B}udget {E}xperiment. \textit{Science},
-  \textbf{243~(4887)}, 57--63, \doi{10.1126/science.243.4887.57}.
-
 \bibitem[{Randall et~al.(2003)Randall, Khairoutdinov, Arakawa, and
   Grabowski}]{randall_et_al_2003}
 Randall, D., M.~Khairoutdinov, A.~Arakawa, and W.~Grabowski, 2003: Breaking the
@@ -428,11 +397,6 @@ Randall, D., M.~Khairoutdinov, A.~Arakawa, and W.~Grabowski, 2003: Breaking the
 Rossow, W.~B. and R.~A. Schiffer, 1999: Advances in understanding clouds from
   {ISCCP}. \textit{Bull. Amer. Meteor. Soc.}, \textbf{80~(11)}, 2261--2287,
   \doi{10.1175/1520-0477(1999)080$<$2261:AIUCFI$>$2.0.CO;2}.
-
-\bibitem[{Stephens(2005)}]{stephens_2005}
-Stephens, G.~L., 2005: Cloud feedbacks in the climate system: A critical
-  review. \textit{J. Climate}, \textbf{18~(2)}, 237--273,
-  \doi{10.1175/JCLI-3243.1}.
 
 \bibitem[{Stephens and Platt(1987)}]{stephens_and_platt_1987}
 Stephens, G.~L. and C.~M.~R. Platt, 1987: Aircraft observations of the
@@ -463,13 +427,6 @@ Tanelli, S., S.~L. Durden, E.~Im, K.~S. Pak, D.~G. Reinke, P.~Partain, J.~M.
 Tao, W.-K., et~al., 2009: A multiscale modeling system: Developments,
   applications, and critical issues. \textit{Bulletin of the American
   Meteorological Society}, \textbf{90~(4)}, 515.
-
-\bibitem[{The HadGEM2 Development Team:~Martin
-  et~al.(2011)}]{martin_et_al_2011}
-The HadGEM2 Development Team:~Martin, G.~M., et~al., 2011: The hadgem2 family
-  of met office unified model climate configurations. \textit{Geoscientific
-  Model Development}, \textbf{4~(3)}, 723--757, \doi{10.5194/gmd-4-723-2011},
-  \urlprefix\url{http://www.geosci-model-dev.net/4/723/2011/}.
 
 \bibitem[{Tian and Curry(1989)}]{tian_and_curry_1989}
 Tian, L. and J.~A. Curry, 1989: Cloud overlap statistics. \textit{J. Geophys.
@@ -513,6 +470,11 @@ Webb, M., C.~Senior, S.~Bony, and J.-J. Morcrette, 2001: Combining {ERBE} and
   {ISCCP} data to assess clouds in the {H}adley {C}entre, {ECMWF} and {LMD}
   atmospheric climate models. \textit{Clim. Dyn.}, \textbf{17~(12)}, 905--922,
   \doi{10.1007/s003820100157}.
+
+\bibitem[{Webb et~al.(2016)}]{webb_et_al_2016}
+Webb, M.~J., et~al., 2016: The {C}loud {F}eedback {M}odel {I}ntercomparison
+  {P}roject ({CFMIP}) contribution to {CMIP6}. Submitted to Geoscientific Model
+  Development (GMD) 30th March, 2016.
 
 \bibitem[{Wielicki and Parker(1992)}]{wielicki_and_parker_1992}
 Wielicki, B.~A. and L.~Parker, 1992: On the determination of cloud cover from

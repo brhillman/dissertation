@@ -32,7 +32,7 @@ that would result from generalized overlap, $\overline{c}_{k_1,
 k_2}^\textrm{max}$ is the cloud area that would result if the layers were
 maximally overlapped, $\overline{c}_{k_1, k_2}^\textrm{ran}$ is the cloud
 fraction that would result if the layers were randomly overlapped, and
-$\alpha_{k_1, k_2}$ is the “overlap parameter” that specifies the weighting
+$\alpha_{k_1, k_2}$ is the "overlap parameter" that specifies the weighting
 between maximum and random overlap. The theoretical combined cloud fractions
 $\overline{c}^\textrm{max}_{k_1, k_2}$ and $\overline{c}^\textrm{ran}_{k_1,
 k_2}$ are defined as $$\begin{gathered} \overline{c}^\textrm{max}_{k_1, k_2} =
@@ -105,7 +105,7 @@ inverse exponential function of the separation between layers, such that
 $$\begin{gathered} \alpha_{k_1, k_2} = \exp\left(-\frac{z_{k_1} -
 z_{k_2}}{z_0}\right) \end{gathered}$$ {#eq:alpha_exponential_equation} where
 $z_{k_1}$ and $z_{k_2}$ are the heights of layers $k_1$ and $k_2$, and $z_0$ is
-the “decorrelation length” for cloud overlap that specifies how quickly the
+the "decorrelation length" for cloud overlap that specifies how quickly the
 vertical correlation in cloud occurrence decays from maximal to random
 [@hogan_and_illingworth_2000; @mace_and_benson-troth_2002; @raisanen_et_al_2004;
 @pincus_et_al_2005; @barker_2008; @tompkins_and_digiuseppe_2015].
@@ -166,7 +166,7 @@ in COSP diagnostics to overlap. With the high-resolution model output provided
 by the SP-CAM, the occurrence overlap can be directly calculated for each
 gridbox from the subcolumn cloud condensate amount by solving
 [@eq:generalized_overlap_equation] for $\alpha_{k_1, k_2}$ and assuming that the
-“true” combined cloud fraction between layers $k_1$ and $k_2$ can be described
+"true" combined cloud fraction between layers $k_1$ and $k_2$ can be described
 by generalized overlap, so that $\overline{c}^\textrm{true}_{k_1, k_2} =
 \overline{c}^\textrm{gen}_{k_1, k_2}$. This yields for the overlap parameter
 $\alpha$ $$\begin{gathered} \alpha_{k_1, k_2} = \frac{
@@ -183,7 +183,7 @@ each gridbox and at each archived 3-hourly snapshot of the SP-CAM outputs used
 in the previous chapter. The overlap calculation is restricted to layers with
 partial cloud fractions between 5% and 95% cloud area. The separation between
 layers is calculated from the height above surface field from the SP-CAM output
-(“HEIGHT” in the SP-CAM history files), and overlap is binned by separation
+("HEIGHT" in the SP-CAM history files), and overlap is binned by separation
 distance using 40 uniformly-spaced height bins from 0 to 5 km over a single
 month of output. The analysis is limited to separations of 5 km or less because
 layers separated by more than 5 km are essentially uncorrelated and, as pointed
@@ -400,11 +400,11 @@ testing the sensitivity of simulated satellite cloud diagnostics to the
 treatment of unresolved variability. With overlap, rank correlation, and
 condensate distributions completely parameterized, an additional set of modified
 fields is created using the above described subcolumn generator, and referred to
-as “GEN-VAR-PARAM”. In order to separately test the parameterization of overlap,
+as "GEN-VAR-PARAM". In order to separately test the parameterization of overlap,
 rank correlation, and variability, another set of modified fields is created
 where the overlap, rank correlation, and gridbox variance is calculated at each
 gridbox directly from the CRM fields rather than parameterized. This case is
-referred to as “GEN-VAR-CALC” and represents the limit of performance that can
+referred to as "GEN-VAR-CALC" and represents the limit of performance that can
 be expected with this subcolumn generator.
 
 ![Raw (left) and normalized (right) condensate empirical density functions from
@@ -559,7 +559,7 @@ condensate fields from gridbox-mean profiles, in the same manner in which
 [@fig:subgrid1_cldmisr_maps_diff] shows errors that arise due to using
 SCOPS/PREC_SCOPS with maximum-random overlap and homogeneous condensate
 (MRO-HOM). [@fig:subgrid2_cldmisr_maps_gen-var-calc_diff] shows the errors in
-using the new scheme with ideal or “best-case” overlap, rank correlation, and
+using the new scheme with ideal or "best-case" overlap, rank correlation, and
 variance calculated directly from the original CRM fields, while
 [@fig:subgrid2_cldmisr_maps_gen-var-param_diff] shows the errors in using the
 new scheme with these quantities parameterized as discussed in
@@ -738,8 +738,8 @@ issues are not unique to simulation of satellite-observable cloud diagnostics,
 and it has been recognized that subgrid-scale variability, including cloud and
 precipitation occurrence overlap and condensate amount, effect many important
 processes in large-scale models, and some researchers are trying to develop
-explicit subgrid treatments for GCMS. This includes so-called “statistical” or
-“assumed probability distribution” schemes, which predict the evolution of not
+explicit subgrid treatments for GCMS. This includes so-called "statistical" or
+"assumed probability distribution" schemes, which predict the evolution of not
 only the mean, but also the probability distribution of total water (and hence
 the cloud and precipitation condensate) within each grid-box
 [e.g.;@tompkins_2002]. There has been growing interest in using these schemes in

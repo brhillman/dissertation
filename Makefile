@@ -25,7 +25,7 @@ TEXSRC = latex/01_intro.tex \
 		 latex/04_subgrid2.tex \
 		 latex/05_cmip5.tex
 
-$(document).pdf: $(document).tex $(TEXSRC) $(shell find graphics -type f)
+$(document).pdf: $(document).tex $(TEXSRC) $(document).bib $(shell find graphics -type f)
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<
 
 $(document).docx: $(document).md $(CHAPTERS)

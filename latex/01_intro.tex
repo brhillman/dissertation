@@ -1,26 +1,28 @@
 \chapter{Introduction}\label{sec:introductionChapter}
 
 Large-scale (global) models of the atmosphere and climate system are
-fundamental tools that aid in our understanding of climate system. They
-are used not only to study interactions between different components of
-the climate system, but also to perform simulations of future climate
-change relevant for informing government policy decisions. The
-formulation of these models are evaluated on multiple scales, from
-testing the individual components that go into the models (such as a
-particular physical process like convection) to evaluating the
-simulation of climate as a whole. On the large-scale, models are often
-evaluated by comparing simulations of present-day climate with
+fundamental tools that aid in our understanding of the climate system.
+They are used not only to study interactions between different
+components of the climate system, but also to perform simulations of
+future climate change relevant for informing government policy
+decisions. The formulation of these models is evaluated using multiple
+approaches, including testing the individual components that go into the
+models (such as a particular physical process like convection) using
+case studies, idealized frameworks (such as aqua planets, in which land
+is removed) and idealized forcings. Climate models are often, if not
+always, evaluated by comparing simulations of present-day climate with
 observations of the present-day climate system. The sources for these
 observations are diverse, and depend on the particular aspect of the
 climate being evaluated.
 
-Clouds are a critic piece of the climate system, and yet the simulation
-of clouds by global climate models (GCMs, also general circulation
-models) remains a challenge, and cloud feedback processes are well-known
-to be a primary source of uncertainty in projections of future climate
+Clouds are a critical piece of the climate system, and yet the
+simulation of clouds by global climate models (GCMs, also general
+circulation models) remains a challenge, and cloud feedback processes
+are well-known to be a primary source of uncertainty in projections of
+future climate
 \citep{cess_et_al_1990, bony_and_dufresne_2005, williams_and_webb_2009, medeiros_et_al_2008, dufresne_and_bony_2008, bony_et_al_2006}.
 This makes evaluation of clouds in large-scale models of utmost
-importance.
+importance. {[}TODO: add more recent references{]}
 
 Observational records of cloud occurrence and other properties from
 satellite imagers including the International Satellite Cloud
@@ -30,42 +32,42 @@ Moderate Resolution Imaging Spectroradiometer
 Spectroradiometer \citep[MISR][]{diner_et_al_2002, diner_et_al_2005}
 provide a natural baseline for the evaluation of the large-scale cloud
 statistics simulated by these models because they provide near-global
-coverage and an increasingly long time-series. Comparisons of this type
-have been used to evaluate models for as long as such observations have
-been available {[}citations{]}, but comparisons between
-satellite-retrieved and modeled cloud properties are difficult because
-of fundamental differences between how clouds can be measured from space
-and how they are represented in large-scale models. These differences
-stem from both unavoidable limitations in the satellite retrieval
-process, as well as from limitations that arise due to the differences
-in scale between satellite retrievals and current GCMs. For example,
-cloud top height or cloud top pressure retrievals based on visible or
-infrared observations (e.g., ISCCP, MODIS, and MISR) are known to have
-significant problems when clouds with low amounts of condensate
-(i.e.~non-opaque clouds or cloud-tops) are present, especially for
-scenes with multi-layer clouds where the upper layer cloud is optically
-thin \citep{marchand_et_al_2010, pincus_et_al_2012}. Fundamentally, the
-visible and infrared observations gathered by MODIS, MISR and ISSCP
-cannot fully constrain the vertical distribution of condensate,
-including discriminating between condensate types in differing layers,
-and this leads to uncertainties and systematic errors in the
-determination (retrieval) of cloud top height. Models, however, specify
-(or resolve) the vertical distribution of condensate to some degree.
-This fundamental difference between retrievals of cloud top height and
-the vertical distribution of clouds specified by a model makes any
-direct comparisons between the two somewhat ambiguous. An alternative to
-this often ambiguous direct comparison between satellite-retrieved and
-modeled clouds is to first ``simulate'' the satellite view of clouds
-from the model-simulated atmospheric state. The goal with this approach
-is to account for the known errors in the satellite retrieval process by
-forward-modeling or emulating the retrieval technique used for a
-particular satellite instrument from the available model fields, with
-the goal of providing a description of what a given satellite instrument
-would see given the model-simulated atmosphere. These simulated or
-psuedo-retrievals are expected to be more directly comparable to the
-available satellite retrievals than the raw model fields, thus enabling
-a more appropriate evaluation of model clouds against satellite
-observations.
+coverage and an increasingly long time-series. Comparisons of cloud
+amount (or cloud fraction) and cloud top height for various cloud types
+have long been used to evaluate models {[}citations{]}, but comparisons
+between satellite-retrieved and modeled cloud properties are difficult
+because of fundamental differences between how clouds can be measured
+from space and how they are represented in large-scale models. These
+differences stem from both unavoidable limitations in the satellite
+retrieval process, as well as from limitations that arise due to the
+differences in scale between satellite retrievals and current GCMs. For
+example, cloud top height or cloud top pressure retrievals based on
+visible or infrared observations (e.g., ISCCP, MODIS, and MISR) are
+known to have significant problems when clouds with low amounts of
+condensate (i.e.~non-opaque clouds or cloud-tops) are present,
+especially for scenes with multi-layer clouds where the upper layer
+cloud is optically thin \citep{marchand_et_al_2010, pincus_et_al_2012}.
+Fundamentally, the visible and infrared observations gathered by MODIS,
+MISR and ISSCP cannot fully constrain the vertical distribution of
+condensate, including discriminating between condensate types in
+differing layers, and this leads to uncertainties and systematic errors
+in the determination (retrieval) of cloud top height. Models, however,
+specify (or resolve) the vertical distribution of condensate to some
+degree. This fundamental difference between retrievals of cloud top
+height and the vertical distribution of clouds specified by a model
+makes any direct comparisons between the two somewhat ambiguous. An
+alternative to this often ambiguous direct comparison between
+satellite-retrieved and modeled clouds is to first ``simulate'' the
+satellite view of clouds from the model-simulated atmospheric state. The
+goal with this approach is to account for some of the known errors in
+the satellite retrieval process by forward-modeling or emulating the
+retrieval technique used for a particular satellite instrument from the
+available model fields, with the goal of providing a description of what
+a given satellite instrument would see given the model-simulated
+atmosphere. These simulated or psuedo-retrievals are expected to be more
+directly comparable to the available satellite retrievals than the raw
+model fields, thus enabling a more appropriate evaluation of model
+clouds against satellite observations.
 
 The ISCCP simulator introduced by \citet{klein_and_jakob_1999} has been
 widely used in model comparisons with ISCCP observations
@@ -104,9 +106,9 @@ on evalations using the individual simulators{]}
 
 With the goal of facilitating the implementation of these simulators
 into global climate models, the Cloud Feedback Model Intercomparison
-Project (CFMIP; {[}citation{]}) has collected the ISCCP, MISR, MODIS,
-CloudSat, and CALIPSO simulators into a single software package with a
-common interface: the CMFIP Observation Simulator Package
+Project (CFMIP; \citep{webb_et_al_2016}) has collected the ISCCP, MISR,
+MODIS, CloudSat, and CALIPSO simulators into a single software package
+with a common interface: the CMFIP Observation Simulator Package
 \citep[COSP;][]{bodas-salcedo_et_al_2011}. This has enabled both
 coordinated multi-model experiments comparing simulated cloud properties
 across models as well as innovative multi-sensor analyses of models
@@ -160,28 +162,29 @@ subgrid-scale profiles. This is due to the fact that simple profiles of
 averaged quantities at larger scales do not in themselves fully
 constrain the distribution of profiles at smaller scales, and simulating
 the satellite views of clouds depends on detailed knowledge of the
-overlapping nature of clouds at scales approximating satellite pixels.
-This is accounted for in the simulator framework by generating
-stochastic samples of ``subcolumn'' profiles, which reproduce the
-gridbox-averaged profiles in the limit of many samples and are
+overlapping nature of clouds and precipitation at scales approximating
+satellite pixels. This is accounted for in the simulator framework by
+generating stochastic samples of ``subcolumn'' profiles, which reproduce
+the gridbox-averaged profiles in the limit of many samples and are
 consistent with some external assumption about how the cloudy parts of
 the gridbox overlap vertically \citep{klein_and_jakob_1999}. This
 problem is not unique to simulating satellite-retrieved quantities, but
 is also important for simulating radiative fluxes and heating rates
-within models as well. However, the assumptions made in the subcolumn
-sampling process, namely that cloud occurrence obeys a conceptually
-simple combination of maximum and random overlap and that cloud (and
+within models as well. In COSP, the assumption is made in the subcolumn
+sampling process that cloud occurrence obeys a conceptually simple
+combination of maximum and random overlap and that cloud (and
 precipitation) condensate is horizontally homogeneous on the scale of
-model gridboxes, have recently been shown to lead to substantial errors
-in simulated radiative fluxes and heating rates in models
-\citep{barker_et_al_1999, oreopoulos_et_al_2012} {[}others?{]}. In
-Section~\ref{sec:subgrid1} here it is shown that these assumptions
-similarly lead to substantial errors in simulated satellite retrievals.
-In Section~\ref{sec:subgrid2} an improved framework for sampling these
-subcolumns is presented that better represents the subgrid-scale cloud
-and precipitation properties, and it is shown that these improvements
-can substantially reduce the errors identified in
-Section~\ref{sec:subgrid1}
+model gridboxes. These same assumptions are often (but not always) used
+in models for the simulation of radiative fluxes. It has been shown that
+these assumptions can lead to substantial errors in simulated radiative
+fluxes and heating rates in models
+\citep{barker_et_al_1999, oreopoulos_et_al_2012}, and in Chapter 3 here
+it is shown that these assumptions similarly lead to substantial errors
+in simulated satellite retrievals. In Chapter 4 an improved framework
+for sampling these subcolumns is presented that better represents the
+subgrid-scale cloud and precipitation properties, and it is shown that
+these improvements can substantially reduce the errors identified in
+Chapter 3.
 
 Errors in the second step in the simulator framework (simulating the
 pixel-scale satellite retrievals), can arise due to incomplete or
@@ -194,35 +197,20 @@ that largely remains unanswered is, given perfect descriptions of the
 cloudy atmosphere as inputs to the simulators, are they able to
 faithfully reproduce the retrieved cloud properties that the instrument
 they attempt to simulate actually retrieves? A theoretical framework for
-answering this question is to supply actual profiles of cloud properties
-as inputs to the simulators, and then to compare the simulated
-retrievals with actual coincident retrievals. Using this framework to
+answering this question is to supply ``observed profiles'' of cloud
+properties as inputs to the simulators, and then to compare the
+simulated retrievals with coincident retrievals. Using this framework to
 answer this question is difficult because it requires some source for
-these ``perfect inputs'' on which to run the simulators simultaneous
-with actual retrievals from the instruments. \citet{mace_et_al_2009} and
-\citet{mace_et_al_2011} use a multi-sensor approach using ground-based
-remote sensing retrievals of cloud properties to derive inputs to the
-ISCCP simulator, run the ISCCP simulator directly on these inputs and
-then compare the simulated ISCCP cloud properties with actual coincident
-ISCCP retrievals. While the input profiles derived from the ground-based
-retrievals are likely imperfect and have their own associated
-uncertainties themselves, studies such as these are important for
-building confidence in the fidelity of the simulator framework itself.
-In Section~\ref{sec:misr}, an evaluation of the MISR simulator is
-presented, using a conceptually similar framework to that used in
-\citet{mace_et_al_2009} and \citet{mace_et_al_2011}.
-
-Following the quantification of uncertainties and errors in the
-simulator framework presented in
-Sections~\ref{sec:subgrid1}, \ref{sec:subgrid2}, \ref{sec:misr}, the
-simulator framework is applied to a comparison of cloud properties in a
-collection of models in Section~\ref{sec:cmip5}, with a specific focus
-on those differences between models and satellite retrievals that are
-beyond the range of uncertainties estimated in
-Sections~\ref{sec:subgrid1}, \ref{sec:subgrid2}, and
-Section~\ref{sec:misr}. The results presented in Section~\ref{sec:cmip5}
-serve to further illustrate the utility of the simulator framework, but
-more importantly the discussion therein serves to underscore the
-conclusions reached in the previous chapters and the importance of both
-understanding and reducing the sources of errors in model to observation
-comparisons.
+these ``observed profiles''. \citet{mace_et_al_2009} and
+\citet{mace_et_al_2011} use a multi-sensor approach combining
+ground-based remote sensing retrievals of cloud properties to derive
+inputs to the ISCCP simulator, run the ISCCP simulator directly on these
+inputs and then compare the simulated ISCCP cloud properties with actual
+coincident ISCCP retrievals. While the input profiles derived from the
+ground-based retrievals are likely imperfect and have their own
+associated uncertainties (which must be considered in the analysis),
+studies such as these are important for building confidence in the
+fidelity of the simulator framework itself. In Chapter 2, an evaluation
+of the MISR simulator is presented, using a conceptually similar
+framework to that used in \citet{mace_et_al_2009} and
+\citet{mace_et_al_2011}.
