@@ -38,7 +38,7 @@ affects the evaluation of the MISR simulator presented here.
 
 The analysis by M2011 provides one of the few critical evaluation of the
 simulators documented in the available literature. {[}TODO: insert text
-discussion the other few critical evaluations{]} The lack of
+discussing the other few critical evaluations{]} The lack of
 verification of the simulators severely undermines their credibility for
 use in the evaluation of climate models. The goal of this chapter is to
 perform a similar analysis to M2011 for the MISR simulator. Conceptually
@@ -574,13 +574,12 @@ Table~\ref{tbl:misr_cldmisr_table_june}, which show that the more
 broadly defined mid and high-topped categories are in even better
 agreement than the profiles of cloud top height shown in
 Figures~\ref{fig:misr_cth_region_january}, \ref{fig:misr_cth_region_june},
-with differences generally less than 5\%, and the only statistically
-significant differences being in the North Pacific {[}TODO: check
-this{]}. As discussed earlier, the differences in the North Pacific in
-January may reflect biases due to incomplete wind correction in the MISR
-CTH-OD V6 product. Differences in the other regions are much smaller
-than those in the North Pacific (typically less than 5\% cloud area) and
-are generally not statistically significant with respect to sampling.
+with differences generally less than 5\%. As discussed earlier, the
+differences in the North Pacific in January may reflect biases due to
+incomplete wind correction in the MISR CTH-OD V6 product. Differences in
+the other regions are much smaller than those in the North Pacific
+(typically less than 5\% cloud area) and are generally not statistically
+significant with respect to sampling.
 
 As discussed previously, low-topped differences can be large even when
 using the simulator to correct for the effects of thin high-topped cloud
@@ -609,14 +608,16 @@ sampling.
 
 \begin{longtable}[]{@{}lcccccc@{}}
 \caption{\label{tbl:misr_cldmisr_table_january}Regional mean cloud area
-by cloud top height for January 2008. }\tabularnewline
+by cloud top height for January 2008. {[}TODO: check calculation of
+these tables and resolve discrepancies with previous analysis{]}
+}\tabularnewline
 \toprule
-Region & Cloud type & MISR & CC-sim & Diff & p-value &
+Region & Type & MISR & CC-sim & Diff & p-value &
 Significance\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Region & Cloud type & MISR & CC-sim & Diff & p-value &
+Region & Type & MISR & CC-sim & Diff & p-value &
 Significance\tabularnewline
 \midrule
 \endhead
@@ -651,12 +652,12 @@ S. Pacific & High & 9.0 & 11.6 & 2.6 & 0.066 &\tabularnewline
 \caption{\label{tbl:misr_cldmisr_table_june}Regional mean cloud area by
 cloud top height for June 2008. }\tabularnewline
 \toprule
-Region & Cloud type & MISR & CC-sim & Diff & p-value &
+Region & Type & MISR & CC-sim & Diff & p-value &
 Significance\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Region & Cloud type & MISR & CC-sim & Diff & p-value &
+Region & Type & MISR & CC-sim & Diff & p-value &
 Significance\tabularnewline
 \midrule
 \endhead
@@ -740,8 +741,8 @@ MISR and CC-sim low cloud cover shown in the previous section.
 \caption{\label{fig:misr_cldmodis_zonal_january}January climatology of
 zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific
 domain. Shading indicates 95\% confidence interval obtained by bootstrap
-resampling individual monthly-means. {[}TODO: darken
-shading{]}}\label{fig:misrux5fcldmodisux5fzonalux5fjanuary}
+resampling individual
+monthly-means.}\label{fig:misrux5fcldmodisux5fzonalux5fjanuary}
 \end{figure}
 
 \begin{figure}[htbp]

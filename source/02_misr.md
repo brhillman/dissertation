@@ -2,7 +2,7 @@
 
 The goal of the instrument simulator approach is to remove ambiguities in comparisons between models and observations such that remaining differences between the observed and simulated cloud properties can be interpreted unambiguously as model errors. However, the simulators themselves have seen little critical evaluation. @mace_et_al_2011, hereafter M2011, performed an evaluation of the ISCCP simulator using thermodynamic and cloud property profiles derived from data collected at the Atmospheric Radiation Measurement Program [ARM; @ackerman_and_stokes_2003] Southern Great Plains (SGP) ground-based observing site located near Lamont, Oklahoma. In their analysis, M2011 compare ARM radar-and-lidar derived cloud properties directly to those retrieved from ISCCP to first assess the biases in the ISCCP retrieval relative to the ARM-derived cloud properties. They then apply the ISCCP simulator to the ARM-derived profiles of cloud extinction and compare the ISCCP-simulated cloud properties to ISCCP retrievals. They find that the simulator accounts for much of the bias in the ISCCP cloud top pressure ($p_c$) retrieval; that is, the ISCCP-simulated $p_c$ retrieval compares well with the actual ISCCP retrieval. However, mid-level cloud remained a problem with significantly less mid-level cloud in the simulated retrievals than in the ISCCP retrievals (6% relative to the total number of profiles, or equivalently, 23% relative to the amount of simulated mid-level cloud), suggesting that the simulator does not completely compensate for the well-known tendency of ISCCP retrievals to overestimate the amount of mid-level clouds [e.g., @marchand_et_al_2010]. More problematically, M2011 found large differences in optical depth between ISCCP and ARM retrievals. M2011 suggest this may be due to a combination of sub-pixel variability in the clouds and limitations associated with the 1D radiative transfer used in the ISCCP retrievals. The simulators do not current correct for any optical depth biases, and the potential exists for large biases in the comparisons for cases involving small, heterogeneous broken clouds where 3D effects are especially important. This topic is discussed in more detail later in this chapter, as it also affects the evaluation of the MISR simulator presented here.
 
-The analysis by M2011 provides one of the few critical evaluation of the simulators documented in the available literature. [TODO: insert text discussion the other few critical evaluations] The lack of verification of the simulators severely undermines their credibility for use in the evaluation of climate models. The goal of this chapter is to perform a similar analysis to M2011 for the MISR simulator. Conceptually similar to the ISCCP simulator, the MISR simulator produces histograms of cloud optical depth and cloud top height. While the optical depth retrievals are similar, the MISR cloud top height is based on a geometric stereo-imaging technique that has different strengths and weakness than ISCCP. In particular, MISR provides more accurate retrievals of cloud top height for low-level and mid-level clouds, more reliable discrimination of mid-level clouds from other clouds, and is insensitive to the instrument calibration making the data well suited for examining variability on seasonal or longer time scales, while ISCCP provides a longer time record, diurnal sampling (MISR has a fixed equator crossing time near 10:30 am) and is able to better detect optically thin high-level clouds because of its use of thermal IR observations.
+The analysis by M2011 provides one of the few critical evaluation of the simulators documented in the available literature. [TODO: insert text discussing the other few critical evaluations] The lack of verification of the simulators severely undermines their credibility for use in the evaluation of climate models. The goal of this chapter is to perform a similar analysis to M2011 for the MISR simulator. Conceptually similar to the ISCCP simulator, the MISR simulator produces histograms of cloud optical depth and cloud top height. While the optical depth retrievals are similar, the MISR cloud top height is based on a geometric stereo-imaging technique that has different strengths and weakness than ISCCP. In particular, MISR provides more accurate retrievals of cloud top height for low-level and mid-level clouds, more reliable discrimination of mid-level clouds from other clouds, and is insensitive to the instrument calibration making the data well suited for examining variability on seasonal or longer time scales, while ISCCP provides a longer time record, diurnal sampling (MISR has a fixed equator crossing time near 10:30 am) and is able to better detect optically thin high-level clouds because of its use of thermal IR observations.
 
 Again, the overall goal of this chapter is to advance understanding of uncertainties and limitations of the simulator framework by performing a critical verification for the MISR simulator. The fundamental question addressed in this chapter is, given observed profiles of visible extinction, can the MISR simulator accurately reproduce the features of the MISR retrieval?
 
@@ -24,9 +24,9 @@ These retrievals of visible extinction are used in this study as inputs to the M
 
 ## MISR-retrieved and MISR-simulated cloud top heights {#sec:misrRetrievals}
 
-The MISR cloud top height and optical depth (CTH-OD) data used here is the Version 6 product [@marchand_et_al_2010], which is produced at the NASA Langley Distributed Active Archive Center (DAAC). In order to calculate sampling uncertainties at the monthly time scale, orbit-by-orbit data are used in this study, but for use with climate models these data have been aggregated into monthly summaries that are available from the Cloud Feedback Model Intercomparison Project [CFMIP; @webb_et_al_2016] observational data archive[^1]. 
+The MISR cloud top height and optical depth (CTH-OD) data used here is the Version 6 product [@marchand_et_al_2010], which is produced at the NASA Langley Distributed Active Archive Center (DAAC). In order to calculate sampling uncertainties at the monthly time scale, orbit-by-orbit data are used in this study, but for use with climate models these data have been aggregated into monthly summaries that are available from the Cloud Feedback Model Intercomparison Project [CFMIP; @webb_et_al_2016] observational data archive[^cfmipObs]. 
 
-[^1]: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
+[^cfmipObs]: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
 ![Profiles of visible extinction $d\tau$ and estimates of cloud top height $z_c$ for a short orbit segment.](graphics/misr_sim_example.pdf){#fig:misr_sim_example}
 
@@ -78,68 +78,68 @@ Cloud 3D structure and partially-filled satellite pixels are also well-known to 
 
 ![Histograms of cloud top height for June.](graphics/misr_cth_2008-06.pdf){#fig:misr_cth_region_june}
 
-[@fig:misr_cth_region_january;@fig:misr_cth_region_june] show marginal histograms of cloud top height ($z_c$) for each of the regions outlined in [@fig:misr_cldmisr_maps_january] and [@fig:misr_cldmisr_maps_june]. Regionally averaged cloud area by cloud type is summarized for each of these regions in [@tbl:misr_cldmisr_table_january;@tbl:misr_cldmisr_table_june] for January and June, respectively. The tables show the regionally averaged cloud area by cloud type for the MISR and CC-sim retrievals, the difference between CC-sim and MISR, and the significance level of the differences calculated using a Welch's (two-sample, unequal size, unequal variance) Student $t$-test, treating each orbit as an independent sample. With the exception of the California Stratus region, the CC-dir results show large amounts of high-topped clouds in both January and June. Most of this high-topped cloud is optically thin, and the MISR simulator does a reasonable job matching the MISR retrievals. The good agreement between MISR and CC-sim mid and high-topped cloud is also evident in [@tbl:misr_cldmisr_table_january] and [@tbl:misr_cldmisr_table_june], which show that the more broadly defined mid and high-topped categories are in even better agreement than the profiles of cloud top height shown in [@fig:misr_cth_region_january;@fig:misr_cth_region_june], with differences generally less than 5%, and the only statistically significant differences being in the North Pacific [TODO: check this]. As discussed earlier, the differences in the North Pacific in January may reflect biases due to incomplete wind correction in the MISR CTH-OD V6 product. Differences in the other regions are much smaller than those in the North Pacific (typically less than 5% cloud area) and are generally not statistically significant with respect to sampling.
+[@fig:misr_cth_region_january;@fig:misr_cth_region_june] show marginal histograms of cloud top height ($z_c$) for each of the regions outlined in [@fig:misr_cldmisr_maps_january] and [@fig:misr_cldmisr_maps_june]. Regionally averaged cloud area by cloud type is summarized for each of these regions in [@tbl:misr_cldmisr_table_january;@tbl:misr_cldmisr_table_june] for January and June, respectively. The tables show the regionally averaged cloud area by cloud type for the MISR and CC-sim retrievals, the difference between CC-sim and MISR, and the significance level of the differences calculated using a Welch's (two-sample, unequal size, unequal variance) Student $t$-test, treating each orbit as an independent sample. With the exception of the California Stratus region, the CC-dir results show large amounts of high-topped clouds in both January and June. Most of this high-topped cloud is optically thin, and the MISR simulator does a reasonable job matching the MISR retrievals. The good agreement between MISR and CC-sim mid and high-topped cloud is also evident in [@tbl:misr_cldmisr_table_january] and [@tbl:misr_cldmisr_table_june], which show that the more broadly defined mid and high-topped categories are in even better agreement than the profiles of cloud top height shown in [@fig:misr_cth_region_january;@fig:misr_cth_region_june], with differences generally less than 5%. As discussed earlier, the differences in the North Pacific in January may reflect biases due to incomplete wind correction in the MISR CTH-OD V6 product. Differences in the other regions are much smaller than those in the North Pacific (typically less than 5% cloud area) and are generally not statistically significant with respect to sampling.
 
 As discussed previously, low-topped differences can be large even when using the simulator to correct for the effects of thin high-topped cloud on the retrievals due to differences in low-level cloud detection between the different observing platforms. This is especially true in the California Stratocumulus, Hawaiian Trade Cumulus, and North Pacific regions (in the NH summer) due to field-of-view issues, but these regions also have large variability in low-topped cloud amount, as indicated by the large sampling uncertainties for low-topped cloud bins in these regions. [@tbl:misr_cldmisr_table_june] shows that low-topped cloud differences in June are largest in the California SC region, where CC-sim low-topped cloud amount (using the 50% lidar cloud fraction threshold as discussed above in the context of [@fig:misr_rlmask_test]) is lower than MISR by 15% cloud area. While this region is well known for its extensive low cloud, this cloud often displays considerable spatial structure and broken cloudiness. @klein_and_hartmann_1993 found using ship-based observer reports (following @warren_et_al_1986 [@warren_et_al_1988]) that low (stratus) cloud cover in this region can exceed 60% cloud area in summer months, reaching a peak value of 67%. This is consistent with the low-topped cloud cover found here from MISR retrievals. Low-topped cloud amounts are lower in this region in January, and the differences are much smaller and are not statistically significant with respect to sampling.
 
 
-Region             Cloud type    MISR    CC-sim    Diff    p-value    Significance  
-------            ------------  ------  --------  ------  ---------  -------------- 
-Pacific            High          13.2    13.0      -0.2    0.989                   
-                   Mid           13.7    14.9       1.1    0.512                   
-                   Low           44.4    36.4       -8.0   0.000          **       
-                   Total         73.3    65.3       -8.0   0.000          **       
-N. Pacific         High          23.5    9.6       -13.9   0.000          **       
-                   Mid           16.5    26.9       10.3   0.001          **       
-                   Low           38.3    48.3       10.0   0.015           *       
-                   Total         81.5    85.6       4.1    0.336                   
-Tropical W. P.     High          29.6    37.2       7.6    0.047           *       
-                   Mid           12.3    11.2       -1.0   0.468                   
-                   Low           32.9    17.5      -15.4   0.000          **       
-                   Total         75.5    68.5       -7.0   0.018           *       
-California S. C.   High          20.9    15.6       -5.4   0.924                   
-                   Mid           5.3     9.4        4.0    0.072                   
-                   Low           44.3    43.4       -0.8   0.989                   
-                   Total         74.3    69.7       -4.5   0.846                   
-Hawaiian T. C.     High          14.8    8.3        -6.5   0.005          **       
-                   Mid           8.1     8.7        0.6    0.979                   
-                   Low           36.5    35.1       -1.3   0.943                   
-                   Total         60.0    52.9       -7.1   0.006          **       
-S. Pacific         High          9.0     11.6       2.6    0.066                   
-                   Mid           19.0    18.8       -0.2   0.288                   
-                   Low           50.8    42.1       -8.7   0.005          **       
-                   Total         81.5    73.4       -8.0   0.000          **       
+Region            Type     MISR     CC-sim   Diff      p-value   Significance  
+---------------  ------   ------   -------- -------   --------- --------------
+Pacific           High     13.2     13.0      -0.2     0.989                   
+                  Mid      13.7     14.9       1.1     0.512                   
+                  Low      44.4     36.4      -8.0     0.000     **       
+                  Total    73.3     65.3      -8.0     0.000     **       
+N. Pacific        High     23.5     9.6      -13.9     0.000     **       
+                  Mid      16.5     26.9      10.3     0.001     **       
+                  Low      38.3     48.3      10.0     0.015     *       
+                  Total    81.5     85.6       4.1     0.336                   
+Tropical W. P.    High     29.6     37.2       7.6     0.047     *       
+                  Mid      12.3     11.2      -1.0     0.468                   
+                  Low      32.9     17.5     -15.4     0.000     **       
+                  Total    75.5     68.5      -7.0     0.018     *       
+California S. C.  High     20.9     15.6      -5.4     0.924                   
+                  Mid      5.3      9.4        4.0     0.072                   
+                  Low      44.3     43.4      -0.8     0.989                   
+                  Total    74.3     69.7      -4.5     0.846                   
+Hawaiian T. C.    High     14.8     8.3       -6.5     0.005     **       
+                  Mid      8.1      8.7        0.6     0.979                   
+                  Low      36.5     35.1      -1.3     0.943                   
+                  Total    60.0     52.9      -7.1     0.006     **       
+S. Pacific        High     9.0      11.6       2.6     0.066                   
+                  Mid      19.0     18.8      -0.2     0.288                   
+                  Low      50.8     42.1      -8.7     0.005     **       
+                  Total    81.5     73.4      -8.0     0.000     **       
 
-Table: Regional mean cloud area by cloud top height for January 2008. {#tbl:misr_cldmisr_table_january}
+Table: Regional mean cloud area by cloud top height for January 2008. [TODO: check calculation of these tables and resolve discrepancies with previous analysis] {#tbl:misr_cldmisr_table_january}
 
 
-Region             Cloud type    MISR    CC-sim    Diff    p-value    Significance  
-------            ------------  ------  --------  ------  ---------  -------------- 
-Pacific            High          15.5    15.7      0.1     0.532                   
-                   Mid           10.7    12.7      2.0     0.000          **       
-                   Low           41.0    35.3      -5.7    0.000          **       
-                   Total         69.8    64.8      -5.1    0.000          **       
-N. Pacific         High          10.8    15.6      4.8     0.045           *       
-                   Mid           19.0    23.6      4.6     0.004          **       
-                   Low           60.6    48.6      -12.0   0.000          **       
-                   Total         94.2    88.2      -6.0    0.001          **       
-Tropical W. P.     High          32.2    32.1      -0.1    0.567                   
-                   Mid           11.7    14.6      2.9     0.097                   
-                   Low           24.6    16.7      -7.8    0.003          **       
-                   Total         69.0    65.0      -3.9    0.242                   
-California S. C.   High          1.8     1.7       -0.0    0.689                   
-                   Mid           2.0     2.6       0.6     0.418                   
-                   Low           66.2    51.7      -14.5   0.024           *       
-                   Total         76.8    56.5      -20.3   0.001          **       
-Hawaiian T. C.     High          9.8     12.3      2.5     0.727                   
-                   Mid           5.4     5.3       -0.1    0.888                   
-                   Low           42.0    31.3      -10.6   0.000          **       
-                   Total         61.6    50.2      -11.4   0.000          **       
-S. Pacific         High          16.4    11.9      -4.5    0.049           *       
-                   Mid           14.6    16.0      1.4     0.627                   
-                   Low           43.7    52.9      9.1     0.000          **       
-                   Total         78.8    81.5      2.7     0.024           *       
-
+Region            Type     MISR     CC-sim   Diff      p-value   Significance  
+---------------  ------   ------   -------- -------   --------- --------------
+Pacific           High     15.5     15.7       0.1     0.532                   
+                  Mid      10.7     12.7       2.0     0.000     **       
+                  Low      41.0     35.3      -5.7     0.000     **       
+                  Total    69.8     64.8      -5.1     0.000     **       
+N. Pacific        High     10.8     15.6       4.8     0.045     *       
+                  Mid      19.0     23.6       4.6     0.004     **       
+                  Low      60.6     48.6     -12.0     0.000     **       
+                  Total    94.2     88.2      -6.0     0.001     **       
+Tropical W. P.    High     32.2     32.1      -0.1     0.567                   
+                  Mid      11.7     14.6       2.9     0.097                   
+                  Low      24.6     16.7      -7.8     0.003     **       
+                  Total    69.0     65.0      -3.9     0.242                   
+California S. C.  High     1.8      1.7       -0.0     0.689                   
+                  Mid      2.0      2.6        0.6     0.418                   
+                  Low      66.2     51.7     -14.5     0.024     *       
+                  Total    76.8     56.5     -20.3     0.001     **       
+Hawaiian T. C.    High     9.8      12.3       2.5     0.727                   
+                  Mid      5.4      5.3       -0.1     0.888                   
+                  Low      42.0     31.3     -10.6     0.000     **       
+                  Total    61.6     50.2     -11.4     0.000     **       
+S. Pacific        High     16.4     11.9      -4.5     0.049     *       
+                  Mid      14.6     16.0       1.4     0.627                   
+                  Low      43.7     52.9       9.1     0.000     **       
+                  Total    78.8     81.5       2.7     0.024     *       
+ 
 Table: Regional mean cloud area by cloud top height for June 2008. {#tbl:misr_cldmisr_table_june} 
 
 ## Diurnal variations in cloud cover {#sec:misrDiurnal}
@@ -148,7 +148,7 @@ Some of differences discussed in the previous section between MISR and CC-sim ma
 
 Terra to Aqua differences reported in @king_et_al_2013 and @meskhidze_et_al_2009 for the regions studied here are more modest. @king_et_al_2013 show differences in June-July-August total cloud cover for the California Stratus region are about 10%, and differences in the North Pacific for these months is much less than 5%. Nonetheless, these differences in cloud cover are non-trivial, and are of the correct sign to explain at least some of the differences between MISR and CC-sim low cloud cover shown in the previous section.
 
-![January climatology of zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific domain. Shading indicates 95% confidence interval obtained by bootstrap resampling individual monthly-means. [TODO: darken shading]](graphics/misr_cldmodis_zonal_2008-01.pdf){#fig:misr_cldmodis_zonal_january}
+![January climatology of zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific domain. Shading indicates 95% confidence interval obtained by bootstrap resampling individual monthly-means.](graphics/misr_cldmodis_zonal_2008-01.pdf){#fig:misr_cldmodis_zonal_january}
 
 ![June climatology of zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific domain. Shading indicates 95% confidence interval obtained by bootstrap resampling individual monthly-means. [TODO: darken shading]](graphics/misr_cldmodis_zonal_2008-06.pdf){#fig:misr_cldmodis_zonal_june}
 
