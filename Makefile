@@ -17,13 +17,13 @@ CHAPTERS = source/01_intro.md \
 		   source/02_misr.md \
 		   source/03_subgrid1.md \
 		   source/04_subgrid2.md \
-		   source/05_cmip5.md 
+		   source/05_summary.md 
 
 TEXSRC = latex/01_intro.tex \
 		 latex/02_misr.tex \
 		 latex/03_subgrid1.tex \
 		 latex/04_subgrid2.tex \
-		 latex/05_cmip5.tex
+		 latex/05_summary.tex
 
 $(document).pdf: $(document).tex $(TEXSRC) $(document).bib $(shell find graphics -type f)
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<

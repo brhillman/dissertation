@@ -26,48 +26,49 @@ importance. {[}TODO: add more recent references{]}
 
 Observational records of cloud occurrence and other properties from
 satellite imagers including the International Satellite Cloud
-Climatology Project \citep[ISCCP][]{rossow_and_schiffer_1999}, the
+Climatology Project \citep[ISCCP;][]{rossow_and_schiffer_1999}, the
 Moderate Resolution Imaging Spectroradiometer
-\citep[MODIS][]{king_et_al_2003}, and the Multi-angle Imaging
-Spectroradiometer \citep[MISR][]{diner_et_al_2002, diner_et_al_2005}
+\citep[MODIS;][]{king_et_al_2003}, and the Multi-angle Imaging
+Spectroradiometer \citep[MISR;][]{diner_et_al_2002, diner_et_al_2005}
 provide a natural baseline for the evaluation of the large-scale cloud
 statistics simulated by these models because they provide near-global
 coverage and an increasingly long time-series. Comparisons of cloud
 amount (or cloud fraction) and cloud top height for various cloud types
-have long been used to evaluate models {[}citations{]}, but comparisons
-between satellite-retrieved and modeled cloud properties are difficult
-because of fundamental differences between how clouds can be measured
-from space and how they are represented in large-scale models. These
-differences stem from both unavoidable limitations in the satellite
-retrieval process, as well as from limitations that arise due to the
-differences in scale between satellite retrievals and current GCMs. For
-example, cloud top height or cloud top pressure retrievals based on
-visible or infrared observations (e.g., ISCCP, MODIS, and MISR) are
-known to have significant problems when clouds with low amounts of
-condensate (i.e.~non-opaque clouds or cloud-tops) are present,
-especially for scenes with multi-layer clouds where the upper layer
-cloud is optically thin \citep{marchand_et_al_2010, pincus_et_al_2012}.
-Fundamentally, the visible and infrared observations gathered by MODIS,
-MISR and ISSCP cannot fully constrain the vertical distribution of
-condensate, including discriminating between condensate types in
-differing layers, and this leads to uncertainties and systematic errors
-in the determination (retrieval) of cloud top height. Models, however,
-specify (or resolve) the vertical distribution of condensate to some
-degree. This fundamental difference between retrievals of cloud top
-height and the vertical distribution of clouds specified by a model
-makes any direct comparisons between the two somewhat ambiguous. An
-alternative to this often ambiguous direct comparison between
-satellite-retrieved and modeled clouds is to first ``simulate'' the
-satellite view of clouds from the model-simulated atmospheric state. The
-goal with this approach is to account for some of the known errors in
-the satellite retrieval process by forward-modeling or emulating the
-retrieval technique used for a particular satellite instrument from the
-available model fields, with the goal of providing a description of what
-a given satellite instrument would see given the model-simulated
-atmosphere. These simulated or psuedo-retrievals are expected to be more
-directly comparable to the available satellite retrievals than the raw
-model fields, thus enabling a more appropriate evaluation of model
-clouds against satellite observations.
+have long been used to evaluate models {[}TODO: add supporting
+citations{]}, but comparisons between satellite-retrieved and modeled
+cloud properties are difficult because of fundamental differences
+between how clouds can be measured from space and how they are
+represented in large-scale models. These differences stem from both
+unavoidable limitations in the satellite retrieval process, as well as
+from limitations that arise due to the differences in scale between
+satellite retrievals and current GCMs. For example, cloud top height or
+cloud top pressure retrievals based on visible or infrared observations
+(e.g., ISCCP, MODIS, and MISR) are known to have significant problems
+when clouds with low amounts of condensate (i.e.~non-opaque clouds or
+cloud-tops) are present, especially for scenes with multi-layer clouds
+where the upper layer cloud is optically thin
+\citep{marchand_et_al_2010, pincus_et_al_2012}. Fundamentally, the
+visible and infrared observations gathered by ISCCP, MODIS and MISR
+cannot fully constrain the vertical distribution of condensate,
+including discriminating between condensate types in differing layers,
+and this leads to uncertainties and systematic errors in the
+determination (retrieval) of cloud top height. Models, however, specify
+(or resolve) the vertical distribution of condensate to some degree.
+This fundamental difference between retrievals of cloud top height and
+the vertical distribution of clouds specified by a model makes any
+direct comparisons between the two somewhat ambiguous. An alternative to
+this often ambiguous direct comparison between satellite-retrieved and
+modeled clouds is to first ``simulate'' the satellite view of clouds
+from the model-simulated atmospheric state. The goal with this approach
+is to account for some of the known errors in the satellite retrieval
+process by forward-modeling or emulating the retrieval technique used
+for a particular satellite instrument from the available model fields,
+with the goal of providing a description of what a given satellite
+instrument would see given the model-simulated atmosphere. These
+simulated or psuedo-retrievals are expected to be more directly
+comparable to the available satellite retrievals than the raw model
+fields, thus enabling a more appropriate evaluation of model clouds
+against satellite observations.
 
 The ISCCP simulator introduced by \citet{klein_and_jakob_1999} has been
 widely used in model comparisons with ISCCP observations
@@ -102,7 +103,8 @@ Additional simulators have also recently been developed for the CloudSat
 with Orthogonal Polarization (CALIOP) lidar \citep{chepfer_et_al_2008}
 onboard the Cloud-Aerosol Lidar and Infrared Pathfinder Satellite
 Observations \citep[CALIPSO][]{winker_et_al_2007} satellite. {[}TODO:
-comment on evalations using the individual simulators{]}
+comment on evalations using the individual simulators, and cite relevant
+literature{]}
 
 With the goal of facilitating the implementation of these simulators
 into global climate models, the Cloud Feedback Model Intercomparison
