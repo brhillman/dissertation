@@ -11,7 +11,7 @@ tblPrefix:
   - "Table"
   - "Tables"
 
-eqPrefix:
+eqnPrefix:
   - "Equation"
   - "Equations"
 ...

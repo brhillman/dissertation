@@ -25,6 +25,12 @@ TEXSRC = latex/01_intro.tex \
 		 latex/04_subgrid2.tex \
 		 latex/05_summary.tex
 
+# Make targets
+# NOTE: for compiling the pdf from the LaTeX source, if you do not have latexmk 
+# installed, you can replace the latexmk command with:
+#
+#     pdflatex $< && bibtex $< && pdflatex $< && pdflatex $<
+#     
 $(document).pdf: $(document).tex $(TEXSRC) $(document).bib $(shell find graphics -type f)
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<
 

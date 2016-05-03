@@ -13,11 +13,10 @@ by \citet{raisanen_et_al_2004} to generate subcolumn cloud condensate
 that both follows a more realistic and flexible cloud overlap assumption
 and allows for generating subcolumn condensate with horizontal
 variability. This scheme has been extended here to apply to
-precipitation as well. Using the same framework as in
-Section~\ref{sec:subgrid1}, the new subcolumn generator presented here
-is shown to substantially reduced the identified errors that arise in
-using SCOPS/PREC\_SCOPS to generate stochastic subcolumns of cloud and
-precipitation condensate.
+precipitation as well. Using the same framework as in Chapter 3, the new
+subcolumn generator presented here is shown to substantially reduced the
+identified errors that arise in using SCOPS and PREC\_SCOPS to generate
+stochastic subcolumns of cloud and precipitation condensate.
 
 \section{Generating stochastic subcolumns of cloud and precipitation
 condensate}\label{sec:subgrid2Generator}
@@ -54,7 +53,7 @@ are the partial cloud fractions of layers \(k_1\) and \(k_2\),
 respectively (i.e., the fraction of the gridbox at levels \(k_1\) and
 \(k_2\) that are cloudy).
 
-In general, eq.~\ref{eq:generalized_overlap_equation} is assumed to
+In general, Equation~\ref{eq:generalized_overlap_equation} is assumed to
 apply to any two pairs of layers, but for the practical implementation
 of the subcolumn generator R04 consider only adjacent layer pairs. Given
 \(\alpha_{k, k-1}\) and the gridbox-mean cloud fraction
@@ -175,7 +174,7 @@ amount but with a separate rank correlation for precipitation, and in
 general a separate assumed probability distribution. Other approaches
 could certainly be designed to extend this to precipitation, but as
 demonstrated in the following sections this simple approach performs
-quite (well when the correct cloud occurrence overlap and variability
+quite well (when the correct cloud occurrence overlap and variability
 are used).
 
 The above presents a complete subcolumn generator that can produce
@@ -198,8 +197,8 @@ evaluate sensitivities in COSP diagnostics to overlap. With the
 high-resolution model output provided by the SP-CAM, the occurrence
 overlap can be directly calculated for each gridbox from the subcolumn
 cloud condensate amount by solving
-eq.~\ref{eq:generalized_overlap_equation} for \(\alpha_{k_1, k_2}\) and
-assuming that the ``true'' combined cloud fraction between layers
+Equation~\ref{eq:generalized_overlap_equation} for \(\alpha_{k_1, k_2}\)
+and assuming that the ``true'' combined cloud fraction between layers
 \(k_1\) and \(k_2\) can be described by generalized overlap, so that
 \(\overline{c}^\textrm{true}_{k_1, k_2} = \overline{c}^\textrm{gen}_{k_1, k_2}\).
 This yields for the overlap parameter \(\alpha\)
@@ -220,9 +219,9 @@ combined cloud fraction between the two layers
 and randomly-overlapped cloud fractions
 \(\overline{c}^\textrm{max}_{k_1, k_2}\) and
 \(\overline{c}^\textrm{ran}_{k_1, k_2}\), and then using these in
-eq.~\ref{eq:alphaEquation}. Using this, overlap is calculated for pairs
-of layers in each model gridbox and at each archived 3-hourly snapshot
-of the SP-CAM outputs used in the previous chapter. The overlap
+Equation~\ref{eq:alphaEquation}. Using this, overlap is calculated for
+pairs of layers in each model gridbox and at each archived 3-hourly
+snapshot of the SP-CAM outputs used in the previous chapter. The overlap
 calculation is restricted to layers with partial cloud fractions between
 5\% and 95\% cloud area. The dependence on the separation between layers
 is determined using 40 uniformly-spaced height bins from 0 to 5 km over
@@ -230,14 +229,14 @@ the single month of output. The analysis is limited to separations of 5
 km or less because layers separated by more than 5 km are essentially
 uncorrelated, as pointed out by \citet{pincus_et_al_2005}, and
 considering only those layers separated by 5 km or less tended to
-improve the quality of the fit to eq.~\ref{eq:alphaExponential}. The
-monthly-averaged overlap as a function of separation is then calculated
-by summing the binned overlap and dividing by the number of valid counts
-in each bin. This is done for each latitude-longitude gridbox and
-separation bin. Rank correlation of total cloud and total precipitation
-condensate is similarly calculated at each gridbox and level for each
-3-hourly snapshot, and binned using the same separation distance bins
-used to bin the overlap.
+improve the quality of the fit to Equation~\ref{eq:alphaExponential}.
+The monthly-averaged overlap as a function of separation is then
+calculated by summing the binned overlap and dividing by the number of
+valid counts in each bin. This is done for each latitude-longitude
+gridbox and separation bin. Rank correlation of total cloud and total
+precipitation condensate is similarly calculated at each gridbox and
+level for each 3-hourly snapshot, and binned using the same separation
+distance bins used to bin the overlap.
 
 \begin{figure}[htbp]
 \centering
@@ -245,18 +244,19 @@ used to bin the overlap.
 \caption{\label{fig:overlapScatter}Global (area-weighted) average cloud
 occurrence overlap parameter (left) and condensate rank correlation
 (right) as a function of separation distance between layers from a month
-of SP-CAM output. Also shown are fits to eq.~\ref{eq:alphaExponential},
-with values of decorrelation length scales from these fits shown in the
-upper right corner of each panel. {[}TODO: show overlap as a function of
-separation in pressure levels? This seems to fit a lot better for small
-separations (see note in text){]}}\label{fig:overlapScatter}
+of SP-CAM output. Also shown are fits to
+Equation~\ref{eq:alphaExponential}, with values of decorrelation length
+scales from these fits shown in the upper right corner of each panel.
+{[}TODO: show overlap as a function of separation in pressure levels?
+This seems to fit a lot better for small separations (see note in
+text){]}}\label{fig:overlapScatter}
 \end{figure}
 
 Figure~\ref{fig:overlapScatter} shows the globally averaged overlap and
 condensate rank correlation for total cloud condensate as a function of
 separation distance (the area-weighted average of the overlap and rank
 correlation calculated at each latitude-longitude gridbox). Overlap and
-rank correlation are fit to eq.~\ref{eq:alphaExponential} using
+rank correlation are fit to Equation~\ref{eq:alphaExponential} using
 non-linear least squares, and the fit is plotted on
 Figure~\ref{fig:overlapScatter} as well, and the values of the
 decorrelation lengths \(z_0\) from the fits are shown in each panel. The
@@ -265,7 +265,7 @@ Figure~\ref{fig:overlapScatter} demonstrate the general tendency for
 both overlap and rank correlation to decrease as the separation between
 layers increases, and especially for distant layers the inverse
 exponential dependence on separation distance following
-eq.~\ref{eq:alphaExponential} seems reasonable. There is however
+Equation~\ref{eq:alphaExponential} seems reasonable. There is however
 generally larger spread in cloud overlap and rank correlation for small
 layer separations {[}TODO: I have also looked at overlap versus
 separation in \emph{pressure} levels, rather than geometric height, and
@@ -282,31 +282,32 @@ and condensate rank correlation (right) decorrelation length scales for
 both cloud (top) and precipitation (bottom). Decorrelation length scales
 at each point are calculated by fitting time-averaged overlap and rank
 correlation as a function of separation distance (in meters) to
-eq.~\ref{eq:alphaExponential}.}\label{fig:overlapMaps}
+Equation~\ref{eq:alphaExponential}.}\label{fig:overlapMaps}
 \end{figure}
 
 In order to derive decorrelation lengths for overlap and rank
 correlation for use in the improved subcolumn generator presented here,
 time-averaged overlap and rank correlation statistics are fit to
-eq.~\ref{eq:alphaExponential} at each latitude-longitude gridbox, and
-the decorrelation lengths from the fits are shown in
+Equation~\ref{eq:alphaExponential} at each latitude-longitude gridbox,
+and the decorrelation lengths from the fits are shown in
 Figure~\ref{fig:overlapMaps} for overlap and rank correlation binned by
 separation distance. This figure shows that both overlap and rank
 correlation can vary substantially with geographic location, with cloud
 overlap decorrelation lengths varying from less than 1 km to over 4 km.
-This suggests, as has been speculated by others \citep[
-e.g.]{pincus_et_al_2005}, that overlap statistics are dependent on cloud
-type. \citet{pincus_et_al_2005} speculated that overlap and rank
-correlation are likely different for convective versus stratiform
-clouds, with convective clouds likely more vertically coherent than
-stratiform. The map shown in Figure~\ref{fig:overlapMaps} does not seem
-entirely consistent with this assumption, however, as cloud overlap and
-rank correlation decorrelation lengths are generally lower throughout
-the deep tropics, and somewhat higher in the coastal stratocumulus
-regions. The spatially varying patterns in decorrelation lengths in
-Figure~\ref{fig:overlapMaps} suggest that assuming a spatially invariant
-decorrelation length will likely lead to spatially varying errors in
-cloud area. This is shown to be the case in the following sections.
+This suggests, as has been speculated by others
+\citep[e.g.,][]{pincus_et_al_2005}, that overlap statistics are
+dependent on cloud type. \citet{pincus_et_al_2005} speculated that
+overlap and rank correlation are likely different for convective versus
+stratiform clouds, with convective clouds likely more vertically
+coherent than stratiform. The map shown in Figure~\ref{fig:overlapMaps}
+does not seem entirely consistent with this assumption, however, as
+cloud overlap and rank correlation decorrelation lengths are generally
+lower throughout the deep tropics, and somewhat higher in the coastal
+stratocumulus regions. The spatially varying patterns in decorrelation
+lengths in Figure~\ref{fig:overlapMaps} suggest that assuming a
+spatially invariant decorrelation length will likely lead to spatially
+varying errors in cloud area. This is shown to be the case in the
+following sections.
 
 \begin{figure}[htbp]
 \centering
@@ -315,7 +316,7 @@ cloud area. This is shown to be the case in the following sections.
 binned by separation distance for cloud liquid (CRM\_QC, upper left),
 cloud ice (CRM\_QI, upper right), precipitating liquid (CRM\_QPC, lower
 left), and precipitating ice (CRM\_QPI, lower right). Decorrelation
-lengths fit to eq.~\ref{eq:alphaExponential} are shown in the upper
+lengths fit to Equation~\ref{eq:alphaExponential} are shown in the upper
 right of each panel.}\label{fig:rankcorrScatter}
 \end{figure}
 
@@ -371,7 +372,7 @@ density \[\begin{gathered}
 \(k\) and \(\theta\) are the shape and scale parameters of the gamma
 distribution, and \(\Gamma\) is the gamma function. Previous authors
 have shown that condensate amounts can be fit well with gamma, beta, or
-lognormal distributions \citep[e.g.;][]{lee_et_al_2010}, and gamma
+lognormal distributions \citep[e.g.,][]{lee_et_al_2010}, and gamma
 distributions are a reasonable fit to the CRM fields produced by SP-CAM.
 Specifically, Figure~\ref{fig:mxratioCDF} shows the empirical cumulative
 density function (CDF) for normalized cloud and precipitation condensate
@@ -399,7 +400,7 @@ curves) for a single snapshot of SP-CAM output.}\label{fig:mxratioCDF}
 
 The gamma distribution has mean \(\mu = k\theta\) and variance
 \(\sigma^2 = k \theta^2\). Using the method of moments
-\citep[e.g.;][]{wilks_2011} and equating the population mean and
+\citep[e.g.,][]{wilks_2011} and equating the population mean and
 variance with the sample mean \(\overline{q}\) and variance
 \(\sigma_q^2\), this system of two equations is easily solved to
 estimate the shape and scale parameters \(k = \mu^2 / \sigma_q^2\) and
@@ -450,7 +451,7 @@ Figure~\ref{fig:subgrid2_mxratio_variance_fits}. The fit parameters are
 then averaged over all of the snapshots to provide a single
 parameterization of the scale and power parameters \(a\) and \(b\) for
 use in the sensitivity tests in this chapter. The averages of the fit
-parameters are shown in Table
+parameters are shown in
 Table~\ref{tbl:subgrid2_mxratio_variance_fits_table}
 
 \begin{figure}[htbp]
@@ -477,7 +478,7 @@ fit.}\label{fig:subgrid2ux5fmxratioux5fvariance}
 \begin{longtable}[]{@{}lccc@{}}
 \caption{\label{tbl:subgrid2_mxratio_variance_fits_table}Averages of the
 fit parameters shown in Figure~\ref{fig:subgrid2_mxratio_variance_fits}
-over all 284 SP-CAM snapshots. }\tabularnewline
+over all 248 SP-CAM snapshots. }\tabularnewline
 \toprule
 Hydrometeor & Average \(a\) & Average \(b\) & Average
 \(r^2\)\tabularnewline
@@ -573,15 +574,16 @@ variability.
 \centering
 \includegraphics{graphics/subgrid2_mxratio_cdf2.pdf}
 \caption{\label{fig:mxratioCDF2}Raw (left) and normalized (right)
-condensate empirical density functions from the CRM, GEN-VAR-PARAM, and
-GEN-VAR-CALC cases as described in the text for a single snapshot of
-SP-CAM output.}\label{fig:mxratioCDF2}
+condensate empirical density functions from the CRM (solid curves),
+GEN-VAR-PARAM (dotted curves), and GEN-VAR-CALC (dashed curves) cases as
+described in the text for a single snapshot of SP-CAM
+output.}\label{fig:mxratioCDF2}
 \end{figure}
 
 Figure~\ref{fig:mxratioCDF2} shows the cumulative distributions of
 condensate amounts for each hydrometeor type from the regenerated
 GEN-VAR-PARAM (dotted curves) and GEN-VAR-CALC (dashed curves) cases for
-a single day of SP-CAM output, as compared with the CDFs from the
+a single snapshot of SP-CAM output, compared with the CDFs from the
 original CRM fields (solid curves) as shown in
 Figure~\ref{fig:mxratioCDF}. The figure shows that the GEN-VAR-CALC case
 is able to reasonably reproduce the distribution of both the raw
@@ -622,6 +624,9 @@ place of GEN-VAR to evaluate separately the limits of the framework or
 the specific parameterization used. The sensitivity of the various
 simulated diagnostics to the modifications made in the new subcolumn
 generator are evaluated using this framework in the following sections.
+Note that, as in Chapter 3, the total error is equal to the sum of the
+components due to overlap and variability, such that
+\(E_\textrm{total} = E_\textrm{overlap} + E_\textrm{var}\).
 
 \section{Reduced errors in simulated passive remote sensing
 diagnostics}\label{sec:subgrid2Passive}
@@ -630,11 +635,11 @@ diagnostics}\label{sec:subgrid2Passive}
 \centering
 \includegraphics{graphics/subgrid2_cldmisr_maps_gen-var-calc_diff.pdf}
 \caption{\label{fig:cldmisrMapsCalcDiff}Errors in MISR-simulated cloud
-area by cloud top height arising due to using the improved GEN-VAR
-subcolumn generator with \emph{calculated} overlap and variability to
-regenerate subcolumns from gridbox-mean profiles (left), the component
-of the error due to the treatment of variability (middle), and the
-component of the error due to the treatment of overlap
+area by cloud top height arising due to using the improved subcolumn
+generator with \emph{calculated} overlap and variability to regenerate
+subcolumns from gridbox-mean profiles (left), the component of the error
+due to the treatment of variability (middle), and the component of the
+error due to the treatment of overlap
 (right).}\label{fig:cldmisrMapsCalcDiff}
 \end{figure}
 
@@ -642,8 +647,8 @@ component of the error due to the treatment of overlap
 \centering
 \includegraphics{graphics/subgrid2_cldmisr_maps_gen-var-param_diff.pdf}
 \caption{\label{fig:cldmisrMapsParamDiff}Errors in MISR-simulated cloud
-area by cloud top height arising due to using the improved GEN-VAR
-subcolumn generator with \emph{parameterized} overlap and variability to
+area by cloud top height arising due to using the improved subcolumn
+generator with \emph{parameterized} overlap and variability to
 regenerate subcolumns from gridbox-mean profiles (left), the component
 of the error due to the treatment of variability (middle), and the
 component of the error due to the treatment of overlap
@@ -652,14 +657,14 @@ component of the error due to the treatment of overlap
 
 Figure~\ref{fig:cldmisrMapsCalcDiff} and
 Figure~\ref{fig:cldmisrMapsParamDiff} show the errors in MISR-simulated
-cloud area by cloud top height that arise due to using the new GEN-VAR
-subcolumn generator to regenerate subcolumn cloud and precipitation
-condensate fields from gridbox-mean profiles.
-Figure~\ref{fig:cldmisrMapsCalcDiff} shows the errors in using the new
-scheme with ideal or ``best-case'' overlap, rank correlation, and
-variance calculated directly from the original CRM fields, while
-Figure~\ref{fig:cldmisrMapsParamDiff} shows the errors in using the new
-scheme with these quantities parameterized as discussed in
+cloud area by cloud top height that arise due to using the new subcolumn
+generator to regenerate subcolumn cloud and precipitation condensate
+fields from gridbox-mean profiles. Figure~\ref{fig:cldmisrMapsCalcDiff}
+shows the errors in using the new scheme with ideal or ``best-case''
+overlap, rank correlation, and variance calculated directly from the
+original CRM fields, while Figure~\ref{fig:cldmisrMapsParamDiff} shows
+the errors in using the new scheme with these quantities parameterized
+as discussed in
 Sections~\ref{sec:subgrid2Overlap}, \ref{sec:subgrid2Variability}.
 Comparing Figure~\ref{fig:cldmisrMapsCalcDiff} and
 Figure~\ref{fig:cldmisrMapsMroDiff} it is clear that the GEN-VAR-CALC
@@ -676,7 +681,7 @@ much smaller, between 0 and 2\%) using the new scheme, compared with
 errors as large as 10\% cloud area using homogeneous condensate
 (Figure~\ref{fig:cldmisrMapsMroDiff}). Errors due to the overlap
 treatment are similarly reduced, from regional errors as large as 10\%
-using MRO down to less than 2\% using the GEN-VAR scheme.
+using MRO down to less than 2\% using the new scheme.
 
 Using parameterized overlap, rank correlation, and variance results in
 larger errors than using the calculated values, as seen in
@@ -750,8 +755,8 @@ dependence is tested here, with a single constant \emph{overlap}
 \(\alpha_\textrm{cold} = 0.85\) (rather than a dependence on separation,
 as studied previously) selected for levels with temperature \(t < 273\)
 K, and \(\alpha_\textrm{warm} = 0.40\) for levels with temperature
-\(t >= 273\) K. The errors in MISR-simulated cloud area that result from
-this simple test are shown in the far right column of
+\(t \ge 273\) K. The errors in MISR-simulated cloud area that result
+from this simple test are shown in the far right column of
 Figure~\ref{fig:cldmisrMapsOverlapDiff}. Remarkably, the errors in total
 cloud area are substantially reduced using this parameterization based
 on temperature, especially in the Southern Ocean. Regional errors in
@@ -782,22 +787,22 @@ hydrometeor occurrence}\label{sec:subgrid2Active}
 \centering
 \includegraphics{graphics/subgrid2_hfba_zonal_gen-var-calc_diff.pdf}
 \caption{\label{fig:hfbaZonalCalcDiff}Errors in CloudSat-simulated
-hydrometeor occurrence (\(Z_e > -27.5\) dBZ) arising due to using
-GEN-VAR with calculated overlap and variability to regenerate subcolumns
-of cloud and precipitation (top), as well as components due to both the
-VAR treatment of variability (middle) and the GEN treatment of overlap
-(bottom).}\label{fig:hfbaZonalCalcDiff}
+hydrometeor occurrence (\(Z_e > -27.5\) dBZ) arising due to using the
+improved subcolumn generator with calculated overlap and variability to
+regenerate subcolumns of cloud and precipitation (top), as well as
+components due to both the VAR treatment of variability (middle) and the
+GEN treatment of overlap (bottom).}\label{fig:hfbaZonalCalcDiff}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{graphics/subgrid2_hfba_zonal_gen-var-param_diff.pdf}
 \caption{\label{fig:hfbaZonalParamDiff}Errors in CloudSat-simulated
-hydrometeor occurrence (\(Z_e > -27.5\) dBZ) arising due to using
-GEN-VAR with parameterized overlap and variability to regenerate
-subcolumns of cloud and precipitation (top), as well as components due
-to both the VAR treatment of variability (middle) and the GEN treatment
-of overlap (bottom).}\label{fig:hfbaZonalParamDiff}
+hydrometeor occurrence (\(Z_e > -27.5\) dBZ) arising due to using the
+improved subcolumn generator with parameterized overlap and variability
+to regenerate subcolumns of cloud and precipitation (top), as well as
+components due to both the VAR treatment of variability (middle) and the
+GEN treatment of overlap (bottom).}\label{fig:hfbaZonalParamDiff}
 \end{figure}
 
 Figure~\ref{fig:hfbaZonalCalcDiff} and
@@ -806,23 +811,23 @@ zonally-averaged CloudSat-simulated hydrometeor occurrence fraction.
 Comparing these errors to those shown in
 Figure~\ref{fig:hfbaZonalMroDiff} again shows a substantial reduction in
 errors of all types using the improved subcolumn generator relative to
-those errors that resulted from using SCOPS/PREC\_SCOPS when using the
-ideal (calculated) overlap and variance. The total error that arises
+those errors that resulted from using SCOPS and PREC\_SCOPS when using
+the ideal (calculated) overlap and variance. The total error that arises
 using the GEN-VAR-CALC scheme to regenerate subcolumns results in errors
 that are generally less than 0.06 frequency of occurrence, compared to
-errors will above 0.1 frequency of occurrence using the old
-SCOPS/PREC\_SCOPS routine. The remaining overestimate appears to be due
-to the limits of using the gamma distribution, where (even using the
-exact variance) the generated condensate amounts are too large at the
-low end for cloud liquid and ice (Figure~\ref{fig:mxratioCDF2}). This
-inflates the area with simulated radar reflectivity \(Z_e > -27.5\) dBZ
-and causes the overestimate in hydrometeor occurrence seen in
+errors will above 0.1 frequency of occurrence using the old SCOPS and
+PREC\_SCOPS routine. The remaining overestimate appears to be due to the
+limits of using the gamma distribution, where (even using the exact
+variance) the generated condensate amounts are too large at the low end
+for cloud liquid and ice (Figure~\ref{fig:mxratioCDF2}). This inflates
+the area with simulated radar reflectivity \(Z_e > -27.5\) dBZ and
+causes the overestimate in hydrometeor occurrence seen in
 Figure~\ref{fig:hfbaZonalCalcDiff}.
 
 Errors in CloudSat-simulated hydrometeor occurrence when using the
 parameterized treatment of overlap and variability are (again) much
-better than the results using the current COSP scheme
-(SCOPS/PREC\_SCOPS), but are nonetheless much larger than when using the
+better than the results using the current COSP scheme (SCOPS and
+PREC\_SCOPS), but are nonetheless much larger than when using the
 calculated overlap and variability. This suggests that considerable
 improvement can be realized with further efforts to parameterize
 variability. The errors due to the treatment of overlap remain small
@@ -873,9 +878,10 @@ representing the full distribution of cloud ice.
 reflectivity with height histograms for the NH Tropics (0 to 10 degrees
 north) that result from using each of four configurations of the
 subcolumn generator, including, from left to right: the COSP
-implementation of SCOPS/PREC\_SCOPS with homogeneous condensate and
-maximum-random overlap, SCOPS/PREC\_SCOPS with adjusted precipitation
-fraction, GEN-VAR with calculated overlap and variance, and GEN-VAR with
+implementation of SCOPS and PREC\_SCOPS with homogeneous condensate and
+maximum-random overlap, SCOPS and PREC\_SCOPS with adjusted
+precipitation fraction, the improved subcolumn generator with calculated
+overlap and variance, and the improved subcolumn generator with
 parameterized overlap and variance.}\label{fig:cfadTropicsAllDiff}
 \end{figure}
 
@@ -886,11 +892,12 @@ parameterized overlap and variance.}\label{fig:cfadTropicsAllDiff}
 reflectivity with height histograms for the North Pacific (35 to 60
 degrees north latitude, 160 to 220 degrees east longitude) that result
 from using each of four configurations of the subcolumn generator,
-including, from left to right: the COSP implementation of
-SCOPS/PREC\_SCOPS with homogeneous condensate and maximum-random
-overlap, SCOPS/PREC\_SCOPS with adjusted precipitation fraction, GEN-VAR
-with calculated overlap and variance, and GEN-VAR with parameterized
-overlap and variance.}\label{fig:cfadNPAllDiff}
+including, from left to right: the COSP implementation of SCOPS and
+PREC\_SCOPS with homogeneous condensate and maximum-random overlap,
+SCOPS and PREC\_SCOPS with adjusted precipitation fraction, the improved
+subcolumn generator with calculated overlap and variance, and the
+improved subcolumn generator with parameterized overlap and
+variance.}\label{fig:cfadNPAllDiff}
 \end{figure}
 
 The errors shown in Figure~\ref{fig:hfbaZonalParamDiff} and
@@ -902,16 +909,16 @@ substantially smaller than arise when using homogeneous condensate as
 shown in Chapter 3, especially for the full reflectivity with height
 histograms. Figure~\ref{fig:cfadTropicsAllDiff} shows the total errors
 for the NH Tropics from using each configuration of subcolumn
-generators, including SCOPS/PREC\_SCOPS (far-left column),
-SCOPS/PREC\_SCOPS with the precipitation adjustment (second column), the
-new subcolumn generator with calculated overlap and variance (third
-column), and the new subcolumn generator with parameterized overlap and
-variance (far-right column). Figure~\ref{fig:cfadNPAllDiff} shows the
-same cases but for the North Pacific region. It is obvious that although
-the errors using parameterized overlap and variance are larger than when
-using calculated overlap and variance, these errors are much smaller
-than when using SCOPS/PREC\_SCOPS with homogeneous condensate,
-especially at lower-altitudes.
+generators, including SCOPS and PREC\_SCOPS (far-left column), SCOPS and
+PREC\_SCOPS with the precipitation adjustment (second column), the new
+subcolumn generator with calculated overlap and variance (third column),
+and the new subcolumn generator with parameterized overlap and variance
+(far-right column). Figure~\ref{fig:cfadNPAllDiff} shows the same cases
+but for the North Pacific region. It is obvious that although the errors
+using parameterized overlap and variance are larger than when using
+calculated overlap and variance, these errors are much smaller than when
+using SCOPS and PREC\_SCOPS with homogeneous condensate, especially at
+lower-altitudes.
 
 \section{Discussion}\label{sec:subgrid2Discussion}
 
@@ -1017,7 +1024,7 @@ This includes so-called ``statistical'' or ``assumed probability
 distribution'' schemes, which predict the evolution of not only the
 mean, but also the probability distribution of total water (and to a
 degree the cloud and precipitation condensate) within each grid-box
-\citep[e.g.;][]{tompkins_2002}. There has been growing interest in using
+\citep[e.g.,][]{tompkins_2002}. There has been growing interest in using
 these schemes in GCMs. One such example of this is the Cloud Layers
 Unified By Binormals \citep[CLUBB;][]{golaz_et_al_2002} scheme, which is
 being implemented into the NCAR CAM (A. Gettelman, personal

@@ -68,7 +68,7 @@ capturing the complexity of cloud overlap seen in observations
 \citep{hogan_and_illingworth_2000, mace_and_benson-troth_2002, barker_2008}.
 Sensitivity tests using high resolution model simulations have shown
 that these unrealistic overlap assumptions can lead to instantaneous
-errors in calculated fluxes in excess of \(50 \textrm{W/m}^2\)
+errors in calculated fluxes in excess of \(50~\textrm{W}/\textrm{m}^2\)
 \citep{barker_et_al_1999, wu_and_liang_2005}, suggesting that a more
 realistic treatment of cloud overlap should be sought for inclusion in
 GCMs.
@@ -84,14 +84,14 @@ transfer parameterizations are sensitive to subgrid-scale variations in
 cloud condensate
 \citep[e.g.,][]{barker_et_al_1999, wu_and_liang_2005, oreopoulos_et_al_2012}.
 \citet{barker_et_al_1999} demonstrate instantaneous flux errors due to
-unresolved horizontal cloud variability in excess of 100
-\(\textrm{W/m}^2\), and \citet{oreopoulos_et_al_2012} demonstrate global
-cloud radiative effect errors on the order of 5 \(\textrm{W/m}^2\), with
-much larger regional errors. The sensitivity to both cloud overlap and
-condensate horizontal variability emphasizes the need to provide
-descriptions of clouds in large-scale model radiative calculations that
-include both horizontal variability in cloud properties and more
-realistic cloud overlap.
+unresolved horizontal cloud variability in excess of
+\(100~\textrm{W}/\textrm{m}^2\), and \citet{oreopoulos_et_al_2012}
+demonstrate global cloud radiative effect errors on the order of
+\(5~\textrm{W}/\textrm{m}^2\), with much larger regional errors. The
+sensitivity to both cloud overlap and condensate horizontal variability
+emphasizes the need to provide descriptions of clouds in large-scale
+model radiative calculations that include both horizontal variability in
+cloud properties and more realistic cloud overlap.
 
 An alternative to the approach of weighting clear and cloudy sky fluxes
 is to generate stochastic samples of binary clear or cloudy
@@ -329,12 +329,11 @@ July 2000, 10 N, 180 E) along with the original, unmodified CRM fields
 \includegraphics{graphics/subgrid1_mxratio_example.pdf}
 \caption{\label{fig:mxratioExampleMro}Total cloud (left) and
 precipitation (right) mixing ratios from the original CRM fields (top),
-homogenized CRM fields (CRM-HOM, second row), regenerated using
-SCOPS/PREC\_SCOPS (MRO-HOM, third row), and regenerated using
-SCOPS/PREC\_SCOPS with precipitation adjusted to conform to the
-precipitation fraction from the CRM (MRO-HOM-PADJ, bottom row) for an
-example gridbox (00 UTC 01 July 2000, 10 N, 180
-E).}\label{fig:mxratioExampleMro}
+homogenized CRM fields (CRM-HOM, second row), regenerated using SCOPS
+and PREC\_SCOPS (MRO-HOM, third row), and regenerated using SCOPS and
+PREC\_SCOPS with precipitation adjusted to conform to the precipitation
+fraction from the CRM (MRO-HOM-PADJ, bottom row) for an example gridbox
+(00 UTC 01 July 2000, 10 N, 180 E).}\label{fig:mxratioExampleMro}
 \end{figure}
 
 First, a set of fields with homogenized condensate (referred to as
@@ -469,9 +468,9 @@ cases, and global mean values agree to within 4\% cloud area for all
 cloud types. While the differences in the global means appear small, it
 should be noted that this is on the order of the uncertainty in
 comparisons between MISR retrievals and MISR-simulated retrievals using
-CloudSat and CALIPSO-derived extinction profiles, as shown in
-Section~\ref{sec:misr}. {[}TODO: reference literature showing these
-errors are on the order of errors in models{]}
+CloudSat and CALIPSO-derived extinction profiles, as shown in Chapter 2.
+{[}TODO: reference literature showing these errors are on the order of
+errors in models{]}
 
 \begin{figure}[htbp]
 \centering
@@ -479,7 +478,7 @@ errors are on the order of errors in models{]}
 \caption{\label{fig:cldmisrMapsMroDiff}Errors in MISR-simulated cloud
 area by cloud type for (from top to bottom) total, high-topped,
 mid-topped, and low-topped clouds. Shown are (from left to right) the
-total error in using SCOPS/PREC\_SCOPS with homogeneous cloud
+total error in using SCOPS and PREC\_SCOPS with homogeneous cloud
 condensate, the component of the error due only to homogenizing the
 condensate, and the component of the error due only to using SCOPS to
 regenerate subcolumns with maximum-random
@@ -491,7 +490,7 @@ those differences are broken into components due to homogenizing the
 clouds and to the treatment of cloud occurrence overlap following the
 framework described in Section~\ref{sec:subgrid1Framework}.
 Figure~\ref{fig:cldmisrMapsMroDiff} shows the total error in
-regenerating condensate from gridbox-means using SCOPS/PREC\_SCOPS
+regenerating condensate from gridbox-means using SCOPS and PREC\_SCOPS
 (outputs from MRO-HOM minus outputs from CRM, left column), as well as
 the components of these errors due separately to homogenizing the cloud
 condensate within each gridbox (HOM errors; CRM-HOM minus CRM, middle
@@ -596,7 +595,7 @@ compensates the increase in high-topped cloud area.
 cloud area by cloud type for (from top to bottom) total, high-topped
 (\(p_c < 440\) hPa), mid-topped (\(680 < p_c < 440\) hPa), and
 low-topped clouds (\(p_c > 680\) hPa). Shown are (from left to right)
-the total error in using SCOPS/PREC\_SCOPS with homogeneous cloud
+the total error in using SCOPS and PREC\_SCOPS with homogeneous cloud
 condensate, the component of the error due only to homogenizing the
 condensate, and the component of the error due only to using SCOPS to
 regenerate subcolumns with maximum-random
@@ -637,9 +636,7 @@ fraction by height}\label{fig:hfbaZonalMro}
 \centering
 \includegraphics{graphics/subgrid1_hfba_zonal_diff.pdf}
 \caption{\label{fig:hfbaZonalMroDiff}Zonal-mean hydrometeor occurence
-fraction by height errors. {[}TODO: rename ``MRO error'' to something
-less misleading\ldots{}this panel includes errors due to precip, which
-are shown below. Add contour levels for 10-15\% or
+fraction by height errors. {[}TODO: Add contour levels for 10-15\% or
 higher{]}}\label{fig:hfbaZonalMroDiff}
 \end{figure}
 
@@ -680,9 +677,10 @@ solely to using the unconstrained precipitation treatment in
 PREC\_SCOPS, and it is clear that this error accounts for the majority
 of the error in generating sucolumns of cloud and precipitation
 occurrence. The errors due separately to homogenizing cloud and
-precipitation and to using SCOPS/PREC\_SCOPS with MRO in COSP combine to
-produce larger total errors in hydrometeor occurrence than result from
-either component alone (top panel of Figure~\ref{fig:hfbaZonalMroDiff}).
+precipitation and to using SCOPS and PREC\_SCOPS with MRO in COSP
+combine to produce larger total errors in hydrometeor occurrence than
+result from either component alone (top panel of
+Figure~\ref{fig:hfbaZonalMroDiff}).
 
 The causes of these errors in hydrometeor occurrence can be understood
 more easily by looking at the full reflectivity with height histograms.
@@ -711,16 +709,23 @@ decrease of small reflectivities.
 \begin{figure}[htbp]
 \centering
 \includegraphics{graphics/subgrid1_cfadDbze94_NHTropics.pdf}
-\caption{\label{fig:cfadTropicsMro}Reflectivity with height histograms
-for the NH Tropics {[}\ldots{}{]}.}\label{fig:cfadTropicsMro}
+\caption{\label{fig:cfadTropicsMro}CloudSat-simulated radar reflectivity
+with height histograms for the NH Tropics (0 to 5 N
+latitude).}\label{fig:cfadTropicsMro}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{graphics/subgrid1_cfadDbze94_NHTropics_diff.pdf}
-\caption{\label{fig:cfadTropicsMroDiff}Errors in reflectivity with
-height histograms for the NH Tropics
-{[}\ldots{}{]}.}\label{fig:cfadTropicsMroDiff}
+\caption{\label{fig:cfadTropicsMroDiff}Errors in CloudSat-simulated
+radar reflectivity with height histograms for the NH Tropics (0 to 5 N
+latitude). Shown from left to right are the total errors due to using
+the full subcolumn generator scheme in COSP (SCOPS and PREC\_SCOPS), the
+component of the error due to homogenizing clouds and precipitation, the
+component of the error due \emph{only} to the treatment of cloud and
+precipitation overlap, and the component of the error due to the
+overestimation of precipitation fraction using
+PREC\_SCOPS.}\label{fig:cfadTropicsMroDiff}
 \end{figure}
 
 This apparent inconsistency is explained by considering the attenuation
@@ -756,18 +761,18 @@ with attenuation turned on (left) and with attenuation turned off
 \end{figure}
 
 Errors in CloudSat-simulated hydrometeor occurrence due to using the
-SCOPS/PREC\_SCOPS subcolumn scheme to overlap cloud and precipitation
-condensate (Figure~\ref{fig:cfadTropicsMroDiff}, third panel from left)
-are less extensive than the errors due to homogenizing the hydrometeor
-properties, but can exceed 10\% frequency of occurrence in the tropics,
-and again lead to a false increase in the total hydrometeor occurrence.
-Figure~\ref{fig:cfadTropicsMroDiff} shows that the error is due to an
-increase in the occurrence of hydrometeors with all reflectivities, but
-especially due again to an increase in the occurrence of columns with
-simulated radar reflectivity factor along the characteristic curve. The
-effect is more pronounced at low to mid-levels (altitude \(z < 5\) km).
-This error is not surprising given the discussion in
-Section~\ref{sec:subgrid1Framework} in the context of
+full subcolumn scheme in COSP (SCOPS and PREC\_SCOPS) to overlap cloud
+and precipitation condensate (Figure~\ref{fig:cfadTropicsMroDiff}, third
+panel from left) are less extensive than the errors due to homogenizing
+the hydrometeor properties, but can exceed 10\% frequency of occurrence
+in the tropics, and again lead to a false increase in the total
+hydrometeor occurrence. Figure~\ref{fig:cfadTropicsMroDiff} shows that
+the error is due to an increase in the occurrence of hydrometeors with
+all reflectivities, but especially due again to an increase in the
+occurrence of columns with simulated radar reflectivity factor along the
+characteristic curve. The effect is more pronounced at low to mid-levels
+(altitude \(z < 5\) km). This error is not surprising given the
+discussion in Section~\ref{sec:subgrid1Framework} in the context of
 Figure~\ref{fig:mxratioExampleMro}, which shows that the PREC\_SCOPS
 subcolumn precipitation generator can tend to overestimate the number of
 precipitating subcolumns. The fourth panel of
@@ -852,7 +857,7 @@ satellite remote sensing retrievals
 errors in MISR-simulated cloud area by cloud top height identified here
 are large, and exceed the uncertainty in MISR-retrieved high-topped
 cloud area, which is estimated to be on the order of 5\% cloud area
-regionally, as shown in Section~\ref{sec:misr}. Thus, the sensitivity of
+regionally, as shown in Chapter 2. Thus, the sensitivity of
 MISR-simulated cloud area to homogeneous cloud condensate and
 maximum-random overlap cannot be ignored, especially as representations
 of clouds in GCMs improve.
