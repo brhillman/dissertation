@@ -36,9 +36,9 @@ heterogeneous broken clouds where 3D effects are especially important.
 This topic is discussed in more detail later in this chapter, as it also
 affects the evaluation of the MISR simulator presented here.
 
-The analysis by M2011 provides one of the few critical evaluation of the
-simulators documented in the available literature. {[}TODO: insert text
-discussing the other few critical evaluations{]} The lack of
+The analysis by M2011 provides one of the few critical evaluations of
+the simulators documented in the available literature \citep[see
+also,][]{mace_et_al_2006, dimichele_et_al_2012}. The lack of
 verification of the simulators severely undermines their credibility for
 use in the evaluation of climate models. The goal of this chapter is to
 perform a similar analysis to M2011 for the MISR simulator. Conceptually
@@ -114,15 +114,14 @@ The retrieval approach used is essentially that used in
 cloud microphysical properties taken from the CloudSat 2C-ICE product
 \citep{deng_et_al_2010, deng_et_al_2013} following
 \citet{berry_and_mace_2014}. Thermodynamic profiles are based on
-European Centre for Medium-Range Weather Forecasts (ECMWF {[}TODO: add
-citation for ECMWF reanalysis{]}) data mapped to the CloudSat track in
-the CloudSat auxiliary product known as ECMWF-AUX. Column visible
-optical depths from the CloudSat cloud optical depth product (2B-TAU,
-which uses MODIS radiances) are used. With the exception of the use of
-2C-ICE, the most detailed description of this technique can be found in
-\citet{mace_2010}. Specifically, the hydrometeor layer occurrences from
-combined CloudSat radar and CALIPSO lidar data from the Radar-Lidar
-Geometrical Profile Product
+European Centre for Medium-Range Weather Forecasts (ECMWF) data mapped
+to the CloudSat track in the CloudSat auxiliary product known as
+ECMWF-AUX. Column visible optical depths from the CloudSat cloud optical
+depth product (2B-TAU, which uses MODIS radiances) are used. With the
+exception of the use of 2C-ICE, the most detailed description of this
+technique can be found in \citet{mace_2010}. Specifically, the
+hydrometeor layer occurrences from combined CloudSat radar and CALIPSO
+lidar data from the Radar-Lidar Geometrical Profile Product
 \citep[RL-GEOPROF;][]{mace_et_al_2009, mace_and_zhang_2014} Version R04
 defines the vertical hydrometeor occurrence. In RL-GEOPROF, CALIPSO
 lidar detections are mapped onto the coarser CloudSat grid (with an
@@ -139,12 +138,12 @@ essentially the \citet{dong_and_mace_2003} retrieval (see
 \citet{mace_2010}, Appendix A). Radar volumes where condensate is only
 detected by the lidar assume a radar reflectivity value below the
 sensitivity of CloudSat (-35 dBZe) and a default liquid water path of
-\(200 \textrm{g/m}^2\) is used in instances where neither optical depth
-nor liquid water path retrievals were successful. For radar volumes with
-temperatures colder than the freezing level an estimate is made of the
-liquid water path fraction that is above the freezing level to
-temperatures as low as 240 K as described in \citet{mace_et_al_2006} and
-is added to the 2C-ICE extinction.
+\(200 \textrm{g}/\textrm{m}^2\) is used in instances where neither
+optical depth nor liquid water path retrievals were successful. For
+radar volumes with temperatures colder than the freezing level an
+estimate is made of the liquid water path fraction that is above the
+freezing level to temperatures as low as 240 K as described in
+\citet{mace_et_al_2006} and is added to the 2C-ICE extinction.
 
 These retrievals of visible extinction are used in this study as inputs
 to the MISR simulator to diagnose the cloud top heights that MISR would
@@ -608,9 +607,7 @@ sampling.
 
 \begin{longtable}[]{@{}lcccccc@{}}
 \caption{\label{tbl:misr_cldmisr_table_january}Regional mean cloud area
-by cloud top height for January 2008. {[}TODO: check calculation of
-these tables and resolve discrepancies with previous analysis{]}
-}\tabularnewline
+by cloud top height for January 2008. }\tabularnewline
 \toprule
 Region & Type & MISR & CC-sim & Diff & p-value &
 Significance\tabularnewline
@@ -751,8 +748,8 @@ monthly-means.}\label{fig:misrux5fcldmodisux5fzonalux5fjanuary}
 \caption{\label{fig:misr_cldmodis_zonal_june}June climatology of
 zonally-averaged cloud area from MODIS Terra and Aqua over the Pacific
 domain. Shading indicates 95\% confidence interval obtained by bootstrap
-resampling individual monthly-means. {[}TODO: darken
-shading{]}}\label{fig:misrux5fcldmodisux5fzonalux5fjune}
+resampling individual
+monthly-means.}\label{fig:misrux5fcldmodisux5fzonalux5fjune}
 \end{figure}
 
 Figure~\ref{fig:misr_cldmodis_zonal_january} and

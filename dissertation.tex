@@ -62,6 +62,9 @@
 \usepackage{booktabs}
 \def\tightlist{}
 
+% make sure latex does not try to break our acronyms
+\hyphenation{ISCCP MISR CloudSat MODIS COSP}
+
 \begin{document}
  
 % ==========   Preliminary pages
@@ -93,7 +96,7 @@
 
 \setcounter{page}{-1}
 \abstract{%
-[TODO: fix this...this is just a placeholder] The representation of clouds in global climate models (GCMs) is recognized as a primary source of uncertainty in projections of future climate change scenarios and in equilibrium climate sensitivity. A fundamental test of the representation of clouds in models is evaluating the simulation of present-day climate, for which we have available observations. Satellite retrievals of cloud properties provide an attractive baseline for this evaluation, because they provide near global coverage, and oftentimes long records (decades or more). However, comparisons of modeled and satellite-retrieved cloud properties are challenged by fundamental differences between what a model can represent, and what can be observed from space. Satellite simulators have emerged in recent decades in an attempt to account for these differences by producing psuedo-retrievals of cloud properties from the model diagnosed description of the atmosphere. These simulators have been the subject of a number of evaluation studies, but a lack of rigorous treatment of the uncertainties in this framework undermines these comparisons. In this thesis, potential sources of uncertainty in simulating retrievals from modeled cloud descriptions are evaluated and quantified. It is shown that assumptions about the structure and variability at scales below which can be resolved with current global models can significantly affect the simulated retrievals, and an improved framework for downscaling cloud properties from the large-scale model to the satellite pixel scale is shown to reduce these errors.
+    \input{latex/abstract}
 }
  
 %
@@ -116,15 +119,15 @@
 % ----- acknowledgments
 %
 \acknowledgments{% \vskip2pc
-  % {\narrower\noindent
-  TODO: put some acknowledgments here.
-  % \par}
+  {\narrower\noindent
+    \input{latex/acknowledgments}
+  \par}
 }
 
 %
 % ----- dedication
 %
-\dedication{\begin{center}TODO: put a dedication here.\end{center}}
+%\dedication{\begin{center}TODO: put a dedication here.\end{center}}
 
 %
 % end of the preliminary pages

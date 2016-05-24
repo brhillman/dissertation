@@ -6,7 +6,6 @@ date: 18 April 2016
 toc: yes
 documentclass: report
 bibliography: dissertation.bib
-abstract: This is the abstract
 
 figPrefix: 
   - "Figure" 

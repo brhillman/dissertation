@@ -19,7 +19,9 @@ CHAPTERS = source/01_intro.md \
 		   source/04_subgrid2.md \
 		   source/05_summary.md 
 
-TEXSRC = latex/01_intro.tex \
+TEXSRC = latex/abstract.tex \
+		 latex/acknowledgments.tex \
+		 latex/01_intro.tex \
 		 latex/02_misr.tex \
 		 latex/03_subgrid1.tex \
 		 latex/04_subgrid2.tex \
@@ -34,11 +36,13 @@ TEXSRC = latex/01_intro.tex \
 $(document).pdf: $(document).tex $(TEXSRC) $(document).bib $(shell find graphics -type f)
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" $<
 
-$(document).docx: $(document).md $(CHAPTERS)
+$(document).docx: $(document).md source/abstract.md $(CHAPTERS)
 	pandoc $(PDFLAGS) -M chapters --reference-docx=template.docx -o $@ $^
 
 latex/%.tex: source/crossref.yaml source/%.md
 	pandoc --filter pandoc-crossref --natbib --chapters -o $@ $^
+
+#sed -i 's/begin{figure}\[htbp\]/begin{figure}\[htp\]/g' $@
 
 clean:
 	latexmk -c
