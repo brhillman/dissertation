@@ -41,8 +41,7 @@ $(document).docx: $(document).md source/abstract.md $(CHAPTERS)
 
 latex/%.tex: source/crossref.yaml source/%.md
 	pandoc --filter pandoc-crossref --natbib --chapters -o $@ $^
-
-#sed -i 's/begin{figure}\[htbp\]/begin{figure}\[htp\]/g' $@
+	sed -i '' 's/begin{figure}\[htbp\]/begin{figure}\[tp\]/g' $@
 
 clean:
 	latexmk -c
