@@ -1,0 +1,275 @@
+\begin{thebibliography}{45}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Barker(2008)}]{barker_2008}
+Barker, H.~W., 2008: Overlap of fractional cloud for radiation calculations in
+  {GCM}s: A global analysis using {CloudSat} and {CALIPSO} data. \textit{J.
+  Geophys. Res.}, \textbf{113~(D00A01)}, \doi{10.1029/2007JD009677}.
+
+\bibitem[{Barker et~al.(1999)Barker, Stephens, and Fu}]{barker_et_al_1999}
+Barker, H.~W., G.~L. Stephens, and Q.~Fu, 1999: The sensitivity of
+  domain-averaged solar fluxes to assumptions about cloud geometry. \textit{Q.
+  J. R. Meteorol. Soc.}, \textbf{125~(558)}, 2127--2152,
+  \doi{10.1256/smsqj.55809}.
+
+\bibitem[{Bodas-Salcedo et~al.(2011)}]{bodas-salcedo_et_al_2011}
+Bodas-Salcedo, A., et~al., 2011: {COSP}: Satellite simulation software for
+  model assessment. \textit{Bull. Amer. Meteor. Soc.}, \textbf{92~(8)},
+  \doi{10.1175/2011BAMS2856.1}.
+
+\bibitem[{Bony and Dufresne(2005)}]{bony_and_dufresne_2005}
+Bony, S. and J.-L. Dufresne, 2005: Marine boundary layer clouds at the heart of
+  tropical cloud feedback uncertainties in climate models. \textit{Geophys.
+  Res. Lett.}, \textbf{32~(20)}, \doi{10.1029/2005GL023851}.
+
+\bibitem[{Cahalan et~al.(1994)Cahalan, Ridgway, Wiscombe, Bell, and
+  Snider}]{cahalan_et_al_1994}
+Cahalan, R.~F., W.~Ridgway, W.~J. Wiscombe, T.~L. Bell, and J.~B. Snider, 1994:
+  The albedo of fractal stratocumulus clouds. \textit{J. Atmos. Sci.},
+  \textbf{51~(16)}, 2434--2455,
+  \doi{10.1175/1520-0469(1994)051$<$2434:TAOFSC$>$2.0.CO;2}.
+
+\bibitem[{Cess et~al.(1990)}]{cess_et_al_1990}
+Cess, R.~D., et~al., 1990: Intercomparison and interpretation of climate
+  feedback processes in 19 atmospheric general circulation models. \textit{J.
+  Geophys. Res.}, \textbf{95~(D10)}, 16\,601--16\,615,
+  \doi{10.1029/JD095iD10p16601}.
+
+\bibitem[{Collins(2001)}]{collins_2001}
+Collins, W.~D., 2001: Parameterization of generalized cloud overlap for
+  radiative calculations in general circulation models. \textit{J. Atmos.
+  Sci.}, \textbf{58~(21)}, 3224--3242,
+  \doi{10.1175/1520-0469(2001)058$<$3224:POGCOF$>$2.0.CO;2}.
+
+\bibitem[{Collins et~al.(2004)}]{cam3_description}
+Collins, W.~D., et~al., 2004: Description of the {NCAR} {C}ommunity
+  {A}tmosphere {M}odel ({CAM} 3.0). NCAR Technical Note TN-464+STR, NCAR.
+
+\bibitem[{{Di Michele} et~al.(2012){Di Michele}, Ahlgrimm, Forbes, Kulie,
+  Janiskov{\'a}, and Bauer}]{dimichele_et_al_2012}
+{Di Michele}, S., M.~Ahlgrimm, R.~Forbes, M.~Kulie, R.~B.~M. Janiskov{\'a}, and
+  P.~Bauer, 2012: Interpreting an evaluation of the {ECMWF} global model with
+  {CloudSat} observations: ambiguities due to radar reflectivity forward
+  operator uncertainties. \textit{Q. J. R. Meteorol. Soc.}, \textbf{138},
+  2047--2065.
+
+\bibitem[{Donner et~al.(2011)}]{donner_et_al_2011}
+Donner, L.~J., et~al., 2011: The dynamical core, physical parameterizations,
+  and basic simulation characteristics of the atmospheric component {AM3} of
+  the {GFDL} global coupled model {CM3}. \textit{J. Climate}, \textbf{24~(13)},
+  3484--3519, \doi{10.1175/2011JCLI3955.1}.
+
+\bibitem[{Geleyn and Hollingsworth(1979)}]{geleyn_and_hollingsworth_1979}
+Geleyn, J.~F. and A.~Hollingsworth, 1979: An economical analytical method for
+  the computation of the interaction of between scattering and line absorption
+  of radiation. \textit{Contrib. Atmos. Phys.}, \textbf{52}.
+
+\bibitem[{Golaz et~al.(2002)Golaz, Larson, and Cotton}]{golaz_et_al_2002}
+Golaz, J.-C., V.~E. Larson, and W.~R. Cotton, 2002: A {PDF}-based model for
+  boundary layer clouds. part {I}: Method and model description. \textit{J.
+  Atmos. Sci.}, \textbf{59~(24)}, 3540--3551,
+  \doi{10.1175/1520-0469(2002)059$<$3540:APBMFB$>$2.0.CO;2}.
+
+\bibitem[{Hogan and Illingworth(2000)}]{hogan_and_illingworth_2000}
+Hogan, R.~J. and A.~J. Illingworth, 2000: Deriving cloud overlap statistics
+  from radar. \textit{Q. J. R. Meteorol. Soc.}, \textbf{126}, 2903--2909,
+  \doi{10.1256/smsqj.56913}.
+
+\bibitem[{Hogan et~al.(2014)}]{navgem_description}
+Hogan, T.~F., et~al., 2014: The navy global environmental model.
+  \textit{Oceanography}, \textbf{27~(3)}, \doi{10.5670/oceanog.2014.73}.
+
+\bibitem[{Iacono et~al.(2008)Iacono, Delamere, Mlawer, Shephard, Clough, and
+  Collins}]{iacono_et_al_2008}
+Iacono, M.~J., J.~S. Delamere, E.~J. Mlawer, M.~W. Shephard, S.~A. Clough, and
+  W.~D. Collins, 2008: Radiative forcing by long-lived greenhouse gases:
+  Calculations with the {AER} radiative transfer models. \textit{J. Geophys.
+  Res.}, \textbf{113~(D13103)}, \doi{10.1029/2008JD009944}.
+
+\bibitem[{Kay et~al.(2012)}]{kay_et_al_2012}
+Kay, J.~E., et~al., 2012: Exposing global cloud biases in the {C}ommunity
+  {A}tmosphere {M}odel ({CAM}) using satellite observations and their
+  corresponding instrument simulators. \textit{J. Climate}, \textbf{25},
+  5190--5207, \doi{{10.1175/JCLI-D-11-00469.1}}.
+
+\bibitem[{Khairoutdinov and Randall(2001)}]{khairoutdinov_and_randall_2001}
+Khairoutdinov, M.~F. and D.~A. Randall, 2001: A cloud-resolving model as a
+  cloud parameterization in the {NCAR} {C}ommunity {C}limate {S}ystem {M}odel:
+  Preliminary results. \textit{Geophys. Res. Lett.}, \textbf{28}, 3617--3620.
+
+\bibitem[{Klein and Jakob(1999)}]{klein_and_jakob_1999}
+Klein, S.~A. and C.~Jakob, 1999: Validation and sensitivities of frontal clouds
+  simulated by the {ECMWF} model. \textit{Monthly Weather Review},
+  \textbf{127~(10)}, 2514--2531,
+  \doi{10.1175/1520-0493(1999)127$<$2514:VASOFC$>$2.0.CO;2}.
+
+\bibitem[{Klein et~al.(2013)Klein, Zhang, Zelinka, Pincus, Boyle, and
+  Gleckler}]{klein_et_al_2013}
+Klein, S.~A., Y.~Zhang, M.~D. Zelinka, R.~Pincus, J.~Boyle, and P.~J. Gleckler,
+  2013: Are climate model simulations of clouds improving? an evaluation using
+  the {ISCCP} simulator. \textit{J. Geophys. Res.}, \textbf{118~(3)},
+  1329--1342, \doi{doi:10.1002/jgrd.50141}.
+
+\bibitem[{Mace and Benson-Troth(2002)}]{mace_and_benson-troth_2002}
+Mace, G.~G. and S.~Benson-Troth, 2002: Cloud-layer overlap characteristics
+  derived from long-term cloud radar data. \textit{J. Climate}, \textbf{15},
+  \doi{10.1175/1520-0442(2002)015$<$2505:CLOCDF$>$2.0.CO;2}.
+
+\bibitem[{Mace et~al.(2010)Mace, Houser, Benson, Klein, and
+  Min}]{mace_et_al_2010}
+Mace, G.~G., S.~Houser, S.~Benson, S.~A. Klein, and Q.~Min, 2010: Critical
+  evaluation of the {ISCCP} simulator using ground-based remote sensing data.
+  \textit{J. Climate}, \textbf{24~(6)}, 1598--1612,
+  \doi{10.1175/2010JCLI3517.1}.
+
+\bibitem[{Mace and Wrenn(2013)}]{mace_and_wrenn_2013}
+Mace, G.~G. and F.~J. Wrenn, 2013: Evaluation of the hydrometeor layers in the
+  east and west pacific within {ISCCP} cloud-top pressure-optical depth bins
+  using merged {CloudSat} and {CALIPSO} data. \textit{J. Climate}, \textbf{26},
+  9429--9444, \doi{10.1175/JCLI-D-12-00207.1}.
+
+\bibitem[{Mace et~al.(2009)Mace, Zhang, Vaughan, Marchand, Stephens, Trepte,
+  and Winker}]{mace_et_al_2009}
+Mace, G.~G., Q.~Zhang, M.~Vaughan, R.~Marchand, G.~Stephens, C.~Trepte, and
+  D.~Winker, 2009: A description of hydrometeor layer occurrence statistics
+  derived from the first year of merged {Cloudsat} and {CALIPSO} data.
+  \textit{J. Geophys. Res.}, \textbf{114}, \doi{10.1029/2007JD009755}.
+
+\bibitem[{Marchand and Ackerman(2010)}]{marchand_and_ackerman_2010}
+Marchand, R. and T.~Ackerman, 2010: An analysis of cloud cover in multiscale
+  modeling framework global climate model simulations using 4 and 1 km
+  horizontal grids. \textit{J. Geophys. Res.}, \textbf{115},
+  \doi{10.1029/2009JD013423}.
+
+\bibitem[{Marchand et~al.(2010)Marchand, Ackerman, Smyth, and
+  Rossow}]{marchand_et_al_2010}
+Marchand, R., T.~Ackerman, M.~Smyth, and W.~B. Rossow, 2010: A review of cloud
+  top height and optical depth histograms from {MISR}, {ISCCP} and {MODIS}.
+  \textit{J. Geophys. Res.}, \textbf{115}, \doi{10.1029/2009JD013422}.
+
+\bibitem[{Marchand et~al.(2009)Marchand, Haynes, Mace, and
+  Ackerman}]{marchand_et_al_2009}
+Marchand, R., J.~Haynes, G.~G. Mace, and T.~Ackerman, 2009: A comparison of
+  simulated radar output from the multiscale modeling framework global climate
+  model with {C}loud{S}at cloud radar observations. \textit{J. Geophys. Res.},
+  \textbf{114}, \doi{10.1029/2008JD009790}.
+
+\bibitem[{Medeiros et~al.(2008)Medeiros, Stevens, Held, Zhao, Williamson,
+  Olson, and Bretherton}]{medeiros_et_al_2008}
+Medeiros, B., B.~Stevens, I.~M. Held, M.~Zhao, D.~L. Williamson, J.~G. Olson,
+  and C.~S. Bretherton, 2008: Aquaplanets, climate sensitivity, and low clouds.
+  \textit{J. Climate}, \textbf{21~(19)}, 4974--4991,
+  \doi{10.1175/2008JCLI1995.1}.
+
+\bibitem[{Neale et~al.(2010{\natexlab{a}})}]{cam4_description}
+Neale, R.~B., et~al., 2010{\natexlab{a}}: Description of the {NCAR} {C}ommunity
+  {A}tmosphere {M}odel ({CAM} 4.0). NCAR Technical Note {TN-485+STR}, NCAR.
+
+\bibitem[{Neale et~al.(2010{\natexlab{b}})}]{cam5_description}
+Neale, R.~B., et~al., 2010{\natexlab{b}}: Description of the {NCAR} {C}ommunity
+  {A}tmosphere {M}odel ({CAM} 5.0). NCAR Technical Note {TN-486+STR}, NCAR.
+
+\bibitem[{Oreopoulos et~al.(2012)Oreopoulos, Lee, Sud, and
+  Suarez}]{oreopoulos_et_al_2012}
+Oreopoulos, L., D.~Lee, Y.~C. Sud, and M.~J. Suarez, 2012: Radiative impacts of
+  cloud heterogeneity and overlap in an atmospheric {G}eneral {C}irculation
+  {M}odel. \textit{Atmos. Chem. Phys.}, \textbf{12}, 9097--9111,
+  \doi{10.5194/acp-12-9097-2012}.
+
+\bibitem[{Pincus et~al.(2003)Pincus, Barker, and Morcrette}]{pincus_et_al_2003}
+Pincus, R., H.~W. Barker, and J.-J. Morcrette, 2003: A fast, flexible,
+  approximate technique for computing radiative transfer in inhomogeneous cloud
+  fields. \textit{J. Geophys. Res.}, \textbf{108~(D13)},
+  \doi{10.1029/2002JD003322}.
+
+\bibitem[{Pincus et~al.(2005)Pincus, Hannay, Klein, Xu, and
+  Hemler}]{pincus_et_al_2005}
+Pincus, R., C.~Hannay, S.~A. Klein, K.-M. Xu, and R.~Hemler, 2005: Overlap
+  assumptions for assumed probability distribution function cloud schemes in
+  large-scale models. \textit{J. Geophys. Res.}, \textbf{110~(D15S09)},
+  \doi{10.1029/2004JD005100}.
+
+\bibitem[{Pincus et~al.(2012)Pincus, Platnick, Ackerman, Hemler, and
+  Hofmann}]{pincus_et_al_2012}
+Pincus, R., S.~Platnick, S.~A. Ackerman, R.~S. Hemler, and R.~J.~P. Hofmann,
+  2012: Reconciling simulated and observed views of clouds: {MODIS}, {ISCCP},
+  and and the limits of instrument simulators. \textit{J. Climate},
+  \textbf{25}, 4699--4720, \doi{10.1175/JCLI-D-11-00267.1}.
+
+\bibitem[{R{\"a}is{\"a}nen et~al.(2004)R{\"a}is{\"a}nen, Barker, Khairoutdinov,
+  Li, and Randall}]{raisanen_et_al_2004}
+R{\"a}is{\"a}nen, P., H.~W. Barker, M.~F. Khairoutdinov, J.~Li, and D.~A.
+  Randall, 2004: Stochastic generation of subgrid-scale cloudy columns for
+  large-scale models. \textit{Q. J. R. Meteorol. Soc.}, \textbf{130},
+  2047--2067, \doi{10.1256/qj.03.99}.
+
+\bibitem[{Randall et~al.(2003)Randall, Khairoutdinov, Arakawa, and
+  Grabowski}]{randall_et_al_2003}
+Randall, D., M.~Khairoutdinov, A.~Arakawa, and W.~Grabowski, 2003: Breaking the
+  cloud parameterization deadlock. \textit{Bull. Amer. Meteor. Soc.},
+  \textbf{84~(11)}, 1547--1564, \doi{10.1175/BAMS-84-11-1547}.
+
+\bibitem[{Stephens and Platt(1987)}]{stephens_and_platt_1987}
+Stephens, G.~L. and C.~M.~R. Platt, 1987: Aircraft observations of the
+  radiative and microphysical properties of stratocumulus and cumulus cloud
+  fields. \textit{J. Climate Appl. Meteor.}, \textbf{26}, 1243--1269,
+  \doi{10.1175/1520-0450(1987)026$<$1243:AOOTRA$>$2.0.CO;2}.
+
+\bibitem[{Stephens et~al.(2002)}]{stephens_et_al_2002}
+Stephens, G.~L., et~al., 2002: The {CloudSat} mission and the {A-Train}.
+  \textit{Bull. Amer. Meteorol. Soc.}, \textbf{83~(12)}, 1771--1790,
+  \doi{10.1175/BAMS-83-12-1771}.
+
+\bibitem[{Tompkins(2002)}]{tompkins_2002}
+Tompkins, A.~M., 2002: A prognostic parameterization for the subgrid-scale
+  variability of water vapor and clouds in large-scale models and its use to
+  diagnose cloud cover. \textit{J. Atmos. Sci.}, \textbf{59}, 1917--1942,
+  \doi{10.1175/1520-0469(2002)059$<$1917:APPFTS$>$2.0.CO;2}.
+
+\bibitem[{von Salzen et~al.(2012)}]{von_salzen_et_al_2012}
+von Salzen, K., et~al., 2012: The {C}anadian fourth generation atmospheric
+  global climate model ({CanAM4}): Simulation of clouds and precipitation and
+  their responses to short-term climate variability. \textit{Atmos.-Ocean},
+  submitted.
+
+\bibitem[{Webb et~al.(2001)Webb, Senior, Bony, and Morcrette}]{webb_et_al_2001}
+Webb, M., C.~Senior, S.~Bony, and J.-J. Morcrette, 2001: Combining {ERBE} and
+  {ISCCP} data to assess clouds in the {H}adley {C}entre, {ECMWF} and {LMD}
+  atmospheric climate models. \textit{Clim. Dyn.}, \textbf{17~(12)}, 905--922,
+  \doi{10.1007/s003820100157}.
+
+\bibitem[{Williams and Webb(2009)}]{williams_and_webb_2009}
+Williams, K.~D. and M.~J. Webb, 2009: A quantitative performance assessment of
+  cloud regimes in climate models. \textit{Clim. Dyn.}, \textbf{33~(1)},
+  141--157, \doi{10.1007/s00382-008-0443-1}.
+
+\bibitem[{Winker et~al.(2007)Winker, Hunt, and McGill}]{winker_et_al_2007}
+Winker, D.~M., B.~H. Hunt, and M.~J. McGill, 2007: Initial performance
+  assessment of {CALIOP}. \textit{Geophys. Res. Lett.}, \textbf{34~(L19803)},
+  \doi{10.1029/2007GL030135}.
+
+\bibitem[{Wu and Liang(2005)}]{wu_and_liang_2005}
+Wu, X. and X.-Z. Liang, 2005: Radiative effects of cloud horizontal
+  inhomogeneity and vertical overlap identified from a monthlong
+  cloud-resolving model simulation. \textit{J. Atmos. Sci.}, \textbf{62},
+  4105--4112.
+
+\bibitem[{Zhang et~al.(2005)}]{zhang_et_al_2005}
+Zhang, M., et~al., 2005: Comparing clouds and their seasonal variations in 10
+  atmospheric general circulation models with satellite measurements.
+  \textit{J. Geophys. Res.}, \textbf{110~(D15)}, \doi{10.1029/2004JD005021}.
+
+\bibitem[{Zhang et~al.(2010)Zhang, Klein, Boyle, and Mace}]{zhang_et_al_2010}
+Zhang, Y., S.~A. Klein, J.~Boyle, and G.~G. Mace, 2010: Evaluation of tropical
+  cloud and precipitation statistics of {C}ommunity {A}tmosphere {M}odel
+  version 3 using {CloudSat} and {CALIPSO} data. \textit{J. Geophys. Res.},
+  \textbf{115~(D12205)}, \doi{10.1029/2009JD012006}.
+
+\end{thebibliography}

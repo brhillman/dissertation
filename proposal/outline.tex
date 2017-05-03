@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\begin{document}
+
+\begin{abstract}
+The representation of clouds presents a great challenge for developers of large-scale models of the atmosphere. Because of the small spatial scales on which clouds occur and vary, their explicit simulation in models such as those used to simulate global climate over long time scales is intractable at the comparatively coarse spatial resolutions required. Yet the interaction of clouds with radiation is of fundamental importance to these models, and so their effects must be accounted for in some approximate sense. A new method for accounting for small-scale cloud heterogeniety in radiative calculations and diagnostics in large-scale models. This method prescribes subgrid-scale cloud properties from the grid-scale means by stochastically sampling a probability distribution function. The method is tested against a full 3D monte carlo photon transport radiative transfer model using outputs from a cloud resolving model for a variety of cases. The new model for small-scale cloud heterogeniety is also implemented into the National Center for Atmospheric Research Community Atmosphere Model, and calculations using the new implementation are compared with calculations using the old and with observations.
+\end{abstract}
+
+Introduction
+    How are clouds represented in large-scale models?
+        cloud water grid-box means predicted (prognostic)
+        cloud fraction grid-box means diagnosed
+    How is radiative transfer calculated in large-scale models?
+        ICA
+        McICA
+    How do clouds interact with radiation in models?
+        overlap
+
+Method
+    Parameterization of subgrid-scale heterogeniety
+        develop probability distribution function
+            PDF of cloud water given grid-box means
+            should depend on large-scale forcing, i.e. temperature, relative
+            humidity, wind, vertical velocity, etc.

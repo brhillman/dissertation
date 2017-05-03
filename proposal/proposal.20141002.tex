@@ -1,0 +1,227 @@
+\documentclass{article}
+\def\baselinestretch{1.5}
+%\usepackage{lineno}
+\usepackage{fullpage}
+\usepackage{natbib}
+\author{Benjamin R. Hillman}
+\title{Constraining clouds in large-scale models with satellite observations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   THEME: Improving the represention of clouds in GCMs, using
+%   satellite instrument simulators to remove abiguities
+%
+%   GOALS:
+%
+%   * Quantify uncertainties in satellite-simulator comparisons of cloud 
+%     statistics using satellite simulators
+%       * Critical evaluation of satellite instrument simulators
+%       * Comparison of different satellite observation products: MISR-ISCCP-MODIS, 
+%         CloudSat-CALIPSO
+%
+%   * Identify and remove ambiguities in simulation of cloud statistics from GCMs
+%       * Evaluate sensitivity of satellite simulator diagnostics to unresolved 
+%         cloud/precipitation variability
+%       * Characterize variability and overlap of clouds and precipitation in
+%         nature
+%       * Implement and test parameterization of subgrid-scale variability/overlap
+%         into COSP (and GCM radiation?)
+%       * Improve treatment of precipitation in COSP
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ROADMAP
+%
+% Introduction (brief)
+% Problem statement
+% Method to solve problem
+% Completed work
+% Expected problems
+% Expected outcomes
+% Timeline
+%
+\begin{document}
+%\linenumbers
+\maketitle
+\section{Introduction and motivation}
+%Radiative fluxes and heating rates depend critically on the description of clouds in models (including assumptions about the subgrid scale), but while evaluating radiative fluxes and heating rates is an important test for GCMs, compensating errors in the description of clouds within the models can cancel each other to produce radiative fluxes in good agreement with observations \citep[e.g.,][]{kay_et_al_2012}. This is not too surprising, as GCM are often ``tuned'' to achieve radiative balance at the top of the atmosphere by adjusting variables within parameterizations in the models (citations?). An example of this is the commonly cited ``too few, too bright'' problem where models can produce top of atmosphere fluxes in good agreement with observations by having too little cloud cover with optical depths that are too large \citep[e.g.,][]{zhang_et_al_2005,klein_et_al_2012,nam_et_al_2012}. Because of this, it is important to evaluate the diagnosed cloud properties themselves, and a great deal of effort has been put into evaluating cloud properties in simulations of present day climate against available observations as a test of their validity \citep[e.g.,][]{gleckler_et_al_2008,zhang_et_al_2005,kay_et_al_2012,klein_et_a_2013} (others?). Satellite observations of cloud properties can be useful as a baseline for comparison because they provide near global coverage, but comparisons of this sort can be challenging due to the fact that the quantities measurable from space are quite different from those that can be simulated by models. While models can diagnose relevant geophysical quantities directly (e.g., cloud fraction, cloud height, cloud liquid and ice water content, particle size, etc.), satellites must infer these quantities from measured radiances using inversion techniques (retrieval algorithms; cite examples). Cloud properties retrieved by these techniques can often carry large uncertainties due to the challenges and limitations of the instruments and inversions \citep[e.g.,][]{marchand_et_al_2010,pincus_et_al_2012} (others?).
+
+%The interaction of clouds with solar and terrestrial radiation provide the diabatic heating that drives the general circulation and controls global energy balance, and changes in cloud amount and properties in response to changes in the climate system have large implications for future climate change. But accurate modeling of clouds in large-scale models is difficult, and cloud feedbacks in global climage models (GCMs) are recognized as a primary contributor to inter-model differences in responses to climate change \citep[e.g.,][]{cess_et_al_1990,bony_and_dufresne_2005,williams_and_webb_2009,medeiros_et_al_2008}. 
+
+Clouds are a key piece of the global climate system, but accurate modeling of clouds in large-scale models is difficult, and cloud feedbacks in global climate models (GCMs) are recognized as a primary contributor to inter-model differences in responses to climate forcings \citep[e.g.,][]{cess_et_al_1990,bony_and_dufresne_2005,williams_and_webb_2009,medeiros_et_al_2008}. 
+
+Evaluating clouds in simulations of present day climate against observations provides a first-order test of their representation models. Satellite observations of clouds serve as a useful baseline for evaluation because they provide near global coverage and sample all meterological regimes. But comparisons of this sort can be challenging because the quantities measurable from space are different from those that can be simulated by models. While models can diagnose cloud properties directly (e.g., cloud fraction, cloud height, cloud liquid and ice water content, particle size, etc.), satellite retrievals must infer these quantities from measured radiances using inversion techniques. Cloud properties retrieved by these techniques can often carry large uncertainties and inherent biases due to the challenges and limitations of the instruments and inversions \citep[e.g.,][]{marchand_et_al_2010,pincus_et_al_2012}.
+
+Satellite instrument simulators such as those available in the Cloud Feedback Model Intercomparison Project \citep[CFMIP;][]{bony_et_al_2011} Observation Simulator Package \citep[COSP;][]{bodas-salcedo_et_al_2011} have emerged as a means to account for the limitations of satellite retrievals, thereby enabling more consistent comparisons between satellite observations of clouds and model representations of clouds \citep[e.g.,][]{klein_and_jakob_1999,bodas-salcedo_et_al_2011,zhang_et_al_2005,marchand_and_ackerman_2010,kay_et_al_2012,klein_et_al_2013,pincus_et_al_2012}. The purpose of the simulators is to produce synthetic observations for specific high-level satellite observation products given a model atmospheric state. To the extent that the simulators accurately account for the limitations and features of the specific satellite retrievals, the resulting diagostics are taken to be directly comparable to the corresponding satellite data. But the performance of these simulators have seen little scrutiny \citep{mace_et_al_2010}, and any remaining uncertainties and ambiguities in comparisons involving observations from satellites with satellite-simulated model diagnostics potentially undermines the robustness of the conclusions of such comparisons.
+
+%Use of satellite instrument simulators in GCM evaluation studies has been facilited by the development of the Cloud Feedback Model Intercomparison Project \citep[CFMIP; ][]{bony_et_al_2011} Observation Simulator Package \citep[COSP;][]{bodas-salcedo_et_al_2011}. COSP includes satellite instrument simulators for a number of satellite observing platforms, including the International Satellite Cloud Climatology Project \citep[ISCCP;][]{rossow_and_schiffer_1999,klein_and_jakob_1999,webb_et_al_2001}, the Multi-angle Imaging Spectroradiometer \citep[MISR;][]{marchand_and_ackerman_2010}, the Moderate Resolution Imaging Spectroradiometer \citep[MODIS;][]{pincus_et_al_2012}, the CloudSat cloud profiling radar \citep[][]{haynes_et_al_2007,marchand_et_al_2009}, and the Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observation (CALIPSO) space-borne lidar \citep{chepfer_et_al_2008}. But the performance of these simulators have seen little scrutiny \citep{mace_et_al_2010}, and any remaining uncertainties and ambiguities in comparisons involving observations from satellites with satellite-simulated model diagnostics potentially undermines the robustness of the conclusions of such comparisons.
+
+%The goal of this study is to identify and remove ambiguities in comparisons between satellite observations and large-scale model simulations of clouds, and in the process remove ambiguities in the representation of clouds in the models themselves. By improving the evaluation framework we use to measure model performance of clouds, more robust constraints on the representation of clouds in GCMs consistent with observations are made possible.
+
+The goal of this research is to quantify uncertainties in comparisons between models and observations using instrument simulators and remove ambiguities in those comparisons that result from assumptions about the unresolved cloud and precipitation structure by providing an improved representation of that structure for use in both GCM radiation parameterizations and satellite instrument simulators. In doing so, the results of this research will lead to more robust model evaluation practices and greater confidence in diagnosed biases in model cloud statistics, and lead to future improvements in the way the small-scale cloud and precipitation properties are treated in global models.
+
+\section{Background}
+Simulating satellite-observable retrieval products from GCM output using COSP is a three-part process. First, the mis-match in resolved scales between the satellite pixel and model resoluation is accounted for by downscaling the gridbox mean cloud properties (the subgrid generator). Second, the known limitations and features of the satellite retrieval products are emulated by appling algorithms that account for assumptions consistent with the individual satellite intruments and retrieval methodologies (the forward operators). Lastly, the subgrid-level simulator outputs are aggregated to produce statistical summaries consistent with the available satellite statistical summaries. There are two primary sources of uncertainty in this process: sensitivity of the simulated diagnostics to the statistical downscaling of the gridbox means, and inaccuracy or incompleteness in the simulator forward operators in accounting for limitations in the satellite retrievals.
+
+The complexity of simulating the climate system and current computational resources limit GCM resolutions to tens or hundreds of kilometers, but clouds occur and vary on much smaller spatial scales. This means that traditional GCMs are unable to resolve individual clouds, and instead descriptions of clouds in GCMs are limited to large-scale statistical summaries of cloud properties (gridbox means). In order to account for the effect of overlapping multiple cloud layers on satellite retrievals, subcolumn profiles of individual cloud elements must be inferred from the gridbox means. This downscaling is done within COSP by generating an ensemble of subcolumns for each GCM gridbox that is consistent with the gridbox mean cloud properties. But the large-scale mean description of cloud properties alone is insufficient to uniquely specify how individual cloud elements should be distributed vertically and horizontally within the gridbox, and inferring subgrid structure depends on additional assumptions about how clouds in different layers should overlap and how cloud properties should be distributed within each gridbox.
+
+Subgrid cloud fields in COSP are stochastically generated consistent with the overlap assumptions used in the radiative transfer parameterization that describe how individual clouds are assumed to align vertically. These are usually simple rules, such as the popular maximum-random overlap assumption \citep{geleyn_and_hollingsworth_1979} in which clouds in adjacent layers are assumed to overlap maximally (perfect correlation) and clouds in non-adjacent layers are assumed to overlap randomly (zero correlation). However, a number of studies have shown that this simple specification of overlap fails to capture the complexity of clouds in nature \citep[e.g.,][]{hogan_and_illingworth_2000,mace_and_benson-troth_2002,pincus_et_al_2005,barker_2008} and can lead to substantial biases in calculated radiative fluxes and heating rates \citep{barker_et_al_1999,oreopoulos_et_al_2012}. Because the satellite simulators attempt to account for the effects of multiple overlapping cloud layers on the retrievals (such as screening of low clouds by high clouds) it is likely that the simulators will likewise be sensitive to assumptions about cloud overlap. Cloud properties (liquid and ice water contents and effective radii) are often assumed to be homogeneous over the entire cloudy portion of model gridboxes, but studies have shown that this assumption is also inappropriate and leads to errors in radiative fluxes and heating rates \citep{barker_et_al_1999,oreopoulos_et_al_2012}. The sensitivity of simulated satellite-observable diagnostics to this unresolved variability has not been evaluated, but it is likely to be important as well especially for quantities with a non-linear dependence on cloud properties (e.g., radar reflectivity). Radar reflectivity is also highly sensitive to precipitation, and radar reflectivity simulated by COSP will likely to be sensitive to the treatment of precipitation overlap and variability as well \citep[e.g.,][]{dimichele_et_al_2012}. Sensitivity to these assumptions would imply that inaccurate assumptions about the unresolved scales in models could lead to inaccurate conclusions about the simulated cloud statistics even if a model is capable of accurately diagnosing the large-scale mean cloud properties, thus undermining conclusions reached in model-observation comparisons.
+
+Inaccurately or incompletely accounting for the limitations of satellite retrievals is another potential source of ambiguity in model evaluations. Satellite simulators have been used extensively in global model evaluations \citep[e.g.,][]{kay_et_al_2012,klein_et_al_2013}, but often without a rigorous validation of the simulators themselves \citep{mace_et_al_2010}. A danger in using simulators to remove ambiguities in comparisons between models and observations lies in naively assuming that all ambiguities are removed in these comparisons, and that differences between observed and simulated cloud statistics therefore represent actual model biases and not just unaccounted for observational biases. An evaluation of the MISR and ISCCP simulators is proposed in the following section to quantify these uncertainties. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proposed work}
+\subsection{Evaluation of ISCCP and MISR simulators}
+The ISCCP and MISR simulators take profiles of a model atmospheric state and attempt to determine the cloud top height and column cloud optical depth that would be retrieved by the satellite. It is assumed that if the inputs are correct, then the cloud top height and optical depth calculated by the simulator will be representative of what the satellite would retrieve. But the performance of the simulators in accurately accounting for the limitations of the satellite retrievals has not been extensively tested and documented.
+
+\cite{mace_et_al_2010} performed a preliminary evaluation of the ISCCP simulator by using as input extinction and atmospheric profiles derived from ground-based data at the Atmospheric Radiation Measurement program (ARM) Southern Great Plains (SGP) site and comparing the simulated cloud top pressure and optical depth with collocated ISCCP retrievals. The results of their study suggest that the ISCCP simulator brings the diagnosed cloud top pressure from ARM measurements closer to those retrieved from ISCCP, indicating that the simulator reasonably accounted for features in the ISCCP retrieval of cloud top pressure. However, differences between the ISCCP-retrieved and ISCCP-simulated cloud top pressure remained unaccounted for, and the simulator fails to account for biases in ISCCP-retrieved cloud optical depths. 
+
+While the \cite{mace_et_al_2010} study provides a first-step toward identifying ambiguities in the simulator forward operators, the results are limited to a single geographic site (which severely limits the meteorology and cloud regimes sampled), and only evaluates the performance of the ISCCP simulator. Remaining differences between the simulated and retrieved ISCCP cloud top pressure also suggest that more work should be done to understand the uncertainties in these comparisons, and in simulated diagnostics from the MISR and MODIS simulators as well. A similar analysis technique will be employed here to evaluate the performance and sensitivity of the ISCCP and MISR simulator over a larger geographic region, and to evaluate multi-layer statistics such as those described in \cite{marchand_et_al_2010} and \cite{marchand_and_ackerman_2010}.
+
+An evaluation of the simulators over a broader geographic region and a greater diversity of cloud regimes is proposed. Extending the analysis technique used by \cite{mace_et_al_2010} is dependent on being able to obtain the needed inputs with high confidence, which include profiles of extinction, temperature, relative humidity, and visible and infrared radiances. Satellite measurements are an attractive option for the source of these inputs because they provide data with large spatial coverage, enabling an evaluation across a large diversity of cloud regimes in different geographic regions. The CloudSat cloud profiling radar \citep{stephens_et_al_2002} and the CALIPSO lidar \citep{winker_et_al_2007} have proven to be capable of accurately retrieving profiles of hydrometeor layers \cite{mace_et_al_2009}, and \cite{mace_and_wrenn_2013} describe a method for deriving extinction profiles from a combination of observations from CloudSat, CALIPSO, and MODIS. Temperature and relative humidity profiles are taken from ECMWF reanalysis mapped to the CloudSat orbit and height bins. \cite{mace_and_wrenn_2013} use these as inputs to the ISCCP simulator in order to characterize the different types of hydrometeor profiles that can be categorized into the different ISCCP CTP-OD histogram bins. But these profiles also allow evaluation of the ISCCP simulator against ISCCP observations, and the analysis can be naturally extended to include the MISR simulator and observations.
+
+While deriving the inputs to the simulators from other satellite data enables an evaluation over a larger geographic range, it also introduces other challenges: 
+\begin{enumerate}
+\item Because the satellites from which the inputs are the derived and the satellites for which simulated-observations are to be evaluated are in different orbits, it is impossible to compare the simulated observations directly for each individual profile. Instead, only aggregated statistics (over a given region and time period) will be comparable. 
+
+\item Uncertainties are introduced into the analysis by using satellite-retrieved cloud properties. CloudSat and CALIPSO are able to characterize the structure of hydrometeor layers accurately, but microphysical retrievals from radar reflectivity measurements can carry large uncertainties due to the presence of precipitation. 
+
+\item The \cite{mace_and_wrenn_2013} retrieval uses MODIS column optical depths to constrain the extinction profiles. But the MODIS optical depth retrieval is known to be biased due to the limitations of 1D radiative transfer and the sampling restrictions of the MODIS retreival \citep{pincus_et_al_2012}. Because MISR uses a similar optical depth retrieval that is also limited by 1D radiative transfer \citep{marchand_et_al_2010}, the optical depth will likely be similarly biased, and any significant differences will likely be due to the sampling issues with the MODIS clear-sky restoral. This limits the evaluation to the simulation of cloud top height.
+\end{enumerate}
+
+After deriving the extinction profiles, the analysis technique is straightforward. The derived profiles will be used as inputs to the MISR and ISCCP simulators along with thermodynamic profiles from ECMWF reanalysis mapped to the CloudSat orbit. Cloud top height output from the simulators will be aggregated for selected regions and time periods and compared to similarly aggregated MISR and ISCCP observations. The differences will be compared against the sampling uncertainties and the uncertainties arising from the two different retrieval techniques to determine where differences are significant. In order to further evaluate the uncertainties in the simulators, the thresholds used within the MISR simulator that determine where MISR is able to see through thin cloud layers will be adjusted within reasonable values and the differences in the outputs compared against the sampling uncertainties as well to determine the sensitivity to these choices.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%The problem of inferring smale-scale structure from the large-scale description of cloud properties is not unique to simulated satellite diagnostic quantities. Because radiative transfer depends on the cloud properties in a non-linear manner, the details of the small-scale structure and variability are critical in calculating the large-scale fluxes and heating rates \citep[e.g.,][]{wielicki_and_welch_1986,boer_and_ramanathan_1997,stubenrauch_et_al_1997}. The cloud overlap problem consequently has a long history. Early radiative transfer parameterizations in GCMs used idealized, simplistic overlap assumptions hard-coded deep within the radiative transfer code (e.g., ???), and assumed that cloud condensate was constant on the scale of GCM gridboxes (plane parallel homogeneous). Until recently a majority of models \citep[e.g.,][]{cam3_description,cam4_description,cam5_description,am2_evaluation} have used the maximum-random overlap assumption \citep{geleyn_and_hollingsworth_1979,stubenrauch_et_al_1997,collins_2001}, in which clouds in adjacent cloudy layers are assumed to be maximally overlapped (perfect correlation) and clouds in layers separated by one or more clear layers are assumed to be randomly overlapped (no correlation). However, a number of studies have shown that these simplistic assumptions of cloud overlap fail to capture the complexity of clouds in nature \citep[e.g.,][]{hogan_and_illingworth_2000,mace_and_benson-troth_2002,pincus_et_al_2005,barker_2008} and can lead to substantial biases in top of atmosphere fluxes and domain-averaged profiles of radiative heating rates \citep{barker_et_al_1999,oreopoulos_et_al_2012}. \cite{barker_et_al_1999} and \cite{oreopoulos_et_al_2012} show that the assumption of homogeneous cloud condensate amount on the scale of GCM gridboxes is also inappropriate and leads to errors in radiative fluxes and heating rates. 
+\subsection{Sensitivity of satellite-observable cloud diagnostics to unresolved cloud and precipitation structure}
+The sensitivity of COSP-simulated diagnostics to assumptions about unresolved cloud and precipitation structure can be evaluated by using fields with fully resolved cloud and precipitation structure as inputs to the simulators themselves, and then modifying the inputs to mimic the assumptions about overlap and variability used in GCMs. Outputs from the modified fields can then be compared to the outputs from the unmodified fields to quantify the sensitivity of the outputs to the assumptions mimicked by the modifications.
+
+Options for the source of resolved cloud and precipitation properties is somewhat limited. Previous studies have used cloud resolving model (CRM) simulations in a similar manner to evaluate the sensitivity of radiative fluxes \citep{barker_et_al_1999,wu_and_liang_2005}, but this limits the analysis to the specific conditions represented by the case studies. A more comprehensive sampling of different meteorological regimes is obtained for this study by using output from the Multi-scale Modeling Framework \citep[MMF;][]{randall_et_al_2003}. The MMF replaces the cloud parameterizations in a traditional GCM with a 2D cloud resolving model in each gridbox. This provides global fields with resolved subgrid structure that can be passed directly to the individual instrument simulators within COSP. While these fields may not be perfectly accurate depictions of hydrometeor fields in nature, as long as the variability in these fields is reasonable they are sufficient for the purpose of evaluating the sensitivity of the diagnostics to the variability (perform comparison of overlap statistics and condensate PDFs compared to those derived from CloudSat to show that this is true?).
+
+There are four main questions to be answered regarding sensitivity to subgrid cloud and precipitation structure:
+\begin{enumerate}
+\item Occurrence overlap: how important is the vertical correlation in cloud and precipitation occurence?
+\item Heterogeniety: how important is local variability in cloud and precipitation condensate amount?
+\item Condensate overlap: for heterogeneous condensate, how important is vertical correlation in condensate amount?
+\item Phase overlap: how important is correlation between hydrometeors of different species (cloud and precipitation)?
+\end{enumerate}
+
+To begin to answer these questions and to motivate the work to improve the representation of overlap and heterogeniety, the following set of modified MMF fields are passed as input to the simulators directly:
+\begin{itemize}
+\item CRM: The original CRM fields within each gridbox of the MMF are used as inputs to the individual instrument simulators in COSP. This provides a baseline for comparison.
+\item CRM-AVG: hydrometeor mixing ratios are replaced with in-cloud averages, but the locations of hydrometeors (both cloud and precipitation) are retained from the full CRM fields. This set of modified fields mimics the layer homogeneous assumption, while retaining exact overlap. Any differences between this case and the full CRM case represent errors arising solely due to the assumption of homogeneous cloud and precipitation properties.
+\item CRM-RES: hydrometeor mixing ratios are resampled from the full distribution of mixing ratios from the CRM fields at each level, while again retaining the locations of hydrometeors from the full CRM fields. This modification tests the importance of condensate and phase overlap, since any vertical correlation in the original CRM condensate amount is destroyed by the resampling.
+\end{itemize}
+
+The above described simulations have been performed with a month of MMF output from the Super-Parameterized Community Atmosphere Model (SP-CAM). Preliminary results suggest that the simulated diagnostics are sensitive to condensate heterogeniety and condensate and phase overlap, as expected. While these simple tests are useful, they do not completely answer the questions posed above, and do not separate the sensitivity of the diagnostics to the different assumptions. That is, difference between the CRM-RES simulation and the CRM simulation arise due to both condensate and phase overlap errors. These simple simulations also do not test the sensitivity of the diagnostics to occurrence overlap. These questions will be revisited in the context of improvements in the treatment of subgrid cloud and precipitation structure in the following section.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Improving the representation of unresolved cloud and precipitation structure in large-scale models}
+%(Developing parameterization. Use \cite{raisanen_et_al_2004} subcolumn generator for generalized cloud and cloud condensate overlap, with modification to treat concurrent overlap of clouds and precipitation. Derive decorrelation lengths from combination of MMF and CloudSat data. Use MMF to study concurrent overlap of clouds and precipitation: this is important for the COSP diagnostics, but is typically neglected in radiative transfer because the effect of precipitation is small? Decorrelation lengths should depend on large-scale fields. See \cite{pincus_et_al_2005} for attempt to parameterize based on wind shear and convective strength. Figure out how to deal with precipitation...key to getting CloudSat simulator to agree with observations. More stringent test of cloud and precipitation fields than CRE. PDFs specified by models (statistical cloud schemes): improving cloud parameterizations is beyond the scope of our work. Look at \cite{oreopoulos_et_al_2012} for crude parameterization based on CloudSat data.)
+The sensitivity of simulated satellite diagnostics identified in the previous section and the sensitivity of radiative fluxes and heating rates discussed in the background both motivate efforts to improve the representation of unresolved cloud and precipitation structure for use in radiative transfer parameterizations and in calculating satellite-observable diagnostics. This is the focus of this section, and the primary contribution of this research.
+
+The development of the Monte Carlo Independent Column approximation \citep[McICA;][]{pincus_et_al_2003} has opened the door for more complete treatments of the subgrid variability of cloud overlap and condensate amount by providing a computationally feasible means of computing radiative fluxes on stochastically generated subcolumns that sample different cloud states. \cite{raisanen_et_al_2004} outline a subcolumn sampling strategy compatible with McICA that includes the ability to treat cloud occurrence and condensate overlap in a more flexible manner than has traditionally been used in GCMs. The \cite{raisanen_et_al_2004} generator allows for ``generalized overlap'', in which cloud overlap is assumed to be a linear combination of maximum and random overlap following \cite{hogan_and_illingworth_2000}. Generalized overlap is defined as follows: let $C_{\rm max} = \max(c_i,c_j)$ be the vertically projected cloud cover assuming maximal overlap due to two overlapped layers $i$,$j$ with partial cloud fractions $c_i,c_j$, and let $C_{\rm ran} = c_i + c_j - c_i c_j$ be the vertically projected cloud cover assuming random overlap due to two overlapped layers. Then the true vertically projected cloud cover $C$ is approximated by the generalized overlap $C_{\rm gen}$, where
+\[
+    C_{\rm gen} = \alpha C_{\rm max} + (1 - \alpha) C_{\rm ran}
+\]
+where $\alpha$ is the overlap parameter that determines the weighting between maximal and random overlap. \cite{hogan_and_illingworth_2000} suggest that $\alpha$ can be approximated as a decaying exponential function of the separation distance $\Delta z$  between two layers, such that
+\[
+    \alpha(\Delta z) = \exp\left(-\frac{\Delta z}{z_0}\right)
+\]
+where $z_0$ is the ``e-folding'' or ``decorrelation'' length and describes the rate at which overlap changes from maximum to random.
+
+For heterogeneous hydrometeor fields, it has been suggested that the condensate overlap can be formulated in terms of a rank correlation $r$ between layers that specifies the degree to which the distribution of condensate amounts in the two layers are lined up \citep[e.g.,][]{raisanen_et_al_2004,pincus_et_al_2005}. Assuming a similar exponential dependence for $r$ as for the cloud occurrence overlap $\alpha$,
+\[
+    r(\Delta z) = \exp\left(-\frac{\Delta z}{z_{0,q}}\right)
+\]
+where $z_{0,q}$ is the rank correlation for condensate between two layers separated by a distance $\Delta z$.
+
+%While this treatment of occurrence and condensate overlap is still somewhat limited, it has been shown to be a vast improvement over the maximum-random assumption \citep[e.g.,][]{hogan_and_illingworth_2000,mace_and_benson-troth_2003,pincus_et_al_2005}.
+
+This is a good start to the problem of improving the representation of unresolved cloud structure, but a number of challenges remain to implementing this in GCMs and in improving the subgrid treatment in COSP.
+\begin{enumerate}
+\item The decorrelation lengths need to be specified. Some models have already implemented this framework using a constant decorrelation length for occurrence overlap \citep[e.g.,][]{donner_et_al_2011}, but observed decorrelation lengths have been shown to vary geographically and seasonally \citep{hogan_and_illingworth_2000,mace_and_benson-troth_2002,barker_2008}. A more appropriate specification than constant values would be to parameterize decorrelation lengths in terms of the large-scale GCM fields, but this will require more work than has been done.
+\item In order to generate subcolumns with heterogeneous condensate, PDFs of condensate amount need to be specified. The trend toward statistical cloud schemes in GCMs \citep[e.g,][]{tompkins_2002,golaz_et_al_2002} will hopefully provide these PDFs at some point. But this still leaves the problem of determining precipitation condensate, which is relevant to the simulated radar reflectivity.
+\item Precipitation overlap has not been considered, as this is typically not included in GCM radiative transfer parameterizations. Precipitation fraction, overlap, and variability are important for simulated radar reflectivity and this subgrid framework will need to be modified to include these effects.
+\item How to overlap condensate of different phases needs to be specified (cloud and precipitation). \cite{dimichele_et_al_2012} implement a simple method in which precipitation overlaps maximally with cloud. This is a good starting point for improving upon this problem.
+\end{enumerate}
+
+Given this framework and the above remaining challenges, the following work is proposed to improve the representation of cloud and precipitation structure in GCMs and COSP diagnostics:
+
+\begin{itemize}
+\item Study hydrometeor structure in MMF output and in CloudSat data to determine relationships between decorrelation lengths and geophysical fields in GCMs.
+\item Implement the \cite{raisanen_et_al_2004} subcolumn generator into the COSP code to replace SCOPS, with modifications to include precipitation. Generalized overlap for cloud and precipitation occurrence and condensate with decorrelation lengths parameterized from above study using MMF output and CloudSat data.
+\item Determine appropriate condensate PDFs to use in the absence of PDFs from statistical cloud schemes (\cite{oreopoulos_et_al_2012} suggest beta distribution or other skewed distributions). Study MMF output and CloudSat data to determine this.
+\item Use the MMF to test the sensitivity of COSP diagnostics to specification and parameterization of decorrelation length scales.
+\end{itemize}
+
+The result of this work will be a parameterization of subgrid cloud and precipitation suitable for inclusion in traditional GCMs. Implementing this into a GCM is beyond the scope of this work but is a natural extension and next step.
+
+% Specifying overlap:
+%   Generalized overlap
+%   Exponential decorrelation length
+%   Rank correlation of condensate
+%
+% How to do this for GCMs?
+%   Can assume constant with location -- not reasonable
+%   Specify latitudinal dependence -- also not reasonable
+%   Parameterize in terms of large-scale circulation -- difficult, but the way to go?
+%
+% Effort to parameterize
+%   Use MMF: condensate related to large-scale fields
+%   Consistency with CloudSat and reanalysis: CloudSat for hydrometeor variability, reanalysis for large-scale fields
+%
+% Precipitation
+%   This is tricky...
+%   Maximally overlap with cloud?
+%   Condensate correlated with cloud condensate?
+%
+% Precipitation fraction
+%   GCMs don't diagnose this
+%   Need to diagnose this from PDF of total water?
+%   How to overlap with cloud
+%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Expected outcomes}
+\begin{itemize}
+\item Quantitative evaluation of the performance of the MISR and ISCCP simulators in accounting for the limitations of the satellite retrievals.
+\item Characterization of cloud and precipitation overlap statistics and condensate variability, and parameterization of these statistics suitable for implementation in a GCM
+\item Implementation of \citep{raisanen_et_al_2004} subgrid generator into COSP code with extentions for improved treatment of precipitation.
+\item Quantitative evaluation of the sensitivity of MISR, ISCCP, MODIS, CloudSat, CALIPSO simulator diagnostics to assumptions about unresolved cloud and precipitation structure and to improvements in that structure.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Timeline}
+\begin{itemize}
+\item Autumn 2014: complete evaluation of MISR and ISCCP uncertainties.
+\item Winter and Spring 2015: study MMF output and CloudSat data to characterize cloud and precipitation overlap parameters and condensate variability. Use MMF to parameterize these in terms of large-scale variables available in GCMs
+\item Summer 2015: Implement my improved subgrid cloud and precipitation generator into COSP code and test sensitivity of diagnostics to subgrid structure using MMF output; write and defend dissertation.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{ametsoc}
+\bibliography{proposal}
+\end{document}
+
+%\section{Testing the sensitivity of model-simulated satellite cloud statistics to unresolved variability}
+
+%There are two primary sources of uncertainty in these comparisons: uncertainties or biases in the observations themselves, and ambiguities or inconsistencies in the conversion from model fields to simulated satellite diagnostics. Evaluation of the observations themselves is difficult, due to a lack of any absolute ``truth'' dataset against which to compare observations retrieved from different satellite instruments. Typically any discussion of uncertainties is relegated to ``expert judgement'' based on comparing features of observations for different specific cases and making general recommendations for the fidelity of observations \citep[e.g.,][]{marchand_et_al_2010,pincus_et_al_2012}.
+
+
+%Atmospheric fields simulated by large-scale models are typically taken at face value to have no intrinsic uncertainty, other than that arising from internal variability of the model. However, underlying assumptions used within a model and lack of consistency between different parts of a model can challenge interpretation of results. An example of this that has been gaining attention in recent years is the assumption about unresolved or ``subgrid-scale'' variability in cloud condensate amount. Typical GCMs predict (or diagnose) only grid-scale mean profiles of partial cloudiness in-cloud condensed liquid and ice water content (effective radii are usually assumed constant). A number of studies have shown that variability in these properties at scales smaller than those resolved by GCMs is important, and assumptions such as horizontally homogeneous clouds can lead to intrinsic biases in not only the domain mean heating rates but also in both local and global TOA radiative fluxes \citep[e.g.,][]{barker_et_al_1999}. Thus, even if a model were to predict gridbox mean values of cloud and precipitation correctly, incorrectly accounting for the subgrid-scale structure that produces those means would still lead to inherent errors in the calculated radiative fluxes. Because clouds are often ``tuned'' or adjusted in models to achieve radiative balance at the top of the atmosphere, agreement in modelled and observed TOA fluxes almost certainly arises fortuitiously due to compensating errors in cloud properties and structure at smaller scales.
+%Cloud statistics derived using satellite instrument simulators also depend on cloud properties and structure at scales smaller than the resolution of GCM grids, and thus are subject to the same ambiguities as the radiative fluxes. The extent to which GCM subgrid assumptions leads to inherent biases in the these statistics has yet to be investigated.
+
+
+%Because the errors that result from the assumption of maximum-random overlap and of homogeneous cloud properties tend to be opposite in sign, \cite{barker_et_al_1999} suggest that any effort to improve the subgrid-scale representation of clouds should treat both the overlap assumptions and heterogeniety of cloud properties. %Because clouds are often ``tuned'' or adjusted in models to achieve radiative balance at the top of the atmosphere (e.g., ???), agreement in modelled and observed TOA fluxes in spite of the inherent errors in subgrid-scale variability assumptions almost certainly arises fortuitiously due to compensating errors in cloud properties and structure at the unresolved scales.
